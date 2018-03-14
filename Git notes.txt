@@ -13,3 +13,8 @@ git branch -d branch1 - deletes the label branch1, commits remain but are
                         unreachable if no merge was done
 git checkout boop - checks out branch boop, allowing for work on it
 git merge master branch1 - merges branch1 into master
+git remote - shows remotes
+git remote remote1 git@github.com/sshLinkFromGithubRepo - creates a remote with
+                                                          this repo on github
+git push remote1 branch1 - pushes branch1 to github
+git pull remote1 master - pulls master from name1
