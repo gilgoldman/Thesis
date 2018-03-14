@@ -1,0 +1,284 @@
+% arara: pdflatex: { synctex: yes }
+% arara: makeindex: { style: ctuthesis }
+% arara: bibtex
+
+% The class takes all the key=value arguments that \ctusetup does,
+% and a couple more: draft and oneside
+\documentclass[twoside]{ctuthesis}
+\usepackage{graphicx}
+\usepackage{listings}
+
+
+\ctusetup{
+%	preprint = \ctuverlog,
+	mainlanguage = english,
+%	titlelanguage = czech,
+%	mainlanguage = czech,
+	otherlanguages = {czech},
+	title-czech = {Title in Czech},
+	title-english = {Fermentation measurement},
+	subtitle-czech = {Subtitle in Czech},
+	subtitle-english = {\textit{Subtitle In English}},
+	doctype = B,
+	faculty = F3,
+	department-czech = {Department in Czech},
+	department-english = {What is the department name in English?},
+	author = {Gil Goldman},
+	supervisor = {Prof. Jiři Novák},
+	supervisor-address = {Ústav X, \\ Uliční 5, \\ Praha 99},
+	supervisor-specialist = {Who do we write here?},
+	fieldofstudy-english = {Robotics and Cybernetics},
+	subfieldofstudy-english = {Control Engineering},
+	fieldofstudy-czech = {Robotika a Kybernetika},
+	subfieldofstudy-czech = {Subfield in Czech},
+	keywords-czech = {Keywords in Czech},
+	keywords-english = {Fermentation, Ethanol, Automation, Measurement},
+	day = 20,
+	month = 4,
+	year = 2018,
+	specification-file = {ctutest-zadani.pdf},
+%	front-specification = true,
+%	front-list-of-figures = false,
+%	front-list-of-tables = false,
+%	monochrome = true,
+%	layout-short = true,
+}
+
+\ctuprocess
+
+\addto\ctucaptionsczech{%
+	\def\supervisorname{Vedoucí}%
+	\def\subfieldofstudyname{Studijní program}%
+}
+
+\ctutemplateset{maketitle twocolumn default}{
+	\begin{twocolumnfrontmatterpage}
+		\ctutemplate{twocolumn.thanks}
+		\ctutemplate{twocolumn.declaration}
+		\ctutemplate{twocolumn.abstract.in.titlelanguage}
+		\ctutemplate{twocolumn.abstract.in.secondlanguage}
+		\ctutemplate{twocolumn.tableofcontents}
+		\ctutemplate{twocolumn.listoffigures}
+	\end{twocolumnfrontmatterpage}
+}
+
+% Theorem declarations, this is the reasonable default, anybody can do what they wish.
+% If you prefer theorems in italics rather than slanted, use \theoremstyle{plainit}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{note}
+\newtheorem*{remark*}{Remark}
+\newtheorem{remark}[theorem]{Remark}
+
+%\setlength{\parskip}{5ex plus 0.2ex minus 0.2ex}
+
+% Abstract in Czech
+\begin{abstract-czech}
+Abstract in Czech
+\end{abstract-czech}
+
+% Abstract in English
+\begin{abstract-english}
+ In this dissertation we will survey the current methods of measuring the progression of home grade beer fermentation processes. In addition, we will implement an automatic solution to monitor the gradual accumulation of ethanol in the process of beer fermentation.
+\end{abstract-english}
+
+% Acknowledgements / Podekovani
+\begin{thanks}
+The Author would like to thank Professor Jiri Novak for his thorough guidance and tutelage - it has been an honor working on this topic under his supervision. %\emph{alma mater}.
+\end{thanks}
+
+% Declaration / Prohlaseni
+\begin{declaration}
+	
+Prohlašuji, že jsem předloženou práci vypracoval samostatně, a že jsem uvedl veškerou použitou literaturu.\\
+V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}\\
+
+\vspace{5mm} % a small space between both paragraphs
+
+I declare that this work is all my own work and I have cited all the sources I have
+used in the bibliography.\\
+
+In Prague, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
+
+\end{declaration}
+
+% Only for testing purposes
+\listfiles
+\usepackage[pagewise]{lineno}
+\usepackage{lipsum,blindtext}
+\usepackage{mathrsfs} % provides \mathscr used in the ridiculous examples
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+In this dissertation we will provide a brief overview of the way beer is made by home brewers today - we will follow the process from grains to beer and observe a few issues with the common way this process is carried out today in most microbreweries.\\
+Then, we will explore the various ways by which ethanol is currently being measured in home-grade brewing processes, also known as micro-brewing, and evaluate the advantages and disadvantages of each method. We will then discuss why and how the method suggested by this paper is the most suitable.\\
+We will then establish and justify an automatic, low cost solution to the issue of accurate and safe ethanol measurement, followed by rigorous testing of the proposed solution.
+
+\chapter{How beer is brewed}
+
+In this chapter, we will elaborate on how beer is being made, and discuss the most common method of micro-brewing.
+From this explanation we may easily identify the weakness in the process and the justification for this thesis.
+
+\section{Overview of Beer Brewing}
+In general, micro-brewing can be seen as a fairly simple process, composed of five significant stages: \textit{Malting}, \textit{Mashing}, \textit{Worting}, \textit{Fermentation}, and \textit{Packing}.\\
+A short flow chart below illustrates the general principles of the brewing process before we dive deeply into the various steps:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.39]{BeerMakingFlowChart}
+\caption{Flow chart of the Brewing process}
+\end{figure}
+
+
+\section{Malting}
+The first step in beer brewing is called \textit{Malting}, and it is the name given to the process of preparing the grain to be \textit{mashed}. The most common grains to be malted are Barley (\textit{Hordeum Vulgare}) and Wheat (\textit{Triticum aestivum}). Sorghum (\textit{Sorghum Vulgare}) is also rather common, but mostly in its indigenous continent of Africa. Some varieties of rye, oats, and millets are also used, but to a significantly lesser extent \cite{Brewing_Science}.\\
+The main goal of malting is to germinate the grains used in the brewing process, breaking the $\alpha-amylase$ and $\beta-amylase$ enzymes out of the \textit{amylose homologous} series in the grains. These Enzymes will later be used to break the grain starches into various saccharides .\\
+Malting is most commonly done by steeping the grains in and out of water until they reach about 45$\%$ moisture content, and then maintaining that high moisture content via bursts of highly humidified air. The germination process is stopped by $Kilning$ - blowing hot, dry air through the grains to reduce their inherent moisture content down to 5$\%$ \cite{Malting_Brewing}. Various flavors and colors can be developed by changing the duration and temperature of the Kilning process. \cite{Malting} \\
+The final step of the Malting process is done as close to brewing as feasible, and involves cracking and grinding the grains to allow easy extraction of the starches during the Mashing stage. The end product of this process is called $Malt$.\\
+As this process is relatively expensive and mechanically demanding, the majority of micro-breweries buy malt rather than produce it.
+
+\section{Mashing}
+The process of $mashing$ involves steeping, or cooking, the malt in water at specific temperatures to allow the enzymes developed during the malting process to take effect.\\
+The $\alpha-amylase$ enzyme's main function is to break the large, complex, insoluble starches in the grain into smaller, simpler, and soluble starches. The $\beta-amylase$ converts the water soluble starches into usable types of sugar, such as the monosaccharide glucose, the disaccharide maltose, the trisaccharide maltotriose, and various other, more complex, sugars. Most notable among these is the disaccharide $Maltose$, which is the main sugar processed by the $\alpha$ and $\beta$-amylase enzymes.\\
+There are various mashing methods, most notable are \textit{infusion mashing} and \textit{decoction mashing}.\\
+Infusion mashing involves steeping the grains in water, slowly increasing the temperature of the water, and stopping at pre-designated stops - the goal of which is to encourage the enzymes to break the starches into sugars without denaturing them. This is the easier alternative, requiring nothing more than a source of heat, a thermometer, and a timer. \\
+Decoction mashing involves removing set amounts of grain at set times from the brewing mash, boiling them in a separate vessal to encourage a Mallard reaction, and reintroducing the now hotter grains into the mash in order to increase its overall temperature. This method is far more complex than infusion mashing, yet produces greater quantities of maltose, better calculated fermentability rates, as well as more noticeable flavors and aromas \cite{Brewing_Science}.\\
+A review of the summary of the summarized table below, comparing the results of various methods, mashes, syrups, will reinforce the above statement.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{MashingTable}
+\begin{table}[H]
+	\caption{The carbohydrate compositions of two worts and several syrups prepared from starches ($\%$)}
+\end{table}
+\end{figure}
+
+\section{Worting}
+In favor of clarity, in the scope of this work we will define a step of the process which we will name "Worting". To the experienced, it is a combination of Lautering and secondary boiling.\\
+After the mashing process is complete, we will begin Worting the mash. Worting involves two main steps:\\
+The first step consists of separating the grains from the mash. This is commonly achieved in large breweries by filtering the grains from the mash as it is being transferred into a secondary pot for the Worting process. Microbreweries sometimes preform the same action, however it is common to use only one pot, resulting in use of specialized bags or sieves to hold the grains during the mashing process, and removing them before Worting. At this stage, Hops (\textit{Humulus lupulus}) are added into the brewing mixture in order to add flavor and texture, as well as control the bitterness of the final Product.\cite{Hops}\\
+The second step of the process involves boiling the now grain-free mash to eliminate bacteria and sterilize the mixture - resulting in a sugary grain juice named Wort.
+
+\section{Fermentation} 
+After the Worting process is complete, the Wort is chilled to a predetermined temperature range which depends on the type of beer being brewed. The chilled wort is transferred into a new air sealed container where yeast of the genus \textit{Saccharomyces} are added to it at a common rate of $15-20 x 10^6$ cells per [m$L^{-1}$] - a process called Pitching. The yeast which are added to the Wort will consume the abundant sugars and convert them into ethanol and higher alcohols, all the while producing $CO_2$ as a byproduct. The yeast's action will over time transform the sugary grain juice into what we recognize as beer.\\
+During this relatively long process which lasts from a few days up to several weeks, the most common way of measuring the progress of the fermentation process is via extracting a sample of wort by hand and measuring the liquid's specific gravity - the ratio between the density of the liquid and that of water measured at 4[$C^\circ$] - by dipping a hydrometer in the sample.\\
+As fermenting beer is sensitive to contamination and oxidization, this method of measurement, by far the most common one, is far from optimal. \cite{Biochemistry}
+
+\section{Packing}
+After the yeast have finished their work, the final step of the process is to package the beer in sterilized bottles or cans. In most microbreweries, the bottling is conducted by utilizing specialized tools to deliver the beer from the fermentation tanks to the bottles while limiting contact with the surrounding air as much as possible - contact with air at this step exposes the beer to severe contamination risk,  which endangers the products safety, and oxidation, which leads to considerable worsening of flavor and taste.\\
+In most microbreweries it is common to add additional saccharides - most commonly white sugar or glucose syrup - to the bottled beer in order to stimulate additional fermentation after capping the bottles, ensuring sufficient carbonization of the final product.
+
+\section{Reasons for this thesis}
+As we now know, the nature of the fermentation process as it is carried out in most microbreweries means it cannot be continuously or accurately measured, as every measurement of the fermentation process endangers the final products safety and taste.\\
+In addition, accurate measurement of the fermentation process would allow early bottling of the beer, eliminating the need to add sugar or saccharides to stimulate sufficient carbonization and assuring a healthier, tastier, and safer product.
+
+\chapter{Fermentation Measurement Methods}
+In this chapter, we will discuss the various methods used by different institutes and businesses to monitor the progression of Wort fermentation processes - most commonly by measuring in various ways its Ethanol content.\\
+We will investigate six main methods of Ethanol measurement:\\
+
+\begin{itemize}
+	\item Densitometry 
+	\item Near Infra-red Spectroscopy
+	\item Mid Infra-red Spectroscopy
+	\item Gas Chromatography
+	\item Enzymatic Quantitation
+	\item Hydrometry
+\end{itemize}
+
+In the following chapter, we will discuss the methodology of the six alternatives, as well as examine their use cases and feasibility for use in micro-brewing.
+\section{Densitometry}
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\part{My Party}
+
+%\input{ctutest-1}
+
+%\input{ctutest-2}
+
+
+%\part{Your Party}
+
+
+
+%\appendix
+
+%\printindex
+
+\appendix
+
+%\bibliographystyle{amsalpha}
+%\bibliography{ctutest}
+\begin{thebibliography}{9}
+	\bibitem{Brewing_Science}
+	\textit{\textbf{Brewing Science and Practice}}\\
+	Dennis E. Briggs, Chris A. Boulton, Peter A. Brooks, and Roger Stevens\\
+	Woodhead Publishing Limited and CRC Press LLC\\
+	\textit{2004}\\
+	
+	\bibitem{Brewing}
+	\textit{\textbf{Brewing}}\\
+	Michael J. Lewis, Tom W. Young\\
+	Springer Science \& Business Media\\
+	\textit{6.12.2012}\\
+	ISBN 9780306472749
+	
+	\bibitem{Malting_Brewing}
+	\textit{\textbf{Malting and Brewing Science: Volume II Hopped Wort and Beer}}\\
+	J. S. Hough, D. E. Briggs, R. Stevens, T. W. Young\\
+	Springer Science \& Business Media\\
+	ISBN 978-1-4613-5727-8
+	
+	\bibitem{Malting}
+	\textit{“Effect of Malting Temperature and Mashing Methods on Sorghum Wort Composition and Beer Flavour.”} \\
+	Igyor, M.a, et al. \\
+	\textit{Process Biochemistry}, vol. 36, no. 11, 2001, pp. 1039–1044.\\
+	doi:10.1016/s0032-9592(00)00267-3.
+	
+	\bibitem{Hops}
+	\textit{“125th Anniversary Review: The Role of Hops in Brewing”}\\
+	C. Schonberger, T. Kostelecky\\
+	\textit{Journal of the Institute of Brewing}, vol. 117, no. 3, 2001, pp. 259-267.\\
+	doi:10.1002/j.2050-0416.2011.tb00471.x
+	
+	\bibitem{Biochemistry}
+	\textit{\textbf{Biochemistry of Beer Fermentation}}\\
+	Pires, E. ; Branyik, T\\
+	Springer international publishing\\
+	ISBN: 978-3-319-15188-5
+	
+	\bibitem{Ethanol_Measurement}
+	\textit{“Evaluation of Ethanol Measuring Tehcniques”}\\
+	S. Hennessey, K Payne\\
+	\textit{Worcester Polytechnic Institute}, 2015\\
+	
+	
+\end{thebibliography}
+
+\ctutemplate{specification.as.chapter}
+
+\end{document}

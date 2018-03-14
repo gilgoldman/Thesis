@@ -1,0 +1,5 @@
+git init - starts repo
+git add - adds to staging area
+git status - give a status of the repo
+git log - gives a history of the repo
+git clone - clones a repo to be worked on
