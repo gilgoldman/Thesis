@@ -9,4 +9,7 @@ git reset --hard - resets the working directory, deleting
                    all changes in working directory and staging area
 git branch - Shows branches
 git branch testy-Mctestface - creates a branch called testy-Mctestface
+git branch -d branch1 - deletes the label branch1, commits remain but are
+                        unreachable if no merge was done
 git checkout boop - checks out branch boop, allowing for work on it
+git merge master branch1 - merges branch1 into master
