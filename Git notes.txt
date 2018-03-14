@@ -2,6 +2,8 @@ git init - starts repo
 git add - adds to staging area
 git status - give a status of the repo
 git log - gives a history of the repo
+git log --graph --oneline branch1 branch2 - shows graphically changes
+                                            to branch1 and branch2
 git clone - clones a repo to be worked on
 git reset --hard - resets the working directory, deleting
                    all changes in working directory and staging area
