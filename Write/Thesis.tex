@@ -188,21 +188,49 @@ In addition, accurate measurement of the fermentation process would allow early 
 
 \chapter{Fermentation Measurement Methods}
 In this chapter, we will discuss the various methods used by different institutes and businesses to monitor the progression of Wort fermentation processes - most commonly by measuring in various ways its Ethanol content.\\
-We will investigate six main methods of Ethanol measurement:\\
+We will investigate six methods of Ethanol measurement:\\
 
 \begin{itemize}
 	\item Densitometry 
-	\item Near Infra-red Spectroscopy
-	\item Mid Infra-red Spectroscopy
+	\item Near and Mid Infra-red Spectroscopy
 	\item Gas Chromatography
 	\item Enzymatic Quantitation
 	\item Hydrometry
 \end{itemize}
 
-In the following chapter, we will discuss the methodology of the six alternatives, as well as examine their use cases and feasibility for use in micro-brewing.
-\section{Densitometry}
-Densitometry involves dancing.
+In the following chapter, we will discuss the methodology of the six alternatives, as well as examine their use cases and feasibility for use in micro-brewing and large breweries alike.\\
 
+\newpage
+
+\section{Densitometry}
+The first method of measuring ethanol in beer fermentation processes we will explore is utilizing a digital density meter.\\
+As fermentation progresses, the yeast pitched into the Wort earlier will convert the saccharides into ethanol, higher alcohols, and carbon dioxide. This process eliminates the Worts sweetness, revealing the bitterness given by the hops, and transforming the Wort into beer. While this process is not fully explored yet \cite{Brewing_Science}, it has a measurable effect on the Worts density, an effect which, while not linear, is pretty well understood and charted.\\
+As the correlation between Worts density and alcohol content is well explored, it is possible to identify current alcohol content in a sample by identifying its density. Since finding out a liquids density is rather challenging, it is common to use a digital density meter\cite{Ethanol_Measurement}.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.6]{sg-ultra-max-digital-densitymeter-d}
+	\caption{A SG digital density-meter}
+\end{figure}
+
+A digital density meter works by extracting a small sample of liquid, and injecting it into an oscillating U shaped tube. The tube is then piezoelectrically or electromagnetically excited into un-damped oscillation. As the oscillating volume is known, it is possible to deduce its mass from the period in which it oscillates based on the following relation:
+\begin{equation}
+	\rho = \mathcal{A}\cdot{\tau}^2 - \mathcal{B}
+\end{equation}
+Where $\mathcal{A}$ and $\mathcal{B}$ are constants of the device itself, and are determined via calibration against two substances of known densities - in most cases, air and water.
+\newpage
+This method is mostly chosen due to its flexibility and reliability - substances of different densities will oscillate in different frequencies directly affected by their respective densities, and overfilling the device will not impact the measurement results\cite{Density_Measurement}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale = 0.45]{u-tube-density-meter}
+	\caption{An example of a digital density meter working principle}
+\end{figure}
+
+While common in many industrial fields, a digital density meter is an expensive device. While it may be suitable for companies or research laboratories, it is not so fitting for private individuals.\\
+
+\section{Near and Mid Infra-red Spectroscopy}
+Near and Mid Infra-red Spectroscopy, respectively NIRS or MIRS, are twin methods which may be used for measuring ethanol content in liquids. To avoid repetitivity, we will explore how NIRS work, and detail the major differences between the methods.\\
+NIRS is a spectroscopic method
 
 
 
@@ -238,8 +266,7 @@ Densitometry involves dancing.
 	\bibitem{Brewing_Science}
 	\textit{\textbf{Brewing Science and Practice}}\\
 	Dennis E. Briggs, Chris A. Boulton, Peter A. Brooks, and Roger Stevens\\
-	Woodhead Publishing Limited and CRC Press LLC\\
-	\textit{2004}\\
+	Woodhead Publishing Limited and CRC Press LLC, 2004
 	
 	\bibitem{Brewing}
 	\textit{\textbf{Brewing}}\\
@@ -268,16 +295,19 @@ Densitometry involves dancing.
 	
 	\bibitem{Biochemistry}
 	\textit{\textbf{Biochemistry of Beer Fermentation}}\\
-	Pires, E. ; Branyik, T\\
+	E. Pires ; T. Branyik \\
 	Springer international publishing\\
 	ISBN: 978-3-319-15188-5
 	
 	\bibitem{Ethanol_Measurement}
 	\textit{“Evaluation of Ethanol Measuring Tehcniques”}\\
-	S. Hennessey, K Payne\\
+	S. Hennessey, K. Payne\\
 	\textit{Worcester Polytechnic Institute}, 2015\\
 	
-	
+	\bibitem{Density_Measurement}
+	\textit{"Density Measurement using modern oscillating transducers"}\\
+	H. Stabinger\\
+	\textit{South Yorkshire Trading Standards Unit}, 1994
 \end{thebibliography}
 
 \ctutemplate{specification.as.chapter}

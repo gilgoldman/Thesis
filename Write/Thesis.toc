@@ -29,6 +29,7 @@
 \contentsline {section}{\numberline {1.6}Packing}{6}{section.1.6}
 \contentsline {section}{\numberline {1.7}Reasons for this thesis}{6}{section.1.7}
 \contentsline {chapter}{\numberline {2}Fermentation Measurement Methods}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Densitometry}{7}{section.2.1}
-\contentsline {chapter}{\numberline {A}Bibliography}{9}{appendix.A}
-\contentsline {chapter}{\numberline {B}Project\ Specification}{11}{section*.5}
+\contentsline {section}{\numberline {2.1}Densitometry}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Near and Mid Infra-red Spectroscopy}{9}{section.2.2}
+\contentsline {chapter}{\numberline {A}Bibliography}{11}{appendix.A}
+\contentsline {chapter}{\numberline {B}Project\ Specification}{13}{section*.5}
