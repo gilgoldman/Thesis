@@ -21,3 +21,4 @@ git remote remote1 git@github.com/sshLinkFromGithubRepo - creates a remote with
 git push remote1 branch1 - pushes branch1 to github
 git pull remote1 master - pulls master from name1. In effect, fetches from
                           remote, then merges with local
+git edit file1 - opens file1 in text editor
