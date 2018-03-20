@@ -203,7 +203,8 @@ In the following chapter, we will discuss the methodology of these five alternat
 
 \section{Densitometry}
 The first method of measuring ethanol in beer fermentation processes we will explore is utilizing a digital density meter.\\
-As fermentation progresses, the yeast pitched into the Wort earlier will convert the saccharides into ethanol, higher alcohols, and carbon dioxide. This process eliminates the Worts sweetness, revealing the bitterness given by the hops, and transforming the Wort into beer. While this process is not fully explored yet \cite{Brewing_Science}, it has a measurable effect on the Worts density, an effect which, while not linear, is pretty well understood and charted.\\
+As fermentation progresses, the yeast pitched into the Wort earlier will convert the saccharides into ethanol, higher alcohols, and carbon dioxide. This process eliminates the Worts sweetness, revealing the bitterness given by the hops, and transforming the Wort into beer. \\
+While this process is not fully explored yet \cite{Brewing_Science}, it has a measurable effect on the Worts density, an effect which, while not linear, is pretty well understood and charted.\\
 As the correlation between Worts density and alcohol content is well explored, it is possible to identify current alcohol content in a sample by identifying its density. Since finding out a liquids density is rather challenging, it is common to use a digital density meter\cite{Ethanol_Measurement}.\\
 
 \begin{figure}[H]
@@ -212,12 +213,12 @@ As the correlation between Worts density and alcohol content is well explored, i
 	\caption{A SG digital density-meter}
 \end{figure}
 
-A digital density meter works by extracting a small sample of liquid, and injecting it into an oscillating U shaped tube. The tube is then piezoelectrically or electromagnetically excited into un-damped oscillation. As the oscillating volume is known, it is possible to deduce its mass from the period in which it oscillates based on the following relation:
+A digital density meter works by extracting a small sample of liquid, and injecting it into an oscillating U shaped tube. The tube is then piezoelectrically or electromagnetically excited into un-damped oscillation, vibrating two tubes - one with a sample, the other with a reference material. As the oscillating volume is known, it is possible to deduce its density from the period in which it oscillates based on the following relation:
 \begin{equation}
-	\rho = \mathcal{A}\cdot{\tau}^2 - \mathcal{B}
+	\tau = 2\pi \sqrt{\frac{\rho_sV_c+m_c}{\mathcal{K}}}
 \end{equation}
-Where $\mathcal{A}$ and $\mathcal{B}$ are constants of the device itself, and are determined via calibration against two substances of known densities - in most cases, air and water.
-\newpage
+Where $\rho_s$ is the density of the liquid to be discovered, $V_c$ is the internal volume of the u-tube, $m_c$ is the mass of an empty u-tube, and $\mathcal{K}$ is a manufacturer defined constant.\\
+
 This method is mostly chosen due to its flexibility and reliability - substances will oscillate in different frequencies directly affected by their respective densities, and overfilling the device will not impact the measurement results\cite{Density_Measurement}.
 \begin{figure}[H]
 	\centering
@@ -256,7 +257,7 @@ Chromatography is an umbrella term for several methods following a common princi
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale = 0.5]{refurbished-gas_chromatograph}
+	\includegraphics[scale = 0.4]{refurbished-gas_chromatograph}
 	\caption{Gas Cromatograph (picture by BVK Technology Services)}
 \end{figure}
 
@@ -266,7 +267,7 @@ As the gaseous mixture travels through the heated tubing, it separates into its 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale = 0.5]{Gas_Chromatograph_PDF}
+	\includegraphics[width = \textwidth]{Gas_Chromatograph_PDF}
 	\caption{Gas Cromatograph flow chart}
 \end{figure}
 
@@ -275,8 +276,8 @@ Gas chromatography is highly complex and very expensive method which has little 
 \newpage
 
 \section{Hydrometry} 
-
-
+Hydrometry is the most common of all ethanol measurement techniques, as it is the cheapest and easiest to understand and utilize.\\
+In the next chapter we will delve deeply into how a hydrometer works and why it was chosen as the cornerstone method of the physical implementation of this thesis.
 
 
 
