@@ -16,17 +16,16 @@
 %	mainlanguage = czech,
 	otherlanguages = {czech},
 	title-czech = {Title in Czech},
-	title-english = {Fermentation measurement},
+	title-english = {Alcohol content measurement within the fermentation process},
 	subtitle-czech = {Subtitle in Czech},
-	subtitle-english = {\textit{Subtitle In English}},
+	subtitle-english = {\textit{Low-cost automatic ethanol measurement as indication of fermentation progress}},
 	doctype = B,
 	faculty = F3,
 	department-czech = {Department in Czech},
-	department-english = {What is the department name in English?},
+	department-english = {Department of Control Engineering},
 	author = {Gil Goldman},
 	supervisor = {Prof. Jiři Novák},
 	supervisor-address = {Ústav X, \\ Uliční 5, \\ Praha 99},
-	supervisor-specialist = {Who do we write here?},
 	fieldofstudy-english = {Robotics and Cybernetics},
 	subfieldofstudy-english = {Control Engineering},
 	fieldofstudy-czech = {Robotika a Kybernetika},
@@ -89,7 +88,7 @@ Abstract in Czech
 
 % Abstract in English
 \begin{abstract-english}
- In this dissertation we will survey the current methods of measuring the progression of home grade beer fermentation processes. In addition, we will implement an automatic solution to monitor the gradual accumulation of ethanol in the process of beer fermentation.
+ In this dissertation I will survey the current methods of measuring the progression of microbrewed beer fermentation processes. In addition, I will implement an automatic solution to monitor the gradual accumulation of ethanol in the process of beer fermentation.
 \end{abstract-english}
 
 % Acknowledgements / Podekovani
@@ -99,7 +98,7 @@ The Author would like to thank Professor Jiri Novak for his thorough guidance an
 
 % Declaration / Prohlaseni
 \begin{declaration}
-	
+
 Prohlašuji, že jsem předloženou práci vypracoval samostatně, a že jsem uvedl veškerou použitou literaturu.\\
 V Praze, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}\\
 
@@ -124,18 +123,18 @@ In Prague, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 
 \section{Introduction}
 
-In this dissertation we will provide a brief overview of the way beer is made by home brewers today - we will follow the process from grains to beer and observe a few issues with the common way this process is carried out today in most microbreweries.\\
-Then, we will explore the various ways by which ethanol is currently being measured in home-grade brewing processes, also known as micro-brewing, and evaluate the advantages and disadvantages of each method. We will then discuss why and how the method suggested by this paper is the most suitable.\\
-We will then establish and justify an automatic, low cost solution to the issue of accurate and safe ethanol measurement, followed by rigorous testing of the proposed solution.
+In this dissertation I will provide a brief overview of the way beer is made by home brewers today - I will follow the process from grains to beer and observe a few issues with the common way this process is carried out today in most microbreweries.\\
+Then, I will explore the various ways by which ethanol is currently being measured in home-grade brewing processes, also known as micro-brewing, and evaluate the advantages and disadvantages of each method. I will then discuss why and how the method suggested by this paper is the most suitable.\\
+I will then establish and justify an automatic, low cost solution to the issue of accurate and safe ethanol measurement, followed by rigorous testing of the proposed solution.
 
 \chapter{How beer is brewed}
 
-In this chapter, we will elaborate on how beer is being made, and discuss the most common method of micro-brewing.
-From this explanation we may easily identify the weakness in the process and the justification for this thesis.
+In this chapter, I will elaborate on how beer is being made, and discuss the most common method of micro-brewing.
+From this explanation I may easily identify the weakness in the process and the justification for this thesis.
 
 \section{Overview of Beer Brewing}
 In general, micro-brewing can be seen as a fairly simple process, composed of five significant stages: \textit{Malting}, \textit{Mashing}, \textit{Worting}, \textit{Fermentation}, and \textit{Packing}.\\
-A short flow chart below illustrates the general principles of the brewing process before we dive deeply into the various steps:
+A short flow chart below illustrates the general principles of the brewing process before I dive deeply into the various steps:
 
 \begin{figure}[H]
 \centering
@@ -168,12 +167,12 @@ A review of the summary of the summarized table below, comparing the results of 
 \end{figure}
 
 \section{Worting}
-In favor of clarity, in the scope of this work we will define a step of the process which we will name "Worting". To the experienced, it is a combination of Lautering and secondary boiling.\\
-After the mashing process is complete, we will begin Worting the mash. Worting involves two main steps:\\
+In favor of clarity, in the scope of this work I will define a step of the process which I will name "Worting". To the experienced, it is a combination of Lautering and secondary boiling.\\
+After the mashing process is complete, I will begin Worting the mash. Worting involves two main steps:\\
 The first step consists of separating the grains from the mash. This is commonly achieved in large breweries by filtering the grains from the mash as it is being transferred into a secondary pot for the Worting process. Microbreweries sometimes preform the same action, however it is common to use only one pot, resulting in use of specialized bags or sieves to hold the grains during the mashing process, and removing them before Worting. At this stage, Hops (\textit{Humulus lupulus}) are added into the brewing mixture in order to add flavor and texture, as well as control the bitterness of the final Product.\cite{Hops}\\
 The second step of the process involves boiling the now grain-free mash to eliminate bacteria and sterilize the mixture - resulting in a sugary grain juice named Wort.
 
-\section{Fermentation} 
+\section{Fermentation}
 After the Worting process is complete, the Wort is chilled to a predetermined temperature range which depends on the type of beer being brewed. The chilled wort is transferred into a new air sealed container where yeast of the genus \textit{Saccharomyces} are added to it at a common rate of $15-20 x 10^6$ cells per [m$L^{-1}$] - a process called Pitching. The yeast which are added to the Wort will consume the abundant sugars and convert them into ethanol and higher alcohols, all the while producing $CO_2$ as a byproduct. The yeast's action will over time transform the sugary grain juice into what we recognize as beer.\\
 During this relatively long process which lasts from a few days up to several weeks, the most common way of measuring the progress of the fermentation process is via extracting a sample of wort by hand and measuring the liquid's specific gravity - the ratio between the density of the liquid and that of water measured at 4[$C^\circ$] - by dipping a hydrometer in the sample.\\
 As fermenting beer is sensitive to contamination and oxidization, this method of measurement, by far the most common one, is far from optimal. \cite{Biochemistry}
@@ -183,26 +182,26 @@ After the yeast have finished their work, the final step of the process is to pa
 In most microbreweries it is common to add additional saccharides - most commonly white sugar or glucose syrup - to the bottled beer in order to stimulate additional fermentation after capping the bottles, ensuring sufficient carbonization of the final product.
 
 \section{Reasons for this thesis}
-As we now know, the nature of the fermentation process as it is carried out in most microbreweries means it cannot be continuously or accurately measured, as every measurement of the fermentation process endangers the final products safety and taste.\\
+As I now know, the nature of the fermentation process as it is carried out in most microbreweries means it cannot be continuously or accurately measured, as every measurement of the fermentation process endangers the final products safety and taste.\\
 In addition, accurate measurement of the fermentation process would allow early bottling of the beer, eliminating the need to add sugar or saccharides to stimulate sufficient carbonization and assuring a healthier, tastier, and safer product.
 
 \chapter{Fermentation Measurement Methods}
-In this chapter, we will discuss the various methods used by different institutes and businesses to monitor the progression of Wort fermentation processes - most commonly by measuring in various ways its Ethanol content.\\
-We will investigate five methods of Ethanol measurement:\\
+In this chapter, I will discuss the various methods used by different institutes and businesses to monitor the progression of Wort fermentation processes - most commonly by measuring in various ways its Ethanol content.\\
+I will investigate five methods of Ethanol measurement:\\
 
 \begin{itemize}
-	\item Densitometry 
+	\item Densitometry
 	\item Near and Mid Infra-red Spectroscopy
 	\item Gas Chromatography
 	\item Hydrometry
 \end{itemize}
 
-In the following chapter, we will discuss the methodology of these five alternatives, as well as examine their use cases and feasibility for use in micro-brewing and large breweries alike.\\
+In the following chapter, I will discuss the methodology of these five alternatives, as well as examine their use cases and feasibility for use in micro-brewing and large breweries alike.\\
 
 \newpage
 
 \section{Densitometry}
-The first method of measuring ethanol in beer fermentation processes we will explore is utilizing a digital density meter.\\
+The first method of measuring ethanol in beer fermentation processes I will explore is utilizing a digital density meter.\\
 As fermentation progresses, the yeast pitched into the Wort earlier will convert the saccharides into ethanol, higher alcohols, and carbon dioxide. This process eliminates the Worts sweetness, revealing the bitterness given by the hops, and transforming the Wort into beer. \\
 While this process is not fully explored yet \cite{Brewing_Science}, it has a measurable effect on the Worts density, an effect which, while not linear, is pretty well understood and charted.\\
 As the correlation between Worts density and alcohol content is well explored, it is possible to identify current alcohol content in a sample by identifying its density. Since finding out a liquids density is rather challenging, it is common to use a digital density meter\cite{Ethanol_Measurement}.\\
@@ -229,9 +228,9 @@ This method is mostly chosen due to its flexibility and reliability - substances
 While common in many industrial fields, a digital density meter is an expensive device. While it may be suitable for companies or research laboratories, it is not so fitting for private individuals.
 
 \section{Near and Mid Infra-red Spectroscopy}
-Near and Mid Infra-red Spectroscopy, respectively NIRS or MIRS, are twin methods which may be used for measuring ethanol content in liquids. To avoid repetitivity, we will explore how NIRS work, and detail the major differences between the methods.\\
-NIRS is a spectroscopic method which utilizes electromagnetic radiation(EMR) from the near infrared region, typified by wavelengths of 700-1100 $[nm]$\cite{NIR_Spectroscopy_Ethanol}. In very broad strokes, we may define spectroscopy as studying the way in which different molecules react to EMR, and can be seen as the implementation of Beer-Lamberts law, which describes the relation between the attenuation of light to the properties of the material through which the light is traveling.\\
-Since specific molecules diffract specific wavelengths, we may understand a samples composition by studying which wavelengths of EMR are absorbed by it. 
+Near and Mid Infra-red Spectroscopy, respectively NIRS or MIRS, are twin methods which may be used for measuring ethanol content in liquids. To avoid repetitivity, I will explore how NIRS work, and detail the major differences between the methods.\\
+NIRS is a spectroscopic method which utilizes electromagnetic radiation(EMR) from the near infrared region, typified by wavelengths of 700-1100 $[nm]$\cite{NIR_Spectroscopy_Ethanol}. In very broad strokes, Spectroscopy may be defined as studying the way in which different molecules react to EMR, and can be seen as the implementation of Beer-Lamberts law, which describes the relation between the attenuation of light to the properties of the material through which the light is traveling.\\
+Since specific molecules diffract specific wavelengths, a samples composition may be understood and analyzed by studying which wavelengths of EMR are absorbed by it.
 
 \begin{figure}[H]
 	\centering
@@ -239,7 +238,7 @@ Since specific molecules diffract specific wavelengths, we may understand a samp
 	\caption{NIRS DS2500 Analyzer by Metrohm NIRSystems}
 \end{figure}
 
-We can similarly define a spectrometer as an instrument which illuminates a sample material with EMR of various wavelengths and measures the diffraction of electromagnetic radiation caused by the sample material. Most spectrometers work by having a light source shine light through a prism or other light diffracting objects, such as specialized grates. The diffracted light is then filtered via a movable slit, allowing to select a specific wavelength range, which is then shined at a photo-diode or photo-transistor through the tested sample. The measured current generated by the photo-diode is then converted into a useful reading.
+A spectrometer can be similarly defined as an instrument which illuminates a sample material with EMR of various wavelengths and measures the diffraction of electromagnetic radiation caused by the sample material. Most spectrometers work by having a light source shine light through a prism or other light diffracting objects, such as specialized grates. The diffracted light is then filtered via a movable slit, allowing to select a specific wavelength range, which is then shined at a photo-diode or photo-transistor through the tested sample. The measured current generated by the photo-diode is then converted into a useful reading.
 
 \begin{figure}[H]
 	\centering
@@ -275,11 +274,35 @@ Gas chromatography is highly complex and very expensive method which has little 
 
 \newpage
 
-\section{Hydrometry} 
+\section{Hydrometry}
 Hydrometry is the most common of all ethanol measurement techniques, as it is the cheapest and easiest to understand and utilize.\\
-In the next chapter we will delve deeply into how a hydrometer works and why it was chosen as the cornerstone method of the physical implementation of this thesis.
+In the next chapter I will delve deeply into how a hydrometer works and why it was chosen as the cornerstone method of the physical implementation of this thesis.
 
 
+\chapter{Solution proposition}
+In this chapter I will discuss why hydrometry is the most common method for evaluating the amount of ethanol in fermenting beer, examine its greatest issue, and propose a solution for this risk.
+
+\section{How Hydrometry work}
+
+
+
+
+
+
+
+
+
+\section{The risk of Hydrometry}
+
+
+
+
+
+
+
+
+
+\section{Proposed solution}
 
 
 %\part{My Party}
@@ -306,80 +329,80 @@ In the next chapter we will delve deeply into how a hydrometer works and why it 
 	\textit{\textbf{Brewing Science and Practice}}\\
 	D. E. Briggs ; C. A. Boulton ; P. A. Brooks ; R. Stevens\\
 	Woodhead Publishing Limited and CRC Press LLC, 2004
-	
+
 	\bibitem{Brewing}
 	\textit{\textbf{Brewing}}\\
 	M. J. Lewis ; T. W. Young\\
 	Springer Science \& Business Media\\
 	\textit{6.12.2012}\\
 	ISBN 9780306472749
-	
+
 	\bibitem{Malting_Brewing}
 	\textit{\textbf{Malting and Brewing Science: Volume II Hopped Wort and Beer}}\\
 	J. S. Hough ; D. E. Briggs ; R. Stevens ; T. W. Young\\
 	Springer Science \& Business Media\\
 	ISBN 978-1-4613-5727-8
-	
+
 	\bibitem{Malting}
 	\textit{“Effect of Malting Temperature and Mashing Methods on Sorghum Wort Composition and Beer Flavour.”} \\
 	M. A. Igyor, et al. \\
 	\textit{Process Biochemistry}, vol. 36, no. 11, 2001, pp. 1039–1044.\\
 	doi:10.1016/s0032-9592(00)00267-3.
-	
+
 	\bibitem{Hops}
 	\textit{“125th Anniversary Review: The Role of Hops in Brewing”}\\
 	C. Schonberger ; T. Kostelecky\\
 	\textit{Journal of the Institute of Brewing}, vol. 117, no. 3, 2001, pp. 259-267.\\
 	doi:10.1002/j.2050-0416.2011.tb00471.x
-	
+
 	\bibitem{Biochemistry}
 	\textit{\textbf{Biochemistry of Beer Fermentation}}\\
 	E. Pires ; T. Branyik \\
 	Springer international publishing\\
 	ISBN: 978-3-319-15188-5
-	
+
 	\bibitem{Ethanol_Measurement}
 	\textit{“Evaluation of Ethanol Measuring Tehcniques”}\\
 	S. Hennessey ; K. Payne\\
 	\textit{Worcester Polytechnic Institute}, 2015\\
-	
+
 	\bibitem{Density_Measurement}
 	\textit{"Density Measurement using modern oscillating transducers"}\\
 	H. Stabinger\\
 	\textit{South Yorkshire Trading Standards Unit}, 1994
-	
+
 	\bibitem{Nondestructive_Measurement}
 	\textit{\textbf{Nondestructive Evaluation of Food Quality Theory and Practice}}\\
 	S. N. Jha, et al.\\
 	Springer Science \& Business Media\\
 	ISBN 978-3-642-15795-0
-	
+
 	\bibitem{NIR_For_Spices}
 	\textit{"Comparison of Near-and Mid-Infrared Spectroscopy for Herb and Spice Authenticity Analysis"}\\
 	K. Lawson-Wood ; I. Robertson ; U. K. Seer Green\\
 	\textit{PerkinElmer, Inc.}, 2016
-	
+
 	\bibitem{NIR_Spectroscopy_Ethanol}
 	\textit{"Noninvasive Method for Monitoring Ethanol in Fermentation Processes Using Fiber-optic Near-Infrared Spectroscopy"}\\
 	A. G. Cavinato ; D. M. Mayes ; Z. Ge ; J. B. Callis\\
 	\textit{Analytical chemistry 62, no. 18: 1977-1982}, 1990
-	
+
 	\bibitem{Gas_Chromatography_beer}
 	\textit{"A rapid method for determination of ethanol in alcoholic beverages using capillary gas chromatography"}\\
 	M. L. Wang; Y. M. Choong ; N. W. Su ; M. H. Lee\\
 	\textit{Journal of Food and Drug Analysis, 11(2)}, 2003
-	
+
 	\bibitem{Ehtnaol_adsorption}
 	\textit{"Adsorption of ethanol on Si (1 0 0) from first principles calculations"}\\
 	P. L. Silvestrelli\\
 	\textit{Surface science, 552(1-3), 17-26}, 2004
-	
+
 	\bibitem{Ethanol_in_Wine_GC}
 	\textit{"Quantitative determination of ethanol in wine by gas chromatography"}\\
 	Stackler, B., $\&$ Christensen, E. N. (1974)\\
 	\textit{American Journal of Enology and Viticulture, 25(4), 202-207.}
-	
-	
+
+
 \end{thebibliography}
 
 \ctutemplate{specification.as.chapter}
