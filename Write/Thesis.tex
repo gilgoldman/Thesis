@@ -280,29 +280,43 @@ In the next chapter I will delve deeply into how a hydrometer works and why it w
 
 
 \chapter{Solution proposition}
-In this chapter I will discuss why hydrometry is the most common method for evaluating the amount of ethanol in fermenting beer, examine its greatest issue, and propose a solution for this risk.
+In this chapter I will discuss how hydrometry work and why it is the most common method for evaluating the amount of ethanol in fermenting beer, examine its greatest issue, and propose a solution for this risk.
 
 \section{How Hydrometry work}
+Hydrometry is simple, easy, and cheap to perform, and provides a sufficiently accurate measurement of ethanol contents.\\
+Hydrometry can be viewed as an application of Archimedes principle: "Any object immersed in fluid, partially or wholly, is acted upon by a buoyant force equal to the weight of the fluid displaced by it". A hydrometer is a marked instrument, commonly made from glass and weighed by lead\cite{Ethanol_Measurement}, weighted so as to achieve neutral buoyancy, with the point on the hydrometer at water level while it is in buoyant equilibrium marked as the instruments baseline. The baseline is marked as $1.00$, to denote that there is no difference between the fluids density and that of water. Due to historical reasons, in Britain it is commonly marked up by three orders of magnitude, marking the baseline as $1000$\cite{Brewing_Science} instead of $1.00$\\
+As the hydrometer floats around a certain equilibrium point in water, and its precise weight and volume is known, it is possible to deduce the sample fluids specific gravity - its density compared to that of water - based on the difference between the height of the current equilibrium point relative to that of water. In simpler terms, the denser the fluid, the higher the hydrometer will float in the fluid due to a stronger buoyant force acting on it.\\
+The instrument is notched or marked in various distances to simplify reading its results, each notch indicating a different specific gravity. It is also calibrated around a specific temperature, in most cases 15$[C^{\circ}]$\cite{Ethanol_Measurement}. As temperature has a noticeable effect on density, and as a result on specific gravity(SG), most charts detailing correlation between SG and hydrometer readings also correct for temperature differences.\\
 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{hydrometer}
+	\caption{Hydrometer operating principle \cite{Hydrometer_Pic}}
+\end{figure}
 
-
-
-
-
-
+In order to use a hydrometer, a sample of the Wort is retrieved after it has cooled to the desired temperature, but before the yeast has been pitched (see section 1.5). This reading will be designated as the Original Gravity(OG) of the batch being brewed, and all changes in the Worts SG due to an increase in ethanol content will be compared to this. While it is possible to estimate from the OG the finite products alcohol content, it is rarely accurate.
 
 \section{The risk of Hydrometry}
+To ensure accuracy, and to know when to proceed to the next stage of the brewing process, at least several measurements by hydrometer are required. However, every measurement involves retrieving a sample of fermenting Wort in order to measure its specific gravity.\\
+Several solutions have been implemented to minimize exposure to contaminants and oxygen, which, at this stage of the process, can cause staling of the beer and a severe damage to its taste and clarity. However, most of them are mechanical, and none of them has completely solved the issue.\\
+Today, each micro-brewer must find their own point of balance between accuracy and risk, with each measurement increasing the accuracy of the process but endangering the final product.
 
-
-
-
-
-
-
-
+\pagebreak
 
 \section{Proposed solution}
+Therefore, I propose eliminating the need to retrieve a sample of the fermenting beer altogether, and disposing of the last major risk factor in beer brewing.\\
+The proposed solution will ensure a continuous - or, more accurately, discrete over very short intervals - measurement of the fermenting Worts SG, as well as calculate the current alcohol content while factoring in the environmental temperature. The device proposed will be integrated as a part of the closed fermenting Wort system, thus eliminating the danger of oxidation or contamination. Furthermore, it will allow wireless access to the results, so as to provide greater transparency of the brewing process.\\
+The device will be a modified Raspberry pi zero w attached to an HC-sr04 ultrasonic distance sensor and a DHT-11 temperature sensor - the exact architecture will be discussed in length in Chapter 4 of this work. The prototype designed and built for this thesis will be powered via cable, however future version may be battery operated. In order to ease integration and reduce costs, the device will utilize the hydrometer already present at every micro-brewery to complete the system. Should a micro-brewery not have a hydrometer, one may be supplied.\\
+The final result will be a low cost, accurate, and reliable solution to provide insight into the process while eliminating the most common danger factors of traditional methods.
+
+
+
+
+
+
+
+
 
 
 %\part{My Party}
@@ -401,6 +415,11 @@ In this chapter I will discuss why hydrometry is the most common method for eval
 	\textit{"Quantitative determination of ethanol in wine by gas chromatography"}\\
 	Stackler, B., $\&$ Christensen, E. N. (1974)\\
 	\textit{American Journal of Enology and Viticulture, 25(4), 202-207.}
+	
+	\bibitem{Hydrometer_Pic}
+	\textit{"Racking the Hard Cider"}\\
+	\textit{http://www.windward.org/notes/notes70/andrew7010.htm}\\
+	Accessed on 26.3.2018
 
 
 \end{thebibliography}
