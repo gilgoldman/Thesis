@@ -36,6 +36,13 @@
 \contentsline {chapter}{\numberline {3}Solution proposition}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}How Hydrometry work}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}The risk of Hydrometry}{14}{section.3.2}
-\contentsline {section}{\numberline {3.3}Proposed solution}{15}{section.3.3}
-\contentsline {chapter}{\numberline {A}Bibliography}{17}{appendix.A}
-\contentsline {chapter}{\numberline {B}Project\ Specification}{19}{section*.5}
+\contentsline {section}{\numberline {3.3}Proposed solution}{14}{section.3.3}
+\contentsline {chapter}{\numberline {4}Technical Implementation}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Physical Architecture}{16}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Raspberry Pi Zero W}{17}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}HC-sr04 Ultrasonic sensor}{17}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Software Architecture}{17}{section.4.2}
+\contentsline {section}{\numberline {4.3}Implementation: Physical Architecture}{17}{section.4.3}
+\contentsline {section}{\numberline {4.4}Implementation: Software Architecture}{17}{section.4.4}
+\contentsline {chapter}{\numberline {A}Bibliography}{19}{appendix.A}
+\contentsline {chapter}{\numberline {B}Project\ Specification}{21}{section*.5}

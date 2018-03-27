@@ -16,5 +16,12 @@
 \BOOKMARK [1][-]{section.3.1}{How Hydrometry work}{chapter.3}% 16
 \BOOKMARK [1][-]{section.3.2}{The risk of Hydrometry}{chapter.3}% 17
 \BOOKMARK [1][-]{section.3.3}{Proposed solution}{chapter.3}% 18
-\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 19
-\BOOKMARK [0][-]{section*.5}{Project Specification}{}% 20
+\BOOKMARK [0][-]{chapter.4}{Technical Implementation}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Physical Architecture}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.1.1}{Raspberry Pi Zero W}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.2}{HC-sr04 Ultrasonic sensor}{section.4.1}% 22
+\BOOKMARK [1][-]{section.4.2}{Software Architecture}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Implementation: Physical Architecture}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Implementation: Software Architecture}{chapter.4}% 25
+\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 26
+\BOOKMARK [0][-]{section*.5}{Project Specification}{}% 27
