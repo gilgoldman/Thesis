@@ -27,4 +27,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Hydrometer operating principle \cite {Hydrometer_Pic}\relax }}{14}{figure.3.1}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Raspberry Pi Zero W micro-computer \cite {RasPi0W}\relax }}{17}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces HC-sr04 dimensions and angle accuracy \cite {HC-SR04}\relax }}{17}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces DHT-11 Digital Humidity and Temperature sensor\cite {HC-SR04}\relax }}{18}{figure.4.3}
 \addvspace {10\p@ }
