@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.8)  4 APR 2018 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.8)  5 APR 2018 12:29
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1686,13 +1686,13 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 
 ]
 Chapter 1.
-<BeerMakingFlowChart.pdf, id=227, 643.40375pt x 724.7075pt>
+<BeerMakingFlowChart.pdf, id=229, 643.40375pt x 724.7075pt>
 File: BeerMakingFlowChart.pdf Graphic file (type pdf)
 <use BeerMakingFlowChart.pdf>
 Package pdftex.def Info: BeerMakingFlowChart.pdf  used on input line 141.
 (pdftex.def)             Requested size: 250.92645pt x 282.63478pt.
 [3 <./BeerMakingFlowChart.pdf>] [4]
-<MashingTable.jpg, id=248, 914.81775pt x 199.947pt>
+<MashingTable.jpg, id=250, 914.81775pt x 199.947pt>
 File: MashingTable.jpg Graphic file (type jpg)
 <use MashingTable.jpg>
 Package pdftex.def Info: MashingTable.jpg  used on input line 163.
@@ -1718,7 +1718,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--208
 
  []
 
-<sg-ultra-max-digital-densitymeter-d.jpg, id=272, 240.9pt x 249.93375pt>
+<sg-ultra-max-digital-densitymeter-d.jpg, id=274, 240.9pt x 249.93375pt>
 File: sg-ultra-max-digital-densitymeter-d.jpg Graphic file (type jpg)
 <use sg-ultra-max-digital-densitymeter-d.jpg>
 Package pdftex.def Info: sg-ultra-max-digital-densitymeter-d.jpg  used on input
@@ -1729,19 +1729,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-<u-tube-density-meter.jpg, id=274, 621.32124pt x 374.39874pt>
+<u-tube-density-meter.jpg, id=276, 621.32124pt x 374.39874pt>
 File: u-tube-density-meter.jpg Graphic file (type jpg)
 <use u-tube-density-meter.jpg>
 Package pdftex.def Info: u-tube-density-meter.jpg  used on input line 224.
 (pdftex.def)             Requested size: 279.59198pt x 168.47787pt.
 [8 <./sg-ultra-max-digital-densitymeter-d.jpg>]
-<spectrometer.jpg, id=285, 150.5625pt x 109.30838pt>
+<spectrometer.jpg, id=287, 150.5625pt x 109.30838pt>
 File: spectrometer.jpg Graphic file (type jpg)
 <use spectrometer.jpg>
 Package pdftex.def Info: spectrometer.jpg  used on input line 237.
 (pdftex.def)             Requested size: 112.92159pt x 81.98108pt.
  [9 <./u-tube-density-meter.jpg> <./spectrometer.jpg>]
-<spectrometer_scheme.jpg, id=291, 549.05125pt x 122.4575pt>
+<spectrometer_scheme.jpg, id=293, 549.05125pt x 122.4575pt>
 File: spectrometer_scheme.jpg Graphic file (type jpg)
 <use spectrometer_scheme.jpg>
 Package pdftex.def Info: spectrometer_scheme.jpg  used on input line 245.
@@ -1756,7 +1756,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
-<refurbished-gas_chromatograph.jpg, id=296, 304.9794pt x 275.3487pt>
+<refurbished-gas_chromatograph.jpg, id=298, 304.9794pt x 275.3487pt>
 File: refurbished-gas_chromatograph.jpg Graphic file (type jpg)
 <use refurbished-gas_chromatograph.jpg>
 Package pdftex.def Info: refurbished-gas_chromatograph.jpg  used on input line 
@@ -1766,7 +1766,7 @@ Package pdftex.def Info: refurbished-gas_chromatograph.jpg  used on input line
 Underfull \vbox (badness 4805) has occurred while \output is active []
 
  [10 <./spectrometer_scheme.jpg>]
-<Gas_Chromatograph_PDF.pdf, id=304, 751.80875pt x 306.14375pt>
+<Gas_Chromatograph_PDF.pdf, id=306, 751.80875pt x 306.14375pt>
 File: Gas_Chromatograph_PDF.pdf Graphic file (type pdf)
 <use Gas_Chromatograph_PDF.pdf>
 Package pdftex.def Info: Gas_Chromatograph_PDF.pdf  used on input line 269.
@@ -1778,7 +1778,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--290
 
  []
 
-<hydrometer.jpg, id=320, 289.08pt x 311.1625pt>
+<hydrometer.jpg, id=322, 289.08pt x 311.1625pt>
 File: hydrometer.jpg Graphic file (type jpg)
 <use hydrometer.jpg>
 Package pdftex.def Info: hydrometer.jpg  used on input line 294.
@@ -1789,104 +1789,114 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [13
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 308--311
+
+ []
+
 [14 <./hydrometer.jpg>]
+<Housing.pdf, id=334, 716.6775pt x 696.6025pt>
+File: Housing.pdf Graphic file (type pdf)
+<use Housing.pdf>
+Package pdftex.def Info: Housing.pdf  used on input line 314.
+(pdftex.def)             Requested size: 286.66592pt x 278.63606pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [15 <./Housing.pdf>]
 Chapter 4.
 [16]
-<RasPIZeroW.jpg, id=340, 1027.84pt x 1027.84pt>
+<RasPIZeroW.jpg, id=348, 1027.84pt x 1027.84pt>
 File: RasPIZeroW.jpg Graphic file (type jpg)
 <use RasPIZeroW.jpg>
-Package pdftex.def Info: RasPIZeroW.jpg  used on input line 354.
+Package pdftex.def Info: RasPIZeroW.jpg  used on input line 362.
 (pdftex.def)             Requested size: 154.16934pt x 154.16934pt.
-<HCSR04_sizes.jpg, id=343, 494.44725pt x 263.18324pt>
+<HCSR04_sizes.jpg, id=351, 494.44725pt x 263.18324pt>
 File: HCSR04_sizes.jpg Graphic file (type jpg)
 <use HCSR04_sizes.jpg>
-Package pdftex.def Info: HCSR04_sizes.jpg  used on input line 366.
+Package pdftex.def Info: HCSR04_sizes.jpg  used on input line 374.
 (pdftex.def)             Requested size: 247.22302pt x 131.5913pt.
  [17 <./RasPIZeroW.jpg> <./HCSR04_sizes.jpg>]
-<DHT11.jpg, id=350, 361.35pt x 361.35pt>
+<DHT11.jpg, id=358, 361.35pt x 361.35pt>
 File: DHT11.jpg Graphic file (type jpg)
 <use DHT11.jpg>
-Package pdftex.def Info: DHT11.jpg  used on input line 375.
+Package pdftex.def Info: DHT11.jpg  used on input line 383.
 (pdftex.def)             Requested size: 180.67456pt x 180.67456pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--381
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \chapter with sig. 's' on line 420.
+. Redefining command \chapter with sig. 's' on line 428.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \appendix with sig. 'ss' on line 420.
+. Redefining command \appendix with sig. 'ss' on line 428.
 .................................................
 [18 <./DHT11.jpg>] [19] [20
 
 ]
 Appendix A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--464
+Underfull \hbox (badness 10000) in paragraph at lines 469--472
 
  []
 
 [21] [22]
-<ctutest-zadani.pdf, id=383, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=391, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf  used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf  used on input line 529.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf  used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf  used on input line 529.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
-<ctutest-zadani.pdf, id=386, page=1, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=394, page=1, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 529.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 529.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 529.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 529.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf , page1 used on input line 529.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [23
 
  <./ctutest-zadani.pdf>]
-<ctutest-zadani.pdf, id=409, page=2, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=416, page=2, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 529.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 529.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 521.
+Package pdftex.def Info: ctutest-zadani.pdf , page2 used on input line 529.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [24 <./ctutest-zadani.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 523.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 523.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 531.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 531.
  (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 523.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 531.
 
 
  *File List*
@@ -2032,6 +2042,7 @@ spectrometer_scheme.jpg    Graphic file (type jpg)
 refurbished-gas_chromatograph.jpg    Graphic file (type jpg)
 Gas_Chromatograph_PDF.pdf    Graphic file (type pdf)
 hydrometer.jpg    Graphic file (type jpg)
+ Housing.pdf    Graphic file (type pdf)
 RasPIZeroW.jpg    Graphic file (type jpg)
 HCSR04_sizes.jpg    Graphic file (type jpg)
    DHT11.jpg    Graphic file (type jpg)
@@ -2042,48 +2053,39 @@ ctutest-zadani.pdf    Graphic file (type pdf)
 ctutest-zadani.pdf    Graphic file (type pdf)
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 523.
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: A308BDB7844DAE73D12B9BF5AE0BC849;1932
-(rerunfilecheck)             After:  A943275D7E355F412F45E1B17C9B7D6D;1932.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 523.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 531.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: A943275D7E355F412F45E1B17C9B7D6D;1932.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 531.
  ) 
 Here is how much of TeX's memory you used:
- 23314 strings out of 493305
- 405573 string characters out of 3138866
+ 23319 strings out of 493305
+ 405671 string characters out of 3138866
  634460 words of memory out of 3000000
- 26295 multiletter control sequences out of 15000+200000
+ 26299 multiletter control sequences out of 15000+200000
  623122 words of font info for 144 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,56p,10370b,822s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section*.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiK
-TeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-sy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr
-8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (30 pages, 1061123 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
+thsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Thesis.pdf (30 pages, 1124206 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
+ 497 PDF objects out of 1000 (max. 8388607)
  101 named destinations out of 1000 (max. 500000)
- 25923 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 25928 words of extra memory for PDF output out of 29859 (max. 10000000)
 
