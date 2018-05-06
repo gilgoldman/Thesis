@@ -367,13 +367,26 @@ This device was chosen for its ease of use, availability, versatility, and low c
 \subsection{HC-sr04 Ultrasonic Ranging Module}
 The HC-sr04 sensor provides a non-contact ultrasonic distance measurement function, at ranges of 2 to 400 [cm] $\pm$0.3[cm] with a measuring angle of 30$^\circ$\\
 The sensor works by emitting eight pulses at 40[kHz] and listening for the rebounding pulses. It is then possible to computationally calculate, based on the length of the rebounding signal, the distance between the sensor and the target.\\
-The HC-sr04 sensor was chosen for this project due to it's high accuracy, small size, and low price.
+The HC-sr04 sensor was chosen for this project due to it's high accuracy, small size, and low price. However, as the sensor's accuracy fluctuations can have a noticeable impact on such sensitive instrumentation, methods to compensate for them will be discussed and tested in Chapter 5.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{HCSR04_sizes}
 	\caption{HC-sr04 dimensions and angle accuracy \cite{HC-SR04}}
 \end{figure}
+
+As the sensor's output signal is rated at 5[V] \cite{HC-SR04} and the Raspberry Pi's GPIO (General Purpose Input Output) is rated at 3.3[V]\cite{RasPi0W}, it would be wise to implement some sort of protection for the board. The most effective way to provide such protection is a voltage divider. The values for the derivation of the required resistors can be found as follows:
+
+\begin{gather}\nonumber
+	\frac{V_{output}}{V_{in}} = \frac{R_2}{R_1 + R_2}\\\nonumber
+	\frac{3.3}{5}= 0.66 = \frac{R_2}{R_1 + R_2}\\\nonumber
+	0.66(R_1+R_2) = R2\\\nonumber
+	0.66R_1 = 0.34R_2\\
+	1.941R_1 = R_2
+\end{gather}
+
+Thanks to $(4.1)$, it is now clear that $R_2$ should have approximately twice the resistance of $R_1$. Therefore, in the scope of this device, the two resistors chosen were of $1000\Omega$ and $2000\Omega$, due to their abundance and price.
+
 
 \subsection{DHT-11 Digital Humidity and Temperature sensor}
 The DHT-11 Digital Humidity and Temperature utilizes a capacitive humidity sensor and a thermistor to measure relative ambient humidity with $\pm$5$\%$ accuracy at 25$^\circ$, and temperature with $\pm$2 [C$^\circ$] at 25[C$^\circ$]. The instruments readings are then digitalized via a built in microprocessor which transmits a digital reading from each sensor at 16 bit resolution.
