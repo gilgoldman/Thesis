@@ -48,7 +48,10 @@
 \contentsline {paragraph}{Resistors}{19}{paragraph*.7}
 \contentsline {paragraph}{Lattice}{19}{paragraph*.8}
 \contentsline {section}{\numberline {4.2}Software Architecture}{19}{section.4.2}
-\contentsline {section}{\numberline {4.3}Implementation: Physical Architecture}{19}{section.4.3}
-\contentsline {section}{\numberline {4.4}Implementation: Software Architecture}{19}{section.4.4}
+\contentsline {subsection}{\numberline {4.2.1}Raspbian Stretch}{20}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Cron Linux Daemon}{20}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Main Software module}{20}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Implementation: Physical Architecture}{20}{section.4.3}
+\contentsline {section}{\numberline {4.4}Implementation: Software Architecture}{20}{section.4.4}
 \contentsline {chapter}{\numberline {A}Bibliography}{21}{appendix.A}
 \contentsline {chapter}{\numberline {B}Project\ Specification}{23}{section*.9}

@@ -173,7 +173,7 @@ The first step consists of separating the grains from the mash. This is commonly
 The second step of the process involves boiling the now grain-free mash to eliminate bacteria and sterilize the mixture - resulting in a sugary grain juice named Wort.
 
 \section{Fermentation}
-After the Worting process is complete, the Wort is chilled to a predetermined temperature range which depends on the type of beer being brewed. The chilled wort is transferred into a new air sealed container where yeast of the genus \textit{Saccharomyces} are added to it at a common rate of $15-20 x 10^6$ cells per [m$L^{-1}$] - a process called Pitching. The yeast which are added to the Wort will consume the abundant sugars and convert them into ethanol and higher alcohols, all the while producing $CO_2$ as a byproduct. The yeast's action will over time transform the sugary grain juice into what we recognize as beer.\\
+After the Worting process is complete, the Wort is chilled to a predetermined temperature range which depends on the type of beer being brewed. The chilled wort is transferred into a new air sealed container where yeast of the genus \textit{Saccharomyces} are added to it at a common rate of $15-20 x 10^6$ cells per [m$L^{-1}$] - a process called Pitching. The yeast which are added to the Wort will consume the abundant sugars and convert them into ethanol and higher alcohols, all the while producing $CO_2$ as a byproduct. The yeast's action will over time transform the sugary grain juice into what is recognized as beer.\\
 During this relatively long process which lasts from a few days up to several weeks, the most common way of measuring the progress of the fermentation process is via extracting a sample of wort by hand and measuring the liquid's specific gravity - the ratio between the density of the liquid and that of water measured at 4[$C^\circ$] - by dipping a hydrometer in the sample.\\
 As fermenting beer is sensitive to contamination and oxidization, this method of measurement, by far the most common one, is far from optimal. \cite{Biochemistry}
 
@@ -335,10 +335,10 @@ The device will be mounted inside a custom housing which will hold all of the re
 
 \begin{itemize}
 	\item Raspberry Pi Zero W
-	\item HC-sr04 Ultrasonic sensor
+	\item Two HC-sr04 Ultrasonic sensors
 	\begin{itemize}
-		\item 1,000 [$\Omega$] resistor
-		\item 2,000 [$\Omega$] resistor
+		\item Two 1,000 [$\Omega$] resistors
+		\item Two 2,000 [$\Omega$] resistors
 	\end{itemize}
 	\item DHT-11 Digital Humidity and Temperature sensor
 	\begin{itemize}
@@ -375,7 +375,7 @@ The HC-sr04 sensor was chosen for this project due to it's high accuracy, small 
 	\caption{HC-sr04 dimensions and angle accuracy \cite{HC-SR04}}
 \end{figure}
 
-As the sensor's output signal is rated at 5[V] \cite{HC-SR04} and the Raspberry Pi's GPIO (General Purpose Input Output) is rated at 3.3[V]\cite{RasPi0W}, it would be wise to implement some sort of protection for the board. The most effective way to provide such protection is a voltage divider. The values for the derivation of the required resistors can be found as follows:
+As the sensor's output signal via the ECHO pin is rated at 5[V] \cite{HC-SR04} and the Raspberry Pi's GPIO (General Purpose Input Output) is rated at 3.3[V]\cite{RasPi0W}, it would be wise to implement some sort of protection for the board. The most effective way to provide such protection is a voltage divider, with the sensors output connected through it to the board. The values for the derivation of the required resistors can be found as follows:
 
 \begin{gather}\nonumber
 	\frac{V_{output}}{V_{in}} = \frac{R_2}{R_1 + R_2}\\\nonumber
@@ -398,16 +398,34 @@ The DHT-11 Digital Humidity and Temperature utilizes a capacitive humidity senso
 \end{figure}
 
 \subsection{Additional Components}
-The rest of the components we need are generic and not type dependant: a mini breadboard, a hydrometer, several resistors, and a piece of paper. The housing unit can be a recycled bottle even, so while for the purposes of this work we will use a 3d printed one, any can be used in its stead.\\
+The rest of the components which are needed are generic and not type dependant: a mini breadboard, a hydrometer, several resistors, and a piece of paper. The housing unit can be a recycled bottle even, so while for the purposes of this work I will use a 3d printed one, any can be used in its stead.\\
 \paragraph{Mini Breadboard} Will be used to simplify prototyping - in a final product the various components will be soldered to each other, making a breadboard obsolete.
 \paragraph{Hydrometer} Is a generic hydrometer - the specific gravity of the liquid will be deduced by the change in the hydrometer height in wort compared to its height in water. Any hydrometer will do.
 \paragraph{Resistors} Are used either as pull-up resistors or to form voltage dividers for the various sensors.
-\paragraph{Lattice} Or the piece of rice paper will act as a lightweight extension added on top of the hydrometer to ease its detection by the HC-sr04
+\paragraph{Lattice} Or the piece of rice paper will act as a lightweight extension added on top of the hydrometer to ease its detection by the HC-sr04. This attachment will be small and lightweight enough to make its addition to the system negligible.
 
 \section{Software Architecture}
+The system will be coded entirely in Python to support modularity and ease of maintenance, supplemented by open-source software with appropriate licenses when necessary to assure high quality. The software architecture can be viewed as composed of three main parts:\\
 
+\begin{itemize}
+	\item Raspbian Stretch
+	\item Cron linux module
+	\item Main software body
+	\item Grafana 
+	\item InfluxDB
+	\item Distance sensor thread
+	\item Temperature sensor thread
+\end{itemize}
 
+\subsection{Raspbian Stretch}
+Raspbian Stretch is a Linux based operating system (OS) adapted for use with ARM processors. The version used in the scope of this work is that of April 2018, the latest in a long line of modifications made to the basic Raspbian system at the time of writing.\\
+It was chosen as it is an OS specifically built to work well with Raspberry Pi's and their unique hardware.
 
+\subsection{Cron Linux Daemon}
+Cron, named after the Greek word for time, is a Linux Daemon - software which run in the background of an operating system as a process independent from user interaction. Cron, specifically, is a Daemon which assists in scheduling tasks, as it runs automatically once a minute based on the systems clock. It will be used to activate the Main software module automatically as the system boots, as well as following and monitoring additional threads and processes created by the Main module.
+
+\subsection{Main Software module}
+The main software body is the 
 
 \section{Implementation: Physical Architecture}
 
