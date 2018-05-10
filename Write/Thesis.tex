@@ -405,7 +405,7 @@ The rest of the components which are needed are generic and not type dependant: 
 \paragraph{Lattice} Or the piece of rice paper will act as a lightweight extension added on top of the hydrometer to ease its detection by the HC-sr04. This attachment will be small and lightweight enough to make its addition to the system negligible.
 
 \section{Software Architecture}
-The system will be coded entirely in Python to support modularity and ease of maintenance, supplemented by open-source software with appropriate licenses when necessary to assure high quality. The software architecture can be viewed as composed of three main parts:\\
+The system will be coded entirely in Python to support modularity and ease of maintenance, supplemented by open-source software with appropriate licenses when necessary to assure high quality. The software architecture can be viewed as composed of several parts:\\
 
 \begin{itemize}
 	\item Raspbian Stretch
@@ -422,11 +422,18 @@ Raspbian Stretch is a Linux based operating system (OS) adapted for use with ARM
 It was chosen as it is an OS specifically built to work well with Raspberry Pi's and their unique hardware.
 
 \subsection{Cron Linux Daemon}
-Cron, named after the Greek word for time, is a Linux Daemon - software which run in the background of an operating system as a process independent from user interaction. Cron, specifically, is a Daemon which assists in scheduling tasks, as it runs automatically once a minute based on the systems clock. It will be used to activate the Main software module automatically as the system boots, as well as following and monitoring additional threads and processes created by the Main module.
+Cron, named after the Greek word for time, is a Linux Daemon - software which run in the background of an operating system as a process independent from user interaction. Cron, specifically, is a Daemon which assists in scheduling tasks, as it runs automatically once a minute based on the systems clock. It will be used to activate the Main software module automatically as the system boots, re-trigger it once a minute, as well as following and monitoring additional threads and processes created by the Main module.\\
+
+\subsection{InfluxDB}
+InfluxDB is an open source, time series database - meaning, it is a database optimized to handle data indexed by time. It support a unique SQL-like language with many time-centric built in functions. It can store data as 64 bit integers, floating points, strings, and booleans.\\
+For this work, data will be stored in it entirely as strings.
 
 \subsection{Main Software module}
-The main software body is the 
+The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of creating and destroying the threads controlling the sensors, as well as run three major calculations: convert distance measured by hydrometer to specific gravity (SG) reading, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.
 
+
+
+Linear approximation: y = 1.15 - 0.0125 x
 \section{Implementation: Physical Architecture}
 
 

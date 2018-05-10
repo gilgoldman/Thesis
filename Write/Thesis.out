@@ -25,8 +25,9 @@
 \BOOKMARK [1][-]{section.4.2}{Software Architecture}{chapter.4}% 25
 \BOOKMARK [2][-]{subsection.4.2.1}{Raspbian Stretch}{section.4.2}% 26
 \BOOKMARK [2][-]{subsection.4.2.2}{Cron Linux Daemon}{section.4.2}% 27
-\BOOKMARK [2][-]{subsection.4.2.3}{Main Software module}{section.4.2}% 28
-\BOOKMARK [1][-]{section.4.3}{Implementation: Physical Architecture}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.4}{Implementation: Software Architecture}{chapter.4}% 30
-\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 31
-\BOOKMARK [0][-]{section*.9}{Project Specification}{}% 32
+\BOOKMARK [2][-]{subsection.4.2.3}{InfluxDB}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.4}{Main Software module}{section.4.2}% 29
+\BOOKMARK [1][-]{section.4.3}{Implementation: Physical Architecture}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.4}{Implementation: Software Architecture}{chapter.4}% 31
+\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 32
+\BOOKMARK [0][-]{section*.9}{Project Specification}{}% 33
