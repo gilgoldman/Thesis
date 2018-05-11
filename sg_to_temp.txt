@@ -1,0 +1,23 @@
+C = ((1.313454 - (0.132674*F) + (0.00205779 * F^2) - (0.000002627634 * F^2)))
+
+Where F = Temperature in degrees Fahrenheit.
+
+C = Correction
+
+So,
+
+CG = C + (SG * 0.001)
+
+Where,
+
+CG = Specific Gravity corrected for temperature
+
+C = Correction from above forumla
+
+SG = Specific Gravity before temperature correction.
+
+Here it is for everone using Degrees Centigrade:
+
+C = ((1.313454 - (0.132674 * ((C * 1.8) + 32)) + (0.00205779 * (((C * 1.8) + 32))^2)) - (0.111112627634 * (((C * 1.8) + 32))^3)))
+
+Then continue with the formula above formula for CG

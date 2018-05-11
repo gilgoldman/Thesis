@@ -422,27 +422,23 @@ Raspbian Stretch is a Linux based operating system (OS) adapted for use with ARM
 It was chosen as it is an OS specifically built to work well with Raspberry Pi's and their unique hardware.
 
 \subsection{Cron Linux Daemon}
-Cron, named after the Greek word for time, is a Linux Daemon - software which run in the background of an operating system as a process independent from user interaction. Cron, specifically, is a Daemon which assists in scheduling tasks, as it runs automatically once a minute based on the systems clock. It will be used to activate the Main software module automatically as the system boots, re-trigger it once a minute, as well as following and monitoring additional threads and processes created by the Main module.\\
+Cron, named after the Greek word for time, is a Linux Daemon - a program which runs in the background of an operating system as a process independent from user interaction. Cron, specifically, is a Daemon which assists in scheduling tasks, as it runs automatically once a minute based on the systems clock. It will be used to activate the Main software module automatically as the system boots, re-trigger it once a minute, as well as following and monitoring additional threads and processes created by the Main module.\\
 
 \subsection{InfluxDB}
 InfluxDB is an open source, time series database - meaning, it is a database optimized to handle data indexed by time. It support a unique SQL-like language with many time-centric built in functions. It can store data as 64 bit integers, floating points, strings, and booleans.\\
 For this work, data will be stored in it entirely as strings.
 
 \subsection{Main Software module}
-The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of creating and destroying the threads controlling the sensors, as well as run three major calculations: convert distance measured by hydrometer to specific gravity (SG) reading, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.
+The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of creating and destroying the threads controlling the sensors, as well as run three major calculations: convert distance measured by hydrometer to specific gravity (SG) reading, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.\\
+A hydrometer reading correlates directly to its depth in liquid, i.e. its distance from the sensor. Since due to the casing which holds the device, the sensors distance from the surface of the liquid is given at 18 [cm]. As it is to be submerged in liquid up to 2 [cm], the hydrometer's height above the water during minimal measurement (1.000, the SG of water) is 2.5[cm], and the sensor height is 1.5 [cm], the active measurement range is 12 [c]. The hydrometer used for this work ranges in SG values between 1.000 to 1.060 across 4.8 [cm].\\
+These two parameters - distance from the sensor and SG reading - can be viewed as a Cartesian tuple. Therefore, as the relation between the two is linear, it can be derived with simple linear approximation:
+\begin{equation}
+y_y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)
+\end{equation}
 
 
 
 Linear approximation: y = 1.15 - 0.0125 x
-\section{Implementation: Physical Architecture}
-
-
-
-
-
-\section{Implementation: Software Architecture}
-
-
 
 
 
