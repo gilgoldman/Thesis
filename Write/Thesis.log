@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.11)  11 MAY 2018 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.11)  11 MAY 2018 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1282,173 +1282,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
-) (./Thesis.aux
-! Undefined control sequence.
-l.21 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 \babel@aux{e
-                 nglish}{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-l.22 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.23 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.25 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.27 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.29 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.33 \babel@aux
-               {czech}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.37 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.45 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.47 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.48 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.49 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.50 \babel@aux
-               {czech}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.51 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.52 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.53 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.54 \babel@aux
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)
+) (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
@@ -1466,16 +1300,11 @@ LaTeX Font Info:    ... okay on input line 120.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
 LaTeX Font Info:    ... okay on input line 120.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 120.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-Overfull \hbox (167.2631pt too wide) in paragraph at lines 21--13
-\T1/cmr/m/n/10.95 en-glish en-glish en-glish czech en-glish en-glish en-glish e
-n-glish                                                                        
-                                    
- []
-
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count266
 \scratchdimen=\dimen265
@@ -1583,30 +1412,13 @@ LaTeX Info: Redefining \nameref on input line 120.
 \@outlinefile=\write4
 \openout4 = `Thesis.out'.
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 122.
-
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [2
-
-]
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 122.
 
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 122.
@@ -1654,7 +1466,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 122.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<ctu_logo_black.pdf, id=147, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=128, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 
 <use ctu_logo_black.pdf>
@@ -1674,7 +1486,22 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 122--122
 []|| [][][][][][] 
  []
 
-[1 <./ctu_logo_black.pdf>] [2
+[1
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ctu_logo_black.pdf>]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 122.
+
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [2
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1745,540 +1572,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--122
 
 ] [4
 
-] (./Thesis.toc
-! Undefined control sequence.
-l.1 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.2 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.3 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.4 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.5 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.6 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.9 \babel@toc
-               {czech}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.13 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.14 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.15 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.16 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.17 \babel@toc
-                {czech}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.18 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.19 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.20 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.21 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22 ...berline {0.1}Introduction}{1}{section.0.1}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-)
+] (./Thesis.toc)
 \tf@toc=\write5
 \openout5 = `Thesis.toc'.
 
  [5
 
 
-] (./Thesis.lof
-! Undefined control sequence.
-l.1 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.2 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.3 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.4 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.5 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.6 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.7 \babel@toc
-               {czech}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.8 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.9 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.10 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.11 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.13 \babel@toc
-                {czech}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.14 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.15 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.16 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.17 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 \addvspace {10\p@ }
-                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19 ...he Brewing process\relax }}{3}{figure.1.1}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-)
+] (./Thesis.lof)
 \tf@lof=\write6
 \openout6 = `Thesis.lof'.
 
- (./Thesis.lot
-! Undefined control sequence.
-l.1 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.2 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.3 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.4 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.5 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.6 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.7 \babel@toc
-               {czech}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.8 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.9 \babel@toc
-               {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.10 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.11 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.13 \babel@toc
-                {czech}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.14 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.15 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.16 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.17 \babel@toc
-                {english}{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 \addvspace {10\p@ }
-                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19 ...e {Brewing_Science}\relax }}{5}{table.1.1}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-)
+ (./Thesis.lot)
 \tf@lot=\write7
 \openout7 = `Thesis.lot'.
 
@@ -2320,33 +1625,23 @@ If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 130.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.130 \chapter
-              {How beer is brewed} [1
+ [1
 
 
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.130 \chapter
-              {How beer is brewed} [2
+] [2
 
 ]
 Chapter 1.
-<BeerMakingFlowChart.pdf, id=258, 643.40375pt x 724.7075pt>
+<BeerMakingFlowChart.pdf, id=239, 643.40375pt x 724.7075pt>
 File: BeerMakingFlowChart.pdf Graphic file (type pdf)
 
 <use BeerMakingFlowChart.pdf>
 Package pdftex.def Info: BeerMakingFlowChart.pdf used on input line 141.
 (pdftex.def)             Requested size: 250.92645pt x 282.63478pt.
  [3 <./BeerMakingFlowChart.pdf>] [4]
-<MashingTable.jpg, id=279, 914.81775pt x 199.947pt>
+<MashingTable.jpg, id=260, 914.81775pt x 199.947pt>
 File: MashingTable.jpg Graphic file (type jpg)
  <use MashingTable.jpg>
 Package pdftex.def Info: MashingTable.jpg used on input line 163.
@@ -2373,7 +1668,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--208
 
  []
 
-<sg-ultra-max-digital-densitymeter-d.jpg, id=303, 240.9pt x 249.93375pt>
+<sg-ultra-max-digital-densitymeter-d.jpg, id=284, 240.9pt x 249.93375pt>
 File: sg-ultra-max-digital-densitymeter-d.jpg Graphic file (type jpg)
 
 <use sg-ultra-max-digital-densitymeter-d.jpg>
@@ -2385,7 +1680,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-<u-tube-density-meter.jpg, id=305, 621.32124pt x 374.39874pt>
+<u-tube-density-meter.jpg, id=286, 621.32124pt x 374.39874pt>
 File: u-tube-density-meter.jpg Graphic file (type jpg)
 
 <use u-tube-density-meter.jpg>
@@ -2406,33 +1701,19 @@ I could not locate the file with any of these extensions:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-! LaTeX Error: File `spectrometer_scheme' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.245 ...raphics[scale = 0.7]{spectrometer_scheme}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 [9 <./u-tube-density-meter.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
-<refurbished-gas_chromatograph.jpg, id=326, 304.9794pt x 275.3487pt>
+<refurbished-gas_chromatograph.jpg, id=306, 304.9794pt x 275.3487pt>
 File: refurbished-gas_chromatograph.jpg Graphic file (type jpg)
 
 <use refurbished-gas_chromatograph.jpg>
 Package pdftex.def Info: refurbished-gas_chromatograph.jpg used on input line 2
 59.
 (pdftex.def)             Requested size: 121.9896pt x 110.13751pt.
- [10 <./refurbished-gas_chromatograph.jpg>] <Gas_Chromatograph_PDF.pdf, id=334,
+ [10 <./refurbished-gas_chromatograph.jpg>] <Gas_Chromatograph_PDF.pdf, id=315,
  751.80875pt x 306.14375pt>
 File: Gas_Chromatograph_PDF.pdf Graphic file (type pdf)
 
@@ -2446,7 +1727,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--290
 
  []
 
-<hydrometer.jpg, id=351, 289.08pt x 311.1625pt>
+<hydrometer.jpg, id=331, 289.08pt x 311.1625pt>
 File: hydrometer.jpg Graphic file (type jpg)
  <use hydrometer.jpg>
 Package pdftex.def Info: hydrometer.jpg used on input line 294.
@@ -2461,7 +1742,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--311
 
  []
 
-[14 <./hydrometer.jpg>] <Housing.pdf, id=362, 716.6775pt x 696.6025pt>
+[14 <./hydrometer.jpg>] <Housing.pdf, id=343, 716.6775pt x 696.6025pt>
 File: Housing.pdf Graphic file (type pdf)
 
 <use Housing.pdf>
@@ -2472,7 +1753,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <./Housing.pdf>]
 Chapter 4.
-[16] <RasPIZeroW.jpg, id=376, 1027.84pt x 1027.84pt>
+[16] <RasPIZeroW.jpg, id=357, 1027.84pt x 1027.84pt>
 File: RasPIZeroW.jpg Graphic file (type jpg)
  <use RasPIZeroW.jpg>
 Package pdftex.def Info: RasPIZeroW.jpg used on input line 362.
@@ -2482,7 +1763,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--371
 
  []
 
-<HCSR04_sizes.jpg, id=379, 494.44725pt x 263.18324pt>
+<HCSR04_sizes.jpg, id=360, 494.44725pt x 263.18324pt>
 File: HCSR04_sizes.jpg Graphic file (type jpg)
  <use HCSR04_sizes.jpg>
 Package pdftex.def Info: HCSR04_sizes.jpg used on input line 374.
@@ -2490,7 +1771,7 @@ Package pdftex.def Info: HCSR04_sizes.jpg used on input line 374.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./RasPIZeroW.jpg>] <DHT11.jpg, id=389, 361.35pt x 361.35pt>
+ [17 <./RasPIZeroW.jpg>] <DHT11.jpg, id=369, 361.35pt x 361.35pt>
 File: DHT11.jpg Graphic file (type jpg)
  <use DHT11.jpg>
 Package pdftex.def Info: DHT11.jpg used on input line 396.
@@ -2513,89 +1794,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
-[20]
-! Double subscript.
-l.436 y_y_
-          1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)
-I treat `x_1_2' essentially like `x_1{}_2'.
 
-.................................................
-. LaTeX info: "xparse/redefine-command"
-. 
-. Redefining command \chapter with sig. 's' on line 462.
-.................................................
-.................................................
-. LaTeX info: "xparse/redefine-command"
-. 
-. Redefining command \appendix with sig. 'ss' on line 462.
-.................................................
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+
+ []
+
 [21] [22
+
+]
+Chapter 5.
+[23] [24
+
+]
+Chapter 6.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \chapter with sig. 's' on line 480.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \appendix with sig. 'ss' on line 480.
+.................................................
+[25] [26
 
 ]
 Appendix A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--506
+Underfull \hbox (badness 10000) in paragraph at lines 521--524
 
  []
 
-[23] [24] <ctutest-zadani.pdf, id=433, 597.50786pt x 845.04686pt>
+[27] [28] <ctutest-zadani.pdf, id=434, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf used on input line 581.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf used on input line 581.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 
-<ctutest-zadani.pdf, id=436, page=1, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=437, page=1, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 581.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 581.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 581.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 581.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 581.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [25
+ [29
 
  <./ctutest-zadani.pdf>]
-<ctutest-zadani.pdf, id=458, page=2, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=460, page=2, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 581.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 581.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 563.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 581.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [26 <./ctutest-zadani.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 565.
+ [30 <./ctutest-zadani.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 583.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 583.
  (./Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 565.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 583.
 
 
  *File List*
@@ -2719,7 +2012,6 @@ pdflscape.sty    2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
   Thesis.out
   Thesis.out
-  t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
   ot1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
   omllmm.fd    2009/10/30 v1.6 Font defs for Latin Modern
  omslmsy.fd    2009/10/30 v1.6 Font defs for Latin Modern
@@ -2730,6 +2022,7 @@ gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
   mt-msb.cfg    2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
    ursfs.fd    1998/03/24 rsfs font definition file (jk)
 ctu_logo_black.pdf    Graphic file (type pdf)
+  t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
 BeerMakingFlowChart.pdf    Graphic file (type pdf)
 MashingTable.jpg    Graphic file (type jpg)
 sg-ultra-max-digital-densitymeter-d.jpg    Graphic file (type jpg)
@@ -2748,52 +2041,47 @@ ctutest-zadani.pdf    Graphic file (type pdf)
 ctutest-zadani.pdf    Graphic file (type pdf)
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 565.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 583.
 
 Package rerunfilecheck Warning: File `Thesis.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: CCD548CB8D7351C02DE756A3224AE1DB;2180
-(rerunfilecheck)             After:  24B021024335CD8383CF72CEA15CAE7B;2012.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 565.
+(rerunfilecheck)             Before: 24B021024335CD8383CF72CEA15CAE7B;2012
+(rerunfilecheck)             After:  E6F13F9C8DFDD5CF7118D0295834A01D;2133.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 583.
  ) 
 Here is how much of TeX's memory you used:
- 21826 strings out of 493029
- 371321 string characters out of 6136234
- 590344 words of memory out of 5000000
- 24785 multiletter control sequences out of 15000+600000
- 99834 words of font info for 140 fonts, out of 8000000 for 9000
+ 21822 strings out of 493029
+ 371227 string characters out of 6136234
+ 589215 words of memory out of 5000000
+ 24781 multiletter control sequences out of 15000+600000
+ 96573 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,58p,10368b,812s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.4.4} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{section*.9} has been referenced but does not exis
+t, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
 s/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
-lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095
-.pfb>
-Output written on Thesis.pdf (34 pages, 1054336 bytes).
+lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Thesis.pdf (36 pages, 1042080 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
- 27998 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 466 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 25934 words of extra memory for PDF output out of 29859 (max. 10000000)
 

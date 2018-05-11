@@ -52,5 +52,8 @@
 \contentsline {subsection}{\numberline {4.2.2}Cron Linux Daemon}{20}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}InfluxDB}{20}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Main Software module}{20}{subsection.4.2.4}
-\contentsline {chapter}{\numberline {A}Bibliography}{23}{appendix.A}
-\contentsline {chapter}{\numberline {B}Project\ Specification}{25}{section*.9}
+\contentsline {paragraph}{Distance to specific gravity}{21}{paragraph*.9}
+\contentsline {chapter}{\numberline {5}Prototyping and Testing}{23}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion and Conclusion}{25}{chapter.6}
+\contentsline {chapter}{\numberline {A}Bibliography}{27}{appendix.A}
+\contentsline {chapter}{\numberline {B}Project\ Specification}{29}{section*.10}
