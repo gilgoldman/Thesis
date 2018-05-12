@@ -7,7 +7,7 @@
 \documentclass[twoside]{ctuthesis}
 \usepackage{graphicx}
 \usepackage{listings}
-
+\usepackage{mathtools}
 
 \ctusetup{
 %	preprint = \ctuverlog,
@@ -445,8 +445,32 @@ Which, in the case of this work, will yield the following linear equation:
 
 Where $y$ is the SG and $x$ is the distance measured.\\
 
-Traditionally, temperature
+Since SG readings depend heavily on temperature, they have been traditionally corrected via tables correlating temperatures by degrees to values. Though it has been known for a while that the dependency of SG on temperature is linear \cite{Temp_To_SG}, a partial correlation factor was only proposed in 2003 \cite{Joy_Of_Brewing}:
 
+\begin{equation}
+C_p = 1.313454 - (0.132674\cdot f) + (0.00205779 \cdot f^2) - (0.000002627634 \cdot f^3)
+\end{equation}
+
+Where $C_p$ is the resultant partial correction factor and $f$ is the temperature in Fahrenheit at the time of measurement.\\
+However, this relation assumes a hydrometer calibrated to older American standards at 59[f$^\circ$]. Since modern hydrometers are calibrated at 20[C$^\circ$], or 68[f$^\circ$], a corrected, complete, temperature independent relation has been proposed:
+
+\begin{equation}
+C_g = SG \cdot \frac{\splitfrac{1.00130346 - 1.34722124*10^{-4} \cdot f + }{2.04052596*10^{-6} \cdot f^2 - 2.32820948*10^{-9} \cdot f^3} }{\splitfrac{1.00130346 - 1.34722124*10^{-4} \cdot h_{ct} +}{ 2.04052596*10^{-6} \cdot h_{ct}^2 - 2.32820948*10^{-9} \cdot h_{ct}^3}}
+\end{equation}
+
+Where $C_g$ is the final corrected gravity, $SG$ is the measured specific gravity, $f$ is the temperature in Fahrenheit, and $h_{ct}$ is the hydrometers calibration temperature.\\
+
+Once the finalized SG value is obtained, it is possible to employ the standardized polynomial for alcohol percentage by weight derived by Rosendahl and Schmidt\cite{Brewing_Science}:
+
+\begin{equation}
+	A_{\%} = 517.4(1-C_g) + 5084(1-C_g)^2 + 33503(1-C_g)^3
+\end{equation} 
+
+Which then may be converted into Alcohol By Volume (ABV), the more common unit of alcohol measurement in micro-breweries, as follows \cite{Brewing_Science}:
+
+\begin{equation}
+	ABV = \frac{A_{\%} \cdot C_g}{0.791}
+\end{equation}
 
 
 
@@ -555,7 +579,7 @@ Traditionally, temperature
 
 	\bibitem{Ethanol_in_Wine_GC}
 	\textit{"Quantitative determination of ethanol in wine by gas chromatography"}\\
-	Stackler, B., $\&$ Christensen, E. N. (1974)\\
+	B. Stackler ; E. N. Christensen(1974)\\
 	\textit{American Journal of Enology and Viticulture, 25(4), 202-207.}
 	
 	\bibitem{Hydrometer_Pic}
@@ -575,6 +599,18 @@ Traditionally, temperature
 	\textit{Temperature and humidity module DHT11 Product Manual
 		www.aosong.}\\
 	Aosong(Guangzhou) Electronics Co.,Ltd
+	
+	\bibitem{Temp_To_SG}
+	\textit{"EFFECT OF TEMPERATURE ON THE SPECIFIC GRAVITY OF WORT"}\\
+	L. H. Hawkins; P. E. Gough\\
+	\textit{Brewing industry research foundation, Vol 69, 139-141, 1963}
+	
+	\bibitem{Joy_Of_Brewing}
+	\textit{\textbf{The Complete Joy of Homebrewing, Third Edition}}\\
+	C. Papazian\\
+	HarperResource; 3rd edition\\
+	\textit{23.9.2003}\\
+	ISBN 9780060531058
 	
 \end{thebibliography}
 
