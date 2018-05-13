@@ -56,6 +56,7 @@
 \contentsline {paragraph}{Distance to specific gravity:}{22}{paragraph*.9}
 \contentsline {paragraph}{Specific gravity correction with relation to temperature:}{22}{paragraph*.10}
 \contentsline {paragraph}{Corrected Gravity to ABV}{23}{paragraph*.11}
+\contentsline {subsection}{\numberline {4.2.6}Hc-SR04 ultrasonic sensor module}{23}{subsection.4.2.6}
 \contentsline {chapter}{\numberline {5}Prototyping and Testing}{24}{chapter.5}
 \contentsline {chapter}{\numberline {6}Discussion and Conclusion}{25}{chapter.6}
 \contentsline {chapter}{\numberline {A}Bibliography}{27}{appendix.A}

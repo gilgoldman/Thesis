@@ -432,7 +432,7 @@ Raspbian Stretch is a Linux based operating system (OS) adapted for use with ARM
 It was chosen as it is an OS specifically built to work well with Raspberry Pi's and their unique hardware.
 
 \subsection{Cron Linux Daemon}
-Cron, named after the Greek word for time, is a Linux Daemon - a program which runs in the background of an operating system as a process independent from user interaction. Cron, specifically, is a Daemon which assists in scheduling tasks, as it runs automatically once a minute based on the systems clock. It will be used to activate the Main software module automatically as the system boots, re-trigger it once a minute, as well as following and monitoring additional threads and processes created by the Main module.\\
+Cron, named after the Greek word for time, is a Linux Daemon - a program which runs in the background of an operating system as a process independent from user interaction. Cron, specifically, is a Daemon which assists in scheduling tasks, as it runs automatically once a minute based on the systems clock. It will be used to activate the Main software module automatically as the system boots, re-trigger it once a minute, as well as following and monitoring additional threads and processes created by the Main module.
 
 \subsection{InfluxDB}
 InfluxDB is an open source, time series database - meaning, it is a database optimized to handle data indexed by time. It support a unique SQL-like language with many time-centric built in functions. It can store data as 64 bit integers, floating points, strings, and booleans.\\
@@ -443,7 +443,8 @@ Grafana is an open source graph generating web server. It is capable of retrievi
 It was chosen as a complement to InfluxDB due to the pair's great integration, as well as Grafana's flexibility and streamlined user interface.
 
 \subsection{Main Software module}
-The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of creating and destroying the threads controlling the sensors, as well as run three major calculations: convert distance measured by hydrometer to specific gravity (SG) reading, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.\\
+The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of creating and destroying the threads controlling the sensors, as well as run three major calculations: convert the average distance measured by the two distance sensors to a specific gravity (SG) reading as is measured by the hydrometer, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.
+
 \paragraph{Distance to specific gravity:}
 A hydrometer reading correlates directly to its depth in liquid, i.e. its distance from the sensor. Since due to the casing which holds the device, the sensors distance from the surface of the liquid is given at 18 [cm]. As it is to be submerged in liquid up to 2 [cm], the hydrometer's height above the water during minimal measurement (1.000, the SG of water) is 2.5[cm], and the sensor height is 1.5 [cm], the active measurement range is 12 [c]. The hydrometer used for this work ranges in SG values between 1.000 to 1.060 across 4.8 [cm].\\
 These two parameters - distance from the sensor and SG reading - can be viewed as a Cartesian tuple. Therefore, as the relation between the two is linear, it can be derived with simple linear approximation:
@@ -451,7 +452,7 @@ These two parameters - distance from the sensor and SG reading - can be viewed a
 y-y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)
 \end{equation}
 
-Which, in the case of this work, will yield the following linear equation:
+Which, in the scope of this work, will yield the following linear equation:
 
 \begin{equation}
 	y = 1.15 - 0.0125 x
@@ -490,8 +491,32 @@ Which then may be converted into Alcohol By Volume (ABV), the more common unit o
 
 The Main module will be switched on once a minute by Cron, verify the sensor processes have been terminated properly during the last cycle, start them again, collect and process their results, store them in InfluxDB as ABV, from where Grafana will retrieve and display the finalized results.
 
+\subsection{Hc-SR04 ultrasonic sensor module}
+The sensor module will interface with the HC-sr04 sensor and output an averaged output to improve the sensor's accuracy.\\
+The sensor responds to a 10[$\mu$s] pulse from the Raspberry Pi's General Purpose Input Output (GPIO) pins by emitting eight ultrasonic bursts at a frequency of 40[kHz] and turning it's output pin, Echo, to high until the sensor detects the returning ultrasonic burst. The sensor module logs the time stamp of the leaving pulse and the returning pulse to and compares them to identify $\Delta t$, which is how much time elapsed until the returning pulse was detected.\\
 
-\pagebreak
+Since the pulse is traveling through air and not other mediums, it is safe to assume a constant and known speed of sound. as $v_{sound}$ is known and $\Delta t$ is measured, calculating distance $x$ is rather simple:
+
+\begin{gather} \nonumber
+v_{sound} = \frac{x}{\frac{\Delta t}{2}}\\
+x = \frac{v_{sound}}{2}\cdot \Delta t
+\end{gather}
+
+Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measurements, as it needs to stabilize for 2 seconds between measurements to allow for higher accuracy. The average result of these measurements will then be sent back to the Main Module to be processed.
+
+\begin{gather}\nonumber
+\frac{V_{output}}{V_{in}} = \frac{R_2}{R_1 + R_2}\\\nonumber
+\frac{3.3}{5}= 0.66 = \frac{R_2}{R_1 + R_2}\\\nonumber
+0.66(R_1+R_2) = R2\\\nonumber
+0.66R_1 = 0.34R_2\\
+1.941R_1 = R_2
+\end{gather}
+
+\subsection{DHT- 11}
+The way the DHT-11 sensor measures temperature and humidity is not revealed by its manufacturers, only how it receives and transmits data. Once the DHT-11 module is awakened by the Main Module, it will conduct 10 temperature and humidity measurements and output the average of the results back to the Main Module.
+
+
+\pagebreak 
 
 \begingroup
 \renewcommand{\cleardoublepage}{}
