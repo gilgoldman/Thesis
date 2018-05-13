@@ -397,13 +397,15 @@ The DHT-11 Digital Humidity and Temperature utilizes a capacitive humidity senso
 	\caption{DHT-11 Digital Humidity and Temperature sensor\cite{HC-SR04}}
 \end{figure}
 
+A $10,000\Omega$ pull up resistor is placed between the power and data pins of the sensor to prevent it from over-heating and melting.
+
 \subsection{Additional Components}
 The rest of the components which are needed are generic and not type dependant: a mini breadboard, a hydrometer, several resistors, and a piece of paper. The housing unit can be a recycled bottle even, so while for the purposes of this work I will use a 3d printed one, any can be used in its stead.\\
 \paragraph{Mini Breadboard} Will be used to simplify prototyping - in a final product the various components will be soldered to each other, making a breadboard obsolete.
 \paragraph{Hydrometer} Is a generic hydrometer - the specific gravity of the liquid will be deduced by the change in the hydrometer height in wort compared to its height in water. Any hydrometer will do.
 \paragraph{Resistors} Are used either as pull-up resistors or to form voltage dividers for the various sensors.
 \paragraph{Lattice} Or the piece of rice paper will act as a lightweight extension added on top of the hydrometer to ease its detection by the HC-sr04. This attachment will be small and lightweight enough to make its addition to the system negligible.
-
+\newpage
 \section{Software Architecture}
 The system will be coded entirely in Python to support modularity and ease of maintenance, supplemented by open-source software with appropriate licenses when necessary to assure high quality. The software architecture can be viewed as composed of several parts:\\
 
@@ -417,6 +419,14 @@ The system will be coded entirely in Python to support modularity and ease of ma
 	\item Temperature sensor thread
 \end{itemize}
 
+Graphically, it may be viewed thus:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{System_architecture}
+	\caption{Software architecture flow chart}
+\end{figure}
+
 \subsection{Raspbian Stretch}
 Raspbian Stretch is a Linux based operating system (OS) adapted for use with ARM processors. The version used in the scope of this work is that of April 2018, the latest in a long line of modifications made to the basic Raspbian system at the time of writing.\\
 It was chosen as it is an OS specifically built to work well with Raspberry Pi's and their unique hardware.
@@ -426,11 +436,15 @@ Cron, named after the Greek word for time, is a Linux Daemon - a program which r
 
 \subsection{InfluxDB}
 InfluxDB is an open source, time series database - meaning, it is a database optimized to handle data indexed by time. It support a unique SQL-like language with many time-centric built in functions. It can store data as 64 bit integers, floating points, strings, and booleans.\\
-For this work, data will be stored in it entirely as strings.
+For this work, data will be stored in it entirely as a string data type.
+
+\subsection{Grafana}
+Grafana is an open source graph generating web server. It is capable of retrieving time series data and adding them seamlessly to graphs hosted locally on the machine it operates on.\\
+It was chosen as a complement to InfluxDB due to the pair's great integration, as well as Grafana's flexibility and streamlined user interface.
 
 \subsection{Main Software module}
 The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of creating and destroying the threads controlling the sensors, as well as run three major calculations: convert distance measured by hydrometer to specific gravity (SG) reading, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.\\
-\paragraph{Distance to specific gravity}
+\paragraph{Distance to specific gravity:}
 A hydrometer reading correlates directly to its depth in liquid, i.e. its distance from the sensor. Since due to the casing which holds the device, the sensors distance from the surface of the liquid is given at 18 [cm]. As it is to be submerged in liquid up to 2 [cm], the hydrometer's height above the water during minimal measurement (1.000, the SG of water) is 2.5[cm], and the sensor height is 1.5 [cm], the active measurement range is 12 [c]. The hydrometer used for this work ranges in SG values between 1.000 to 1.060 across 4.8 [cm].\\
 These two parameters - distance from the sensor and SG reading - can be viewed as a Cartesian tuple. Therefore, as the relation between the two is linear, it can be derived with simple linear approximation:
 \begin{equation}
@@ -445,6 +459,7 @@ Which, in the case of this work, will yield the following linear equation:
 
 Where $y$ is the SG and $x$ is the distance measured.\\
 
+\paragraph{Specific gravity correction with relation to temperature:}
 Since SG readings depend heavily on temperature, they have been traditionally corrected via tables correlating temperatures by degrees to values. Though it has been known for a while that the dependency of SG on temperature is linear \cite{Temp_To_SG}, a partial correlation factor was only proposed in 2003 \cite{Joy_Of_Brewing}:
 
 \begin{equation}
@@ -460,6 +475,7 @@ C_g = SG \cdot \frac{\splitfrac{1.00130346 - 1.34722124*10^{-4} \cdot f + }{2.04
 
 Where $C_g$ is the final corrected gravity, $SG$ is the measured specific gravity, $f$ is the temperature in Fahrenheit, and $h_{ct}$ is the hydrometers calibration temperature.\\
 
+\paragraph{Corrected Gravity to ABV}
 Once the finalized SG value is obtained, it is possible to employ the standardized polynomial for alcohol percentage by weight derived by Rosendahl and Schmidt\cite{Brewing_Science}:
 
 \begin{equation}
@@ -472,9 +488,17 @@ Which then may be converted into Alcohol By Volume (ABV), the more common unit o
 	ABV = \frac{A_{\%} \cdot C_g}{0.791}
 \end{equation}
 
+The Main module will be switched on once a minute by Cron, verify the sensor processes have been terminated properly during the last cycle, start them again, collect and process their results, store them in InfluxDB as ABV, from where Grafana will retrieve and display the finalized results.
 
 
+\pagebreak
+
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
 \chapter{Prototyping and Testing}
+\endgroup
+
 
 
 
