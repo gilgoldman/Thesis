@@ -443,7 +443,7 @@ Grafana is an open source graph generating web server. It is capable of retrievi
 It was chosen as a complement to InfluxDB due to the pair's great integration, as well as Grafana's flexibility and streamlined user interface.
 
 \subsection{Main Software module}
-The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of creating and destroying the threads controlling the sensors, as well as run three major calculations: convert the average distance measured by the two distance sensors to a specific gravity (SG) reading as is measured by the hydrometer, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.
+The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of turning on or off the various sensor modules, as well as run three major calculations: convert the average distance measured by the two distance sensors to a specific gravity (SG) reading as is measured by the hydrometer, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.
 
 \paragraph{Distance to specific gravity:}
 A hydrometer reading correlates directly to its depth in liquid, i.e. its distance from the sensor. Since due to the casing which holds the device, the sensors distance from the surface of the liquid is given at 18 [cm]. As it is to be submerged in liquid up to 2 [cm], the hydrometer's height above the water during minimal measurement (1.000, the SG of water) is 2.5[cm], and the sensor height is 1.5 [cm], the active measurement range is 12 [c]. The hydrometer used for this work ranges in SG values between 1.000 to 1.060 across 4.8 [cm].\\
@@ -489,7 +489,7 @@ Which then may be converted into Alcohol By Volume (ABV), the more common unit o
 	ABV = \frac{A_{\%} \cdot C_g}{0.791}
 \end{equation}
 
-The Main module will be switched on once a minute by Cron, verify the sensor processes have been terminated properly during the last cycle, start them again, collect and process their results, store them in InfluxDB as ABV, from where Grafana will retrieve and display the finalized results.
+The Main module will be switched on once a minute by Cron, and check if the module is currently in operation. If it is, it will terminate and check again in the next Cron cycle. If not, it will start to collect the sensors measurements, process their results, and store them in InfluxDB as a finalized ABV value. from where Grafana will retrieve and display the finalized results.
 
 \subsection{Hc-SR04 ultrasonic sensor module}
 The sensor module will interface with the HC-sr04 sensor and output an averaged output to improve the sensor's accuracy.\\
@@ -502,15 +502,8 @@ v_{sound} = \frac{x}{\frac{\Delta t}{2}}\\
 x = \frac{v_{sound}}{2}\cdot \Delta t
 \end{gather}
 
-Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measurements, as it needs to stabilize for 2 seconds between measurements to allow for higher accuracy. The average result of these measurements will then be sent back to the Main Module to be processed.
+Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measurements, as it needs to stabilize for 2 seconds between measurements to allow for higher accuracy. The average result of these measurements will then be sent back to the Main Module to be processed. The reason for choosing 26 measurements was to assure the process would last less than a minute to match with the work of Cron, but in Chapter 4 our physical experiments suggest a different number of measurements would be better. The different amount of measurements will be justified via experimental data.
 
-\begin{gather}\nonumber
-\frac{V_{output}}{V_{in}} = \frac{R_2}{R_1 + R_2}\\\nonumber
-\frac{3.3}{5}= 0.66 = \frac{R_2}{R_1 + R_2}\\\nonumber
-0.66(R_1+R_2) = R2\\\nonumber
-0.66R_1 = 0.34R_2\\
-1.941R_1 = R_2
-\end{gather}
 
 \subsection{DHT- 11}
 The way the DHT-11 sensor measures temperature and humidity is not revealed by its manufacturers, only how it receives and transmits data. Once the DHT-11 module is awakened by the Main Module, it will conduct 10 temperature and humidity measurements and output the average of the results back to the Main Module.
@@ -521,13 +514,60 @@ The way the DHT-11 sensor measures temperature and humidity is not revealed by i
 \begingroup
 \renewcommand{\cleardoublepage}{}
 \renewcommand{\clearpage}{}
-\chapter{Prototyping and Testing}
+\chapter{Testing}
 \endgroup
+In this chapter we will discuss the testing process of the device. In order to assure maximal accuracy and optimal usability of the device, this chapter will deal with three major tests. The first will be to test the distance sensor itself to assure that it is sufficiently accurate for our purposes. The second test would examine how many measurements would be sufficient to assure the accuracy of the measurement. The third test would be a complete test of the system, to verify its measurement capabilities.
+
+\section{Hc-sr04 verification}
+An experiment can be conducted in order to assure the ultrasonic distance sensor is sufficiently accurate.\\ 
+For this work, the experiment equipment was a custom metal rig with a movable slide, the distance to which was measured using a ******* infra-red distance measurement sensor with an accuracy of ***********, and a screen shows the current measurement value.\\
+
+The experiments procedure involved mounting the sensor on a the custom rig at a set point. A small object was placed on the custom rig's slide, which was moved to a random distance that was defined as zero, or the experiments starting point. From there the object was moved towards the sensor in 20 discrete steps of 1[mm] each, to provide 20 measurements. A python routine was implemented to measure the distance to the object 26 times, and return the average of these measurements as well as their standard deviation. The measurement results can be seen in Table 5.1:
+
+
+\begin{table}[H]
+\centering
+	\begin{tabular}{| c |c| c |}
+		\hline
+		Slide Movement[cm] & Distance Measured [cm] & Standard Deviation\\ \hline
+		0 & 13.8086 & 0.277\\
+		-0.1 & 13.637 & 0.269\\
+		-0.2 & 13.6499 & 0.243\\
+		-0.3 & 13.3111 & 0.146\\
+		-0.4 & 13.2449 & 0.261\\
+		-0.5 & 13.1002 & 0.116\\
+		-0.6 & 13.0287 & 0.101\\
+		-0.7 & 12.8443 & 0.385\\
+		-0.8 & 12.8574 & 0.154\\
+		-0.9 & 12.8026 & 0.212\\
+		-1.0 & 12.6897 & 0.277\\
+		-1.1 & 12.5778 & 0.139\\
+		-1.2 & 12.4317 & 0.107\\
+		-1.3 & 12.3913 & 0.129\\
+		-1.4 & 12.1836 & 0.078\\
+		-1.5 & 12.1268 & 0.122\\
+		-1.6 & 12.0269 & 0.107\\
+		-1.7 & 11.8908 & 0.114\\
+		-1.8 & 11.9059 & 0.106\\
+		-1.9 & 11.7074 & 0.095\\
+		-2.0 & 11.6694 & 0.131\\
+		\hline
+	\end{tabular}
+	\caption{Measurement results for distance sensors accuracy}
+\end{table}
 
 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{DistanceMeasuringGraphAndFit2}
+	\caption{Software architecture flow chart}
+\end{figure}
+Note that as the slide was moving towards the sensor, its movement is noted as negative. 
+It is easy to see that the sensor preforms rather well despite its low cost, with only slight variation in the measurement - a standard deviation of 0.6533.\\
+The sensor provides a fairly accurate measurement, which, over the course of time, provides a rather linear relation, proving that with sufficient measurements the sensor can provide the necessary accuracy of 1[mm].
 
-
+\subsection{Amount of measurements}
 
 
 
