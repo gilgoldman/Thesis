@@ -1,5 +1,5 @@
-clc; clear; close all;
-fid = fopen('Measurement_4_mm.txt');
+clc; clear;
+fid = fopen('Measurement_5_mm.txt');
 line1 = fgetl(fid);
 res = line1;
 while ischar(line1)
@@ -7,8 +7,11 @@ while ischar(line1)
     res = char(res,line1);
 end
 fclose(fid);
-%res(122, :) = [];
-%res(121, :) = [];
-%S = std(res);
-%firstNonZero = find(S>0,1);
-%S(firstNonZero)
+res(122, :) = []; % This is the null line at the end of every file
+res(121, :) = []; % This it the text line from the python work
+%res(107, :) = [];
+%res(106, :) = [];
+
+S = std(res([1:30],:));
+firstNonZero = find(S>0,1);
+S(firstNonZero)
