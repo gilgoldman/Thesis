@@ -62,16 +62,16 @@ Sfinal = [];
 for i = 1:length(resultMatrix(:,1))
    Sfinal(i) = std(resultMatrix(i, :));
 end
-%t = 1:length(resultMatrix(:,1));
+
 t = 10:10:100;
 plot(t, Sfinal, 'bo-')
 xticks(10:10:100);
-xlabel('Number of measurements sampled');
+xlabel('Number of readings sampled');
 ylabel('Standard Deviation');
-title('Standard Deviation compared to amount of measurements taken');
+title('Standard Deviation compared to amount of readings taken');
 legend('Standard Deviation');
-saveas(gca,'test.pdf');
-system('pdfcrop test.pdf test.pdf');
+%saveas(gca,'test.pdf');
+%system('pdfcrop test.pdf test.pdf');
 
 %for i = 1:length(resultMatrix(1,:)) % Plots the entire thingy
 %    t = 1:length(resultMatrix(1,:));
@@ -80,5 +80,8 @@ system('pdfcrop test.pdf test.pdf');
 %end
 %plot(t, resultMatrix(1,:), 'r:^', t, resultMatrix(3, :), 'b:^', t, resultMatrix(5, :), 'g:^', t, resultMatrix(7, :), ...
 %    'm^:', t, resultMatrix(10, :), 'k^:') 
-
-
+%xticks([1:15]);
+%title('Standard deviation cross-sectional cut');
+%xlabel('Number of measurement');
+%ylabel('Standard deviation');
+%legend('10 Measurements','30 Measurements','50 Measurements','70 Measurements','100 Measurements');

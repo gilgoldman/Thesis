@@ -522,6 +522,11 @@ In this chapter we will discuss the testing process of the device. In order to a
 An experiment can be conducted in order to assure the ultrasonic distance sensor is sufficiently accurate.\\ 
 For this work, the experiment equipment was a custom metal rig with a movable slide, the distance to which was measured using a ******* infra-red distance measurement sensor with an accuracy of ***********, and a screen shows the current measurement value.\\
 
+\begin{figure}[H]
+	\centering
+	\caption{Remember - Butta hadn't told you the infra-red sensor's name yet!!! Bug him until he does!}
+\end{figure}
+
 The experiments procedure involved mounting the sensor on a the custom rig at a set point. A small object was placed on the custom rig's slide, which was moved to a random distance that was defined as zero, or the experiments starting point. From there the object was moved towards the sensor in 20 discrete steps of 1[mm] each, to provide 20 measurements. A python routine was implemented to measure the distance to the object 26 times, and return the average of these measurements as well as their standard deviation. The measurement results can be seen in Table 5.1:
 
 
@@ -561,13 +566,42 @@ The experiments procedure involved mounting the sensor on a the custom rig at a 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth]{DistanceMeasuringGraphAndFit2}
-	\caption{Software architecture flow chart}
+	\caption{Measured distance compared to linear prediction}
 \end{figure}
+
 Note that as the slide was moving towards the sensor, its movement is noted as negative. 
 It is easy to see that the sensor preforms rather well despite its low cost, with only slight variation in the measurement - a standard deviation of 0.6533.\\
 The sensor provides a fairly accurate measurement, which, over the course of time, provides a rather linear relation, proving that with sufficient measurements the sensor can provide the necessary accuracy of 1[mm].
 
 \subsection{Amount of measurements}
+The sensors sensitivity in the previous section is entirely dependent on the averaged result of twenty six measurements taken in quick succession.\\
+The original amount of measurements to be averaged was a compromise arrived at due to the sensors settling time - a two seconds pause between consecutive measurements to allow the system to settle and the one minute time limit imposed by Cron, encouraging the system to provide a data point every minute. However, since fermentation is a slow process which lasts at least a week\cite{Joy_Of_Brewing}, it is possible to perhaps waive the need to update the data every minute if the accuracy justifies it. As time is no longer such a pressing issue, it has been decided to update the database, and with it, the graphs and content, once every five minutes or less.\\
+To discover the effect of the number of consecutive measurements take on the accuracy of the result, the same rig which was used in the last measurement was used once more, only this time with a different purpose in mind: fifteen measurements were taken, with the slide moving one millimeter towards the sensor between each measurement cycle. During each cycle the sensor took more than a hundred distance measurements which validity was verified via calculating the standard deviation of each measurement.\\
+Then, after at least a hundred valid measurements of each distance were obtained, a program was created to calculate the standard deviation of various chunks of the measurement and see how the amount of measurements taken influence the standard deviation of the result. The program calculated the standard deviation of ten cross sections of the data (the first 10 readings, 20, 30, and so forth until 100 readings) across the entire 15 complete measurements.\\
+Five selected measurements, the standard deviations of the first 10, 30, 50, 70, and 100 readings from each measurement, can be viewed as:
+ 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{stdAcrossAllMeasurements}
+	\caption{Standard deviation cross section results from each measurement}
+\end{figure}
+
+Since the results are very hectic and seemingly without a pattern, the standard deviation of each cross section of the measurements was recalculated to see how the number of readings taken affect the outcome and provide a far clearer result:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{CrossSectionReadingsStd}
+	\caption{Standard deviation of individual cross sections}
+\end{figure}
+
+
+As it is possible to see from the graph, the best results are the 10 readings per measurement and more than 80. Since 10 readings are far more vulnerable to environmental noise and bad readings than the higher values, it is safe to disqualify it as a viable solution. Since 100 readings take $202.54[s]\pm0.00327$ as measured by a timer while being the least vulnerable to disturbances among the measured cross sections, it will be selected as the proper amount of readings for our system, balancing accuracy with time.
+Therefor, for the optimal operation of the system, the distance from the sensor to the hydrometer will be sampled 100 times per cycle of the distance sensor module, with the average result being passed on for processing in the Main Module along with the temperature results from the DHT11 module.
+
+\subsection{Verification of system capabilities}
+
+
+
 
 
 

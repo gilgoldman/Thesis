@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.10.11)  17 MAY 2018 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.10.11)  18 MAY 2018 23:28
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1537,7 +1537,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 122.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<ctu_logo_black.pdf, id=151, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=155, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 
 <use ctu_logo_black.pdf>
@@ -1705,14 +1705,14 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 
 ]
 Chapter 1.
-<BeerMakingFlowChart.pdf, id=273, 643.40375pt x 724.7075pt>
+<BeerMakingFlowChart.pdf, id=282, 643.40375pt x 724.7075pt>
 File: BeerMakingFlowChart.pdf Graphic file (type pdf)
 
 <use BeerMakingFlowChart.pdf>
 Package pdftex.def Info: BeerMakingFlowChart.pdf used on input line 141.
 (pdftex.def)             Requested size: 250.92645pt x 282.63478pt.
  [3 <./BeerMakingFlowChart.pdf>] [4]
-<MashingTable.jpg, id=294, 914.81775pt x 199.947pt>
+<MashingTable.jpg, id=303, 914.81775pt x 199.947pt>
 File: MashingTable.jpg Graphic file (type jpg)
  <use MashingTable.jpg>
 Package pdftex.def Info: MashingTable.jpg used on input line 163.
@@ -1739,7 +1739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--208
 
  []
 
-<sg-ultra-max-digital-densitymeter-d.jpg, id=318, 240.9pt x 249.93375pt>
+<sg-ultra-max-digital-densitymeter-d.jpg, id=327, 240.9pt x 249.93375pt>
 File: sg-ultra-max-digital-densitymeter-d.jpg Graphic file (type jpg)
 
 <use sg-ultra-max-digital-densitymeter-d.jpg>
@@ -1751,14 +1751,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-<u-tube-density-meter.jpg, id=320, 621.32124pt x 374.39874pt>
+<u-tube-density-meter.jpg, id=329, 621.32124pt x 374.39874pt>
 File: u-tube-density-meter.jpg Graphic file (type jpg)
 
 <use u-tube-density-meter.jpg>
 Package pdftex.def Info: u-tube-density-meter.jpg used on input line 224.
 (pdftex.def)             Requested size: 279.59198pt x 168.47787pt.
  [8 <./sg-ultra-max-digital-densitymeter-d.jpg>]
-<spectrometer.jpg, id=331, 150.5625pt x 109.30838pt>
+<spectrometer.jpg, id=340, 150.5625pt x 109.30838pt>
 File: spectrometer.jpg Graphic file (type jpg)
  <use spectrometer.jpg>
 Package pdftex.def Info: spectrometer.jpg used on input line 237.
@@ -1769,14 +1769,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
-<refurbished-gas_chromatograph.jpg, id=341, 304.9794pt x 275.3487pt>
+<refurbished-gas_chromatograph.jpg, id=350, 304.9794pt x 275.3487pt>
 File: refurbished-gas_chromatograph.jpg Graphic file (type jpg)
 
 <use refurbished-gas_chromatograph.jpg>
 Package pdftex.def Info: refurbished-gas_chromatograph.jpg used on input line 2
 59.
 (pdftex.def)             Requested size: 121.9896pt x 110.13751pt.
- [10 <./refurbished-gas_chromatograph.jpg>] <Gas_Chromatograph_PDF.pdf, id=349,
+ [10 <./refurbished-gas_chromatograph.jpg>] <Gas_Chromatograph_PDF.pdf, id=358,
  751.80875pt x 306.14375pt>
 File: Gas_Chromatograph_PDF.pdf Graphic file (type pdf)
 
@@ -1790,7 +1790,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--290
 
  []
 
-<hydrometer.jpg, id=365, 289.08pt x 311.1625pt>
+<hydrometer.jpg, id=374, 289.08pt x 311.1625pt>
 File: hydrometer.jpg Graphic file (type jpg)
  <use hydrometer.jpg>
 Package pdftex.def Info: hydrometer.jpg used on input line 294.
@@ -1805,7 +1805,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--311
 
  []
 
-[14 <./hydrometer.jpg>] <Housing.pdf, id=377, 514.92375pt x 501.875pt>
+[14 <./hydrometer.jpg>] <Housing.pdf, id=386, 514.92375pt x 501.875pt>
 File: Housing.pdf Graphic file (type pdf)
 
 <use Housing.pdf>
@@ -1820,7 +1820,7 @@ pdfTeX warning: pdflatex.exe (file ./Housing.pdf): PDF inclusion: invalid other
  resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
 Chapter 4.
-[16] <RasPIZeroW.jpg, id=404, 1027.84pt x 1027.84pt>
+[16] <RasPIZeroW.jpg, id=413, 1027.84pt x 1027.84pt>
 File: RasPIZeroW.jpg Graphic file (type jpg)
  <use RasPIZeroW.jpg>
 Package pdftex.def Info: RasPIZeroW.jpg used on input line 362.
@@ -1830,7 +1830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--371
 
  []
 
-<HCSR04_sizes.jpg, id=407, 494.44725pt x 263.18324pt>
+<HCSR04_sizes.jpg, id=416, 494.44725pt x 263.18324pt>
 File: HCSR04_sizes.jpg Graphic file (type jpg)
  <use HCSR04_sizes.jpg>
 Package pdftex.def Info: HCSR04_sizes.jpg used on input line 374.
@@ -1838,7 +1838,7 @@ Package pdftex.def Info: HCSR04_sizes.jpg used on input line 374.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./RasPIZeroW.jpg>] <DHT11.jpg, id=416, 361.35pt x 361.35pt>
+ [17 <./RasPIZeroW.jpg>] <DHT11.jpg, id=425, 361.35pt x 361.35pt>
 File: DHT11.jpg Graphic file (type jpg)
  <use DHT11.jpg>
 Package pdftex.def Info: DHT11.jpg used on input line 396.
@@ -1856,7 +1856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
-<System_architecture.pdf, id=433, 440.64626pt x 348.30125pt>
+<System_architecture.pdf, id=442, 440.64626pt x 348.30125pt>
 File: System_architecture.pdf Graphic file (type pdf)
 
 <use System_architecture.pdf>
@@ -1905,98 +1905,145 @@ d-to.pdf>
 (epstopdf)                    size: 7803 bytes
 (epstopdf)             Command: <epstopdf --outfile=DistanceMeasuringGraphAndFi
 t2-eps-converted-to.pdf DistanceMeasuringGraphAndFit2.eps>
-(epstopdf)             \includegraphics on input line 563.
+(epstopdf)             \includegraphics on input line 568.
 Package epstopdf Info: Output file is already uptodate.
 
-<DistanceMeasuringGraphAndFit2-eps-converted-to.pdf, id=496, 421.575pt x 316.18
+<DistanceMeasuringGraphAndFit2-eps-converted-to.pdf, id=505, 421.575pt x 316.18
 124pt>
 File: DistanceMeasuringGraphAndFit2-eps-converted-to.pdf Graphic file (type pdf
 )
  <use DistanceMeasuringGraphAndFit2-eps-converted-to.pdf>
 Package pdftex.def Info: DistanceMeasuringGraphAndFit2-eps-converted-to.pdf use
-d on input line 563.
+d on input line 568.
 (pdftex.def)             Requested size: 363.0pt x 272.2531pt.
- [26 <./DistanceMeasuringGraphAndFit2-eps-converted-to.pdf>] [27] [28
+ [26 <./DistanceMeasuringGraphAndFit2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <stdAcrossAllMeasurements.eps>
+(epstopdf)                    date: 2018-05-18 22:30:59
+(epstopdf)                    size: 33367 bytes
+(epstopdf)             Output file: <stdAcrossAllMeasurements-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2018-05-18 22:34:28
+(epstopdf)                    size: 5641 bytes
+(epstopdf)             Command: <epstopdf --outfile=stdAcrossAllMeasurements-ep
+s-converted-to.pdf stdAcrossAllMeasurements.eps>
+(epstopdf)             \includegraphics on input line 585.
+Package epstopdf Info: Output file is already uptodate.
+
+<stdAcrossAllMeasurements-eps-converted-to.pdf, id=515, 574.145pt x 378.41376pt
+>
+File: stdAcrossAllMeasurements-eps-converted-to.pdf Graphic file (type pdf)
+ <use stdAcrossAllMeasurements-eps-converted-to.pdf>
+Package pdftex.def Info: stdAcrossAllMeasurements-eps-converted-to.pdf used on 
+input line 585.
+(pdftex.def)             Requested size: 363.0pt x 239.25648pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Package epstopdf Info: Source file: <CrossSectionReadingsStd.eps>
+(epstopdf)                    date: 2018-05-18 22:46:46
+(epstopdf)                    size: 19882 bytes
+(epstopdf)             Output file: <CrossSectionReadingsStd-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-05-18 22:53:48
+(epstopdf)                    size: 4355 bytes
+(epstopdf)             Command: <epstopdf --outfile=CrossSectionReadingsStd-eps
+-converted-to.pdf CrossSectionReadingsStd.eps>
+(epstopdf)             \includegraphics on input line 593.
+Package epstopdf Info: Output file is already uptodate.
+
+<CrossSectionReadingsStd-eps-converted-to.pdf, id=520, 492.84125pt x 352.31625p
+t>
+File: CrossSectionReadingsStd-eps-converted-to.pdf Graphic file (type pdf)
+ <use CrossSectionReadingsStd-eps-converted-to.pdf>
+Package pdftex.def Info: CrossSectionReadingsStd-eps-converted-to.pdf used on i
+nput line 593.
+(pdftex.def)             Requested size: 363.0pt x 259.51111pt.
+
+Underfull \vbox (badness 3039) has occurred while \output is active []
+
+ [28 <./stdAcrossAllMeasurements-eps-converted-to.pdf> <./CrossSectionReadingsS
+td-eps-converted-to.pdf>] [29] [30
 
 ]
 Chapter 6.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \chapter with sig. 's' on line 593.
+. Redefining command \chapter with sig. 's' on line 624.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \appendix with sig. 'ss' on line 593.
+. Redefining command \appendix with sig. 'ss' on line 624.
 .................................................
-[29] [30
+[31] [32
 
 ]
 Appendix A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--637
+Underfull \hbox (badness 10000) in paragraph at lines 665--668
 
  []
 
-[31] [32] [33] [34
+[33] [34] [35] [36
 
-] <ctutest-zadani.pdf, id=544, 597.50786pt x 845.04686pt>
+] <ctutest-zadani.pdf, id=572, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf used on input line 737.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf used on input line 737.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 
-<ctutest-zadani.pdf, id=547, page=1, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=575, page=1, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 737.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 737.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 737.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 737.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 737.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [35 <./ctutest-zadani.pdf>]
-<ctutest-zadani.pdf, id=569, page=2, 597.50786pt x 845.04686pt>
+ [37 <./ctutest-zadani.pdf>]
+<ctutest-zadani.pdf, id=598, page=2, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 737.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 737.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 706.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 737.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
- [36 <./ctutest-zadani.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 708.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 708.
+ [38 <./ctutest-zadani.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 739.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 739.
  (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 708.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 739.
 
 
  *File List*
@@ -2149,6 +2196,8 @@ HCSR04_sizes.jpg    Graphic file (type jpg)
    DHT11.jpg    Graphic file (type jpg)
 System_architecture.pdf    Graphic file (type pdf)
 DistanceMeasuringGraphAndFit2-eps-converted-to.pdf    Graphic file (type pdf)
+stdAcrossAllMeasurements-eps-converted-to.pdf    Graphic file (type pdf)
+CrossSectionReadingsStd-eps-converted-to.pdf    Graphic file (type pdf)
 ctutest-zadani.pdf    Graphic file (type pdf)
 ctutest-zadani.pdf    Graphic file (type pdf)
 ctutest-zadani.pdf    Graphic file (type pdf)
@@ -2156,23 +2205,17 @@ ctutest-zadani.pdf    Graphic file (type pdf)
 ctutest-zadani.pdf    Graphic file (type pdf)
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 708.
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: CE87DCD106CED3F3E645D82B72A70AFC;2429
-(rerunfilecheck)             After:  9148476902A1AE68D1585A2E39333D8A;2506.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 708.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 739.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 9148476902A1AE68D1585A2E39333D8A;2506.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 739.
  ) 
 Here is how much of TeX's memory you used:
- 23698 strings out of 493328
- 411029 string characters out of 3139120
+ 23716 strings out of 493328
+ 411562 string characters out of 3139120
  647278 words of memory out of 3000000
- 26609 multiletter control sequences out of 15000+200000
- 623667 words of font info for 150 fonts, out of 3000000 for 9000
+ 26618 multiletter control sequences out of 15000+200000
+ 623750 words of font info for 151 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,56p,10370b,819s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -2192,9 +2235,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (42 pages, 1196527 bytes).
+Output written on Thesis.pdf (44 pages, 1209061 bytes).
 PDF statistics:
- 659 PDF objects out of 1000 (max. 8388607)
- 137 named destinations out of 1000 (max. 500000)
- 25997 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 689 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
+ 26015 words of extra memory for PDF output out of 29859 (max. 10000000)
 
