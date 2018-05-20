@@ -520,14 +520,8 @@ In this chapter the testing process of the device will be discussed. In order to
 
 \section{Hc-sr04 verification}
 An experiment can be conducted in order to assure the ultrasonic distance sensor is sufficiently accurate.\\ 
-For this work, the experiment equipment was a custom metal rig with a movable slide, the distance to which was measured using a ******* infra-red distance measurement sensor with an accuracy of ***********, and a screen shows the current measurement value.\\
-
-\begin{figure}[H]
-	\centering
-	\caption{Remember - Butta hadn't told you the infra-red sensor's name yet!!! Bug him until he does!}
-\end{figure}
-
-The experiments procedure involved mounting the sensor on a the custom rig at a set point. A small object was placed on the custom rig's slide, which was moved to a random distance that was defined as zero, or the experiments starting point. From there the object was moved towards the sensor in 20 discrete steps of 1[mm] each, to provide 20 measurements. A python routine was implemented to measure the distance to the object 26 times, and return the average of these measurements as well as their standard deviation. The measurement results can be seen in Table 5.1:
+For this work, the experiments equipment was a custom metal rig with a movable slide, the distance to which was measured using an infra-red distance measurement sensor with an accuracy of $\pm1\cdot10^{-4}$[mm], and a screen which shows the current measurement value.\\
+The experiments procedure involved mounting the sensor on a the custom rig at a set point. A small object was placed on the custom rigs slide, which was moved to a random distance that was defined as zero, or the experiments starting point. From there the object was moved towards the sensor in 20 discrete steps of 1[mm] each, to provide 20 measurements. A python routine was implemented to measure the distance to the object 26 times, and return the average of these measurements as well as their standard deviation. The measurement results can be seen in Table 5.1:
 
 
 \begin{table}[H]
@@ -620,7 +614,11 @@ It is worth noting, however, that the temperature readings could not be accurate
 This prototype was built as an expandable platform, designed to accommodate future add ons to both hardware and software. Additional software modifications could include a calibration function to allow for the sensor to be used with all types of hydrometers and breweries; curve fitting to predict when the fermentation would end or when it is best to end it; Google Weather integration to better understand the impact of environmental factors on fermentation; and IoT architecture integration, to implement better fermentation predictions based on data gathered from several such devices, as well as study seemingly unrelated disturbances and their effects on beer brewing.
 Hardware additions could be different sensors to provide extended functionality, better connectivity, or improve the service provided by this device.
 
-\subsection{Business plan}
+\subsection{Business proposal}
+The device targets the very niche market of micro-brewing, which luckily narrows the target audience immensely. A possible marketing strategy would be to propose a modular model of the device, so that every possible type of customer can enjoy their preferred version.\\
+Due to the low cost of the device it is possible to offer the most basic version of it for at least a 300$\%$ markup, and offer several varieties - for example assembled, disassembled, with 3D printed housing, etc.\\
+I believe previous attempts at this market have have failed due to the competing products being extremely expensive, or being so complex that they required specific training and previous knowledge.\\
+A possible marketing strategy could involve ads in targeted literature, as well as a crowd-funding campaign as both a way to gather an initial cash reserve to fund assembly and a marketing push. As most of the micro-brewing market do so as a hobby, suggesting this as a low-cost "Do it yourself" device which can be assembled by the clients themselves would increase product interaction, as well as seem as an addition to their current brewing process and personal skills.
 
 \subsection{Conclusion}
 The aim of this thesis work was to design and build a low cost, high accuracy device to monitor the progression of beer fermentation processes. The proposed device was to be accurate enough to be useful, and yet cheap enough that small, private micro-breweries would benefit from using it.\\ 
