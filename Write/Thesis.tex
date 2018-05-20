@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{mathtools}
+\raggedbottom % This prevents text from sticking to the bottom of pages! Finally!
+
 
 \ctusetup{
 %	preprint = \ctuverlog,
@@ -83,7 +85,7 @@
 
 % Abstract in Czech
 \begin{abstract-czech}
-Abstract in Czech
+V této práci autor poskytuje přehled současných metod pro sledování fermentačních procesů při výrobě piva v minipivovarech. Dále implementuje a testuje automatické řešení pro monitorování graduální akumulace ethanodu v procesu fermentace piva.
 \end{abstract-czech}
 
 % Abstract in English
@@ -126,8 +128,13 @@ In Prague, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 In this dissertation I will provide a brief overview of the way beer is made by home brewers today - I will follow the process from grains to beer and observe a few issues with the common way this process is carried out today in most microbreweries.\\
 Then, I will explore the various ways by which ethanol is currently being measured in home-grade brewing processes, also known as micro-brewing, and evaluate the advantages and disadvantages of each method. I will then discuss why and how the method suggested by this paper is the most suitable.\\
 I will then establish and justify an automatic, low cost solution to the issue of accurate and safe ethanol measurement, followed by rigorous testing of the proposed solution.
+\pagebreak 
 
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
 \chapter{How beer is brewed}
+\endgroup
 
 In this chapter, I will elaborate on how beer is being made, and discuss the most common method of micro-brewing.
 From this explanation I may easily identify the weakness in the process and the justification for this thesis.
@@ -508,6 +515,7 @@ Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measure
 \subsection{DHT- 11}
 The way the DHT-11 sensor measures temperature and humidity is not revealed by its manufacturers, only how it receives and transmits data. Once the DHT-11 module is awakened by the Main Module, it will conduct 10 temperature and humidity measurements and output the average of the results back to the Main Module.
 
+\newpage
 
 \pagebreak 
 
@@ -564,7 +572,7 @@ The experiments procedure involved mounting the sensor on a the custom rig at a 
 \end{figure}
 
 Note that as the slide was moving towards the sensor, its movement is noted as negative. 
-It is easy to see that the sensor preforms rather well despite its low cost, with only slight variation in the measurement - a standard deviation of 0.6533.\\
+It is easy to see that the sensor preforms rather well despite its low cost, with an acceptable variation in the measurement - a standard deviation of 0.6533.\\
 The sensor provides a fairly accurate measurement, which, over the course of time, provides a rather linear relation, proving that with sufficient measurements the sensor can provide the necessary accuracy of 1[mm].
 
 \subsection{Amount of measurements}
@@ -609,10 +617,12 @@ Therefor, for the optimal operation of the system, the distance from the sensor 
 This chapter will be dedicated to the discussion of this works results, the business case for the designed and prototyped device, how can it be improved in the future, as well as the conclusion of this thesis.
 
 \subsection{Discussion}
-The tests conducted in Chapter 5 proved sufficient to determine the accuracy of the HC-sr04 sensor and its appropriateness for use in this device.	The experiments conducted show an that, a few measurement errors aside, the sensors accuracy is 1[mm] or less when 26 measurements are taken, the optimal number of readings to be implemented are 100, and that the error in ABV prediction is **********.\\
+The tests conducted in Chapter 5 proved sufficient to determine the accuracy of the HC-sr04 sensor and its appropriateness for use in this device.	The experiments conducted show an that, a few measurement errors aside, the sensors accuracy is 1[mm] or less when 26 measurements are taken and the optimal number of readings to be implemented are 100.\\
 It is worth noting, however, that the temperature readings could not be accurately recreated without an active beer fermentation process. While the maximal difference in temperature between the fermenting wort and the air above it is expected to be less than one degree Celsius\cite{Thermodynamics_Brewers}, it merits further examination. Despite this, it is clear from the experiments conducted that the device preforms as predicted, and sometimes even better.\\
 This prototype was built as an expandable platform, designed to accommodate future add ons to both hardware and software. Additional software modifications could include a calibration function to allow for the sensor to be used with all types of hydrometers and breweries; curve fitting to predict when the fermentation would end or when it is best to end it; Google Weather integration to better understand the impact of environmental factors on fermentation; and IoT architecture integration, to implement better fermentation predictions based on data gathered from several such devices, as well as study seemingly unrelated disturbances and their effects on beer brewing.
 Hardware additions could be different sensors to provide extended functionality, better connectivity, or improve the service provided by this device.
+
+\pagebreak
 
 \subsection{Business proposal}
 The device targets the very niche market of micro-brewing, which luckily narrows the target audience immensely. A possible marketing strategy would be to propose a modular model of the device, so that every possible type of customer can enjoy their preferred version.\\
@@ -628,30 +638,8 @@ To conclude, this device was designed, programmed, and built using the diverse k
 
 
 
-
-
-
-
-
-%\part{My Party}
-
-%\input{ctutest-1}
-
-%\input{ctutest-2}
-
-
-%\part{Your Party}
-
-
-
-%\appendix
-
-%\printindex
-
 \appendix
 
-%\bibliographystyle{amsalpha}
-%\bibliography{ctutest}
 \begin{thebibliography}{9}
 	\bibitem{Brewing_Science}
 	\textit{\textbf{Brewing Science and Practice}}\\
