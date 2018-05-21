@@ -85,7 +85,7 @@
 
 % Abstract in Czech
 \begin{abstract-czech}
-V této práci autor poskytuje přehled současných metod pro sledování fermentačních procesů při výrobě piva v minipivovarech. Dále implementuje a testuje automatické řešení pro monitorování graduální akumulace ethanodu v procesu fermentace piva.
+V této práci budu prozkoumávat moderní metody měření postupu fermentačních procesů v mikropivovaru. Dále budu implementovat  a testovat automatické řešení na monitorování postupné akumulace ethanolu během procesu fermentace piva.
 \end{abstract-czech}
 
 % Abstract in English
@@ -484,13 +484,16 @@ C_g = SG \cdot \frac{\splitfrac{1.00130346 - 1.34722124*10^{-4} \cdot f + }{2.04
 Where $C_g$ is the final corrected gravity, $SG$ is the measured specific gravity, $f$ is the temperature in Fahrenheit, and $h_{ct}$ is the hydrometers calibration temperature.\\
 
 \paragraph{Corrected Gravity to ABV}
-Once the finalized SG value is obtained, it is possible to employ the standardized polynomial for alcohol percentage by weight derived by Rosendahl and Schmidt\cite{Brewing_Science}:
 
+Once the finalized SG value is obtained, it is possible to employ an adapted version of the standardized polynomial for alcohol percentage by weight from original gravity (OG) measurements proposed by Neville and Hashemi\cite{PH_In_yeast}:
+
+% Optional:
 \begin{equation}
-	A_{\%} = 517.4(1-C_g) + 5084(1-C_g)^2 + 33503(1-C_g)^3
+ABW = 76.08 \cdot \frac{Og - SG}{1.775-OG}
 \end{equation} 
 
-Which then may be converted into Alcohol By Volume (ABV), the more common unit of alcohol measurement in micro-breweries, as follows \cite{Brewing_Science}:
+Where OG is the original gravity, i.e the first specific gravity measured just before adding the yeast,and SG is the current reading.
+The resulting ABW may then be converted into Alcohol By Volume (ABV), the more common unit of alcohol measurement in micro-breweries, as follows \cite{Brewing_Science}:
 
 \begin{equation}
 	ABV = \frac{A_{\%} \cdot C_g}{0.791}
