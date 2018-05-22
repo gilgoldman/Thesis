@@ -187,7 +187,7 @@ In addition, accurate measurement of the fermentation process would allow early 
 
 \chapter{Fermentation Measurement Methods}
 In this chapter, I will discuss the various methods used by different institutes and businesses to monitor the progression of Wort fermentation processes - most commonly by measuring in various ways its Ethanol content.\\
-I will investigate five methods of Ethanol measurement:\\
+I will investigate five methods of Ethanol measurement:
 
 \begin{itemize}
 	\item Densitometry
@@ -196,7 +196,7 @@ I will investigate five methods of Ethanol measurement:\\
 	\item Hydrometry
 \end{itemize}
 
-In the following chapter, I will discuss the methodology of these five alternatives, as well as examine their use cases and feasibility for use in micro-brewing and large breweries alike.\\
+In the following chapter, I will discuss the methodology of these five alternatives, as well as examine their use cases and feasibility for use in micro-brewing and large breweries alike.
 
 \newpage
 
@@ -476,14 +476,14 @@ C_g = SG \cdot \frac{\splitfrac{1.00130346 - 1.34722124*10^{-4} \cdot f + }{2.04
 
 Where $C_g$ is the final corrected gravity, $SG$ is the measured specific gravity, $f$ is the temperature in Fahrenheit, and $h_{ct}$ is the hydrometers calibration temperature.\\
 
-\paragraph{Corrected Gravity to ABV}
+\paragraph{Corrected Gravity to Alcohol By Volume (ABV):}
 Once the finalized SG value is obtained, it is possible to employ the standardized polynomial for alcohol percentage by weight derived by Rosendahl and Schmidt\cite{Brewing_Science}:
 
 \begin{equation}
 	A_{\%} = 517.4(1-C_g) + 5084(1-C_g)^2 + 33503(1-C_g)^3
 \end{equation} 
 
-Which then may be converted into Alcohol By Volume (ABV), the more common unit of alcohol measurement in micro-breweries, as follows \cite{Brewing_Science}:
+Which then may be converted into ABV, the more common unit of alcohol measurement in micro-breweries, as follows \cite{Brewing_Science}:
 
 \begin{equation}
 	ABV = \frac{A_{\%} \cdot C_g}{0.791}
@@ -502,18 +502,10 @@ v_{sound} = \frac{x}{\frac{\Delta t}{2}}\\
 x = \frac{v_{sound}}{2}\cdot \Delta t
 \end{gather}
 
-Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measurements, as it needs to stabilize for 2 seconds between measurements to allow for higher accuracy. The average result of these measurements will then be sent back to the Main Module to be processed.
-
-\begin{gather}\nonumber
-\frac{V_{output}}{V_{in}} = \frac{R_2}{R_1 + R_2}\\\nonumber
-\frac{3.3}{5}= 0.66 = \frac{R_2}{R_1 + R_2}\\\nonumber
-0.66(R_1+R_2) = R2\\\nonumber
-0.66R_1 = 0.34R_2\\
-1.941R_1 = R_2
-\end{gather}
+Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measurements with 2 seconds rest between them to allow the sensor to stabilize, for possible echoes to subside, and to provide much greater accuracy.The average result of these measurements will then be sent back to the Main Module to be processed.
 
 \subsection{DHT- 11}
-The way the DHT-11 sensor measures temperature and humidity is not revealed by its manufacturers, only how it receives and transmits data. Once the DHT-11 module is awakened by the Main Module, it will conduct 10 temperature and humidity measurements and output the average of the results back to the Main Module.
+The way the DHT-11 sensor measures temperature and humidity is not revealed by its manufacturers, only how it receives and transmits data. Once the DHT-11 module is awakened by the Main Module, it will conduct 10 temperature and humidity measurements and send their average to the Main Module to be processed.
 
 
 \pagebreak 
