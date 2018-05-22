@@ -1,0 +1,38 @@
+\documentclass[]{article}
+\usepackage{scrextend}
+\addtokomafont{labelinglabel}{\sffamily\bfseries}
+
+%opening
+\title{Thesis proposition Overview}
+
+\begin{document}
+\section{Problem analysis}
+
+Home Brewing as a hobby has become a far more accessible a field in recent years. As more people make beer, there is a market to enhance and improve the equipment these people use.\\
+When Brewing beer on the micro scale, the current method of testing the fermentation process is, quite simply, to stick a jug in it and retrieve a sample. This exposes the Wort to oxidation, which might damage the flavor of the beer, as well as to contamination from environmental agents which might pose a health hazard.\\
+
+\section{Current solution variants}
+Currently, The following solutions are available:
+\begin{labeling}{Industrial solutions}
+	\item[By hand] The standard method. Effective, yet relatively high risk.
+	\item[Brew Nanny] A Kickstarter project from 2014. Expensive (500\$), apparently a failure - no updates since May 2016, backers are yet to receive product. Product currently unavailable to the market.
+	\item[Industrial solutions] Various solutions used by large scale breweries. Cumbersome, ill suited for home brewing.
+\end{labeling}
+
+\section{Proposed solution}
+A simple, easy to install monitoring system which may be easily fitted into existing plastic (or, with adapters, glass) fermentation tanks.\\
+Would provide all relevant data for successful fermentation, including (but not limited to) original gravity, temperature, sugar content, potential alcohol content, etc. As the solution is modular, it may be put to use by any micro brewer immediately, using equipment they currently posses to cut costs, or may come as a full package for a new brewer. Modular nature would allow for various expansions.\\
+
+\section{Implementation}
+The device would consist of an array of sensors connected to a Raspberry Pi 0, which will monitor the hight of a hydrometer submerged in the fermenting wort, calculate the various necessary factors, and present them all in an easy to understand format.\\
+The Raspberry Pi 0 will be programmed in Python 3, and the initial setup will include a DHT11 temperature and humidity sensor, a HC-SR04 ultrasonic distance sensor, a hydrometer, and, should it be deemed necessary, a PTFE coated PT100. The Raspberry Pi will process the sensor input and present data, graphs and tips over a local network using the Flask framework.
+
+\section{Testing}
+The system may be tested extensively on various "live" fermentation processes, either in Israel or in the Czech Republic.
+
+
+\section{Conclusion}
+To conclude, I propose building a micro scale fermentation monitoring station which will allow for a more accurate, safer, and less invasive fermentation process.\\
+It will be significantly cheaper than existing products, easier to maintain and install, and more effective.
+
+\end{document}

@@ -1,0 +1,24 @@
+git init - starts repo
+git add - adds to staging area
+git status - give a status of the repo
+git log - gives a history of the repo
+          opens the report in 'less' program. Exit it with 'q'
+git log --graph --oneline branch1 branch2 - shows graphically changes
+                                            to branch1 and branch2
+git clone - clones a repo to be worked on
+git reset --hard - resets the working directory, deleting
+                   all changes in working directory and staging area
+git branch - Shows branches
+git branch testy-Mctestface - creates a branch called testy-Mctestface
+git branch -d branch1 - deletes the label branch1, commits remain but are
+                        unreachable if no merge was done
+git checkout boop - checks out branch boop, allowing for work on it
+git merge master branch1 - merges branch1 into master
+git fetch remote1 - Fetches latest from remote into a seperate branch
+git remote - shows remotes
+git remote remote1 git@github.com/sshLinkFromGithubRepo - creates a remote with
+                                                          this repo on github
+git push remote1 branch1 - pushes branch1 to github
+git pull remote1 master - pulls master from name1. In effect, fetches from
+                          remote, then merges with local
+git edit file1 - opens file1 in text editor
