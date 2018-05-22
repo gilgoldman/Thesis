@@ -95,7 +95,7 @@ V této práci budu prozkoumávat moderní metody měření postupu fermentačn�
 
 % Acknowledgements / Podekovani
 \begin{thanks}
-The Author would like to thank Doc. Ing. Jiri Novak, Ph.D. for his thorough guidance and tutelage - it has been an honor working on this topic under his supervision. In addition, the author would like to thank Doc. Ing. Mattia Butta, Ph.D. for his patient and kind assistance with the measurements, and Richard Sedivy, Esq. for his translation of relevant parts into Czech. Furthermore, the author would like to note the assistance of Ido Schwartz, and Ohad Barta with the experimental parts, and Eran Goldman-Malka with technical matters.%\emph{alma mater}.
+The Author would like to thank Doc. Ing. Jiri Novak, Ph.D. for his thorough guidance and tutelage - it has been an honor working on this topic under his supervision. In addition, the author would like to thank Doc. Ing. Mattia Butta, Ph.D. for his patient and kind assistance with the measurements, and Richard Sedivy, Esq. for his translation of relevant parts into Czech. Furthermore, the author would like to note the assistance of Ido Schwartz and Ohad Barta with the experimental parts, and Eran Goldman-Malka with technical matters.%\emph{alma mater}.
 \end{thanks}
 
 % Declaration / Prohlaseni
@@ -128,6 +128,7 @@ In Prague, \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
 In this dissertation I will provide a brief overview of the way beer is made by home brewers today - I will follow the process from grains to beer and observe a few issues with the common way this process is carried out today in most microbreweries.\\
 Then, I will explore the various ways by which ethanol is currently being measured in home-grade brewing processes, also known as micro-brewing, and evaluate the advantages and disadvantages of each method. I will then discuss why and how the method suggested by this paper is the most suitable.\\
 I will then establish and justify an automatic, low cost solution to the issue of accurate and safe ethanol measurement, followed by rigorous testing of the proposed solution.
+
 \pagebreak 
 
 \begingroup
@@ -136,12 +137,11 @@ I will then establish and justify an automatic, low cost solution to the issue o
 \chapter{How beer is brewed}
 \endgroup
 
-In this chapter, I will elaborate on how beer is being made, and discuss the most common method of micro-brewing.
-From this explanation I may easily identify the weakness in the process and the justification for this thesis.
+In this chapter, I will elaborate on how beer is being made, and discuss the most common method of micro-brewing. From this explanation the core weakness in the process, and the justification for this thesis, is easily identifiable.
 
 \section{Overview of Beer Brewing}
 In general, micro-brewing can be seen as a fairly simple process, composed of five significant stages: \textit{Malting}, \textit{Mashing}, \textit{Worting}, \textit{Fermentation}, and \textit{Packing}.\\
-A short flow chart below illustrates the general principles of the brewing process before I dive deeply into the various steps:
+A short flow chart below illustrates the brewing process:
 
 \begin{figure}[H]
 \centering
@@ -163,7 +163,7 @@ The $\alpha-amylase$ enzyme's main function is to break the large, complex, inso
 There are various mashing methods, most notable are \textit{infusion mashing} and \textit{decoction mashing}.\\
 Infusion mashing involves steeping the grains in water, slowly increasing the temperature of the water, and stopping at pre-designated stops - the goal of which is to encourage the enzymes to break the starches into sugars without denaturing them. This is the easier alternative, requiring nothing more than a source of heat, a thermometer, and a timer. \\
 Decoction mashing involves removing set amounts of grain at set times from the brewing mash, boiling them in a separate vessal to encourage a Mallard reaction, and reintroducing the now hotter grains into the mash in order to increase its overall temperature. This method is far more complex than infusion mashing, yet produces greater quantities of maltose, better calculated fermentability rates, as well as more noticeable flavors and aromas \cite{Brewing_Science}.\\
-A review of the summary of the summarized table below, comparing the results of various methods, mashes, syrups, will reinforce the above statement.
+A review of the summarized table below, comparing the results of various methods, mashes, syrups, will reinforce the above statement.
 
 \begin{figure}[H]
 	\centering
@@ -175,12 +175,14 @@ A review of the summary of the summarized table below, comparing the results of 
 
 \section{Worting}
 In favor of clarity, in the scope of this work I will define a step of the process which I will name "Worting". To the experienced, it is a combination of Lautering and secondary boiling.\\
-After the mashing process is complete, I will begin Worting the mash. Worting involves two main steps:\\
+After the mashing process is complete, the next step is to begin Worting the mash. Worting involves two main steps:\\
 The first step consists of separating the grains from the mash. This is commonly achieved in large breweries by filtering the grains from the mash as it is being transferred into a secondary pot for the Worting process. Microbreweries sometimes preform the same action, however it is common to use only one pot, resulting in use of specialized bags or sieves to hold the grains during the mashing process, and removing them before Worting. At this stage, Hops (\textit{Humulus lupulus}) are added into the brewing mixture in order to add flavor and texture, as well as control the bitterness of the final Product.\cite{Hops}\\
 The second step of the process involves boiling the now grain-free mash to eliminate bacteria and sterilize the mixture - resulting in a sugary grain juice named Wort.
 
+\pagebreak
+
 \section{Fermentation}
-After the Worting process is complete, the Wort is chilled to a predetermined temperature range which depends on the type of beer being brewed. The chilled wort is transferred into a new air sealed container where yeast of the genus \textit{Saccharomyces} are added to it at a common rate of $15-20 x 10^6$ cells per [m$L^{-1}$] - a process called Pitching. The yeast which are added to the Wort will consume the abundant sugars and convert them into ethanol and higher alcohols, all the while producing $CO_2$ as a byproduct. The yeast's action will over time transform the sugary grain juice into what is recognized as beer.\\
+After the Worting process is complete, the Wort is chilled to a predetermined temperature range which depends on the type of beer being brewed. The chilled wort is transferred into a new air sealed container where yeast of the genus \textit{Saccharomyces} are added to it at a common rate of $15-20 x 10^6$ cells per [m$L^{-1}$] - a process called Pitching. The yeast which are added to the Wort will consume the abundant sugars and convert them into ethanol and higher alcohols, all the while producing $CO_2$ as a byproduct. The yeast's action will, over time, transform the sugary grain juice into what is recognized as beer.\\
 During this relatively long process which lasts from a few days up to several weeks, the most common way of measuring the progress of the fermentation process is via extracting a sample of wort by hand and measuring the liquid's specific gravity - the ratio between the density of the liquid and that of water measured at 4[$C^\circ$] - by dipping a hydrometer in the sample.\\
 As fermenting beer is sensitive to contamination and oxidization, this method of measurement, by far the most common one, is far from optimal. \cite{Biochemistry}
 
@@ -189,10 +191,17 @@ After the yeast have finished their work, the final step of the process is to pa
 In most microbreweries it is common to add additional saccharides - most commonly white sugar or glucose syrup - to the bottled beer in order to stimulate additional fermentation after capping the bottles, ensuring sufficient carbonization of the final product.
 
 \section{Reasons for this thesis}
-As I now know, the nature of the fermentation process as it is carried out in most microbreweries means it cannot be continuously or accurately measured, as every measurement of the fermentation process endangers the final products safety and taste.\\
+As is now clear, the nature of the fermentation process as it is carried out in most microbreweries means it cannot be continuously or accurately measured, as every measurement of the fermentation process endangers the final products safety and taste. In addition, every measurement of the fermentation's progress wastes beer, as the sample used cannot be returned to the fermenting mass.\\
 In addition, accurate measurement of the fermentation process would allow early bottling of the beer, eliminating the need to add sugar or saccharides to stimulate sufficient carbonization and assuring a healthier, tastier, and safer product.
 
+\pagebreak
+
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
 \chapter{Fermentation Measurement Methods}
+\endgroup
+
 In this chapter, I will discuss the various methods used by different institutes and businesses to monitor the progression of Wort fermentation processes - most commonly by measuring in various ways its Ethanol content.\\
 I will investigate five methods of Ethanol measurement:\\
 
@@ -245,7 +254,8 @@ Since specific molecules diffract specific wavelengths, a samples composition ma
 	\caption{NIRS DS2500 Analyzer by Metrohm NIRSystems}
 \end{figure}
 
-A spectrometer can be similarly defined as an instrument which illuminates a sample material with EMR of various wavelengths and measures the diffraction of electromagnetic radiation caused by the sample material. Most spectrometers work by having a light source shine light through a prism or other light diffracting objects, such as specialized grates. The diffracted light is then filtered via a movable slit, allowing to select a specific wavelength range, which is then shined at a photo-diode or photo-transistor through the tested sample. The measured current generated by the photo-diode is then converted into a useful reading.
+A spectrometer can be similarly defined as an instrument which illuminates a sample material with EMR of various wavelengths and measures the diffraction of electromagnetic radiation caused by the sample material.\\
+Most spectrometers work by having a light source shine light through a prism or other light diffracting objects, such as specialized grates. The diffracted light is then filtered via a movable slit, allowing to select a specific wavelength range, which is then shined at a photo-diode or photo-transistor through the tested sample. The measured current generated by the photo-diode is then converted into a useful reading.
 
 \begin{figure}[H]
 	\centering
@@ -254,7 +264,7 @@ A spectrometer can be similarly defined as an instrument which illuminates a sam
 \end{figure}
 
 In our relevant case, a good correlation has been found between the presence of Ethanol molecules and the intensity of backscattered light at 905 $[nm]$  \cite{NIR_Spectroscopy_Ethanol}, allowing us to identify it in sample compounds.\\
-MIR and NIR, being two different approaches to the same result, are often used in conjunction for better results - NIr having greater sample penetrability and MIR suffering from less noise.
+MIR and NIR, being two different approaches to the same result, are often used in conjunction for better results - NIR having greater sample penetrability and MIR suffering from less noise.
 Until rather recently, NIRS instruments required sanitized environments, highly trained operators, and were generally quite large and bulky - making them more suitable for lab work rather than field work\cite{NIR_For_Spices}.\\ While in recent years more modern devices are being prototyped which will be smaller and can operate in a wider range of environments, using a spectrometer still requires specific training and experience, and a spectrometer is still an extremely expensive device.
 
 \section{Gas Chromatography}
@@ -285,13 +295,19 @@ Gas chromatography is highly complex and very expensive method which has little 
 Hydrometry is the most common of all ethanol measurement techniques, as it is the cheapest and easiest to understand and utilize.\\
 In the next chapter I will delve deeply into how a hydrometer works and why it was chosen as the cornerstone method of the physical implementation of this thesis.
 
+\pagebreak 
 
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
 \chapter{Solution proposition}
+\endgroup
+
 In this chapter I will discuss how hydrometry work and why it is the most common method for evaluating the amount of ethanol in fermenting beer, examine its greatest issue, and propose a solution for this risk.
 
 \section{How Hydrometry work}
 Hydrometry is simple, easy, and cheap to perform, and provides a sufficiently accurate measurement of ethanol contents.\\
-Hydrometry can be viewed as an application of Archimedes principle: "Any object immersed in fluid, partially or wholly, is acted upon by a buoyant force equal to the weight of the fluid displaced by it". A hydrometer is a marked instrument, commonly made from glass and weighed by lead\cite{Ethanol_Measurement}, weighted so as to achieve neutral buoyancy, with the point on the hydrometer at water level while it is in buoyant equilibrium marked as the instruments baseline. The baseline is marked as $1.00$, to denote that there is no difference between the fluids density and that of water. Due to historical reasons, in Britain it is commonly marked up by three orders of magnitude, marking the baseline as $1000$\cite{Brewing_Science} instead of $1.00$\\
+Hydrometry can be viewed as an application of Archimedes principle: "Any object immersed in fluid, partially or wholly, is acted upon by a buoyant force equal to the weight of the fluid displaced by it". A hydrometer is a marked instrument, commonly made from glass and weighed by lead\cite{Ethanol_Measurement}, weighted so as to achieve neutral buoyancy, with the point on the hydrometer at water level while it is in buoyant equilibrium marked as the instruments baseline. The baseline is marked as $1.00$, to denote that there is no difference between the fluids density and that of water. Due to historical reasons, in Britain it is commonly marked up by three orders of magnitude, marking the baseline as $1000$\cite{Brewing_Science} instead of $1.000$\\
 As the hydrometer floats around a certain equilibrium point in water, and its precise weight and volume is known, it is possible to deduce the sample fluids specific gravity - its density compared to that of water - based on the difference between the height of the current equilibrium point relative to that of water. In simpler terms, the denser the fluid, the higher the hydrometer will float in the fluid due to a stronger buoyant force acting on it.\\
 The instrument is notched or marked in various distances to simplify reading its results, each notch indicating a different specific gravity. It is also calibrated around a specific temperature, in most cases 15$[C^{\circ}]$\cite{Ethanol_Measurement}. As temperature has a noticeable effect on density, and as a result on specific gravity(SG), most charts detailing correlation between SG and hydrometer readings also correct for temperature differences.\\
 
@@ -302,19 +318,19 @@ The instrument is notched or marked in various distances to simplify reading its
 	\caption{Hydrometer operating principle \cite{Hydrometer_Pic}}
 \end{figure}
 
-In order to use a hydrometer, a sample of the Wort is retrieved after it has cooled to the desired temperature, but before the yeast has been pitched (see section 1.5). This reading will be designated as the Original Gravity(OG) of the batch being brewed, and all changes in the Worts SG due to an increase in ethanol content will be compared to this. While it is possible to estimate from the OG the finite products alcohol content, it is rarely accurate.
+In order to use a hydrometer, a sample of the Wort is retrieved after it has cooled to the desired temperature, but before the yeast has been pitched (see section 1.5). This reading will be designated as the Original Gravity(OG) of the batch being brewed, and all changes in the Worts SG due to an increase in ethanol content will be compared to this.
 
 \section{The risk of Hydrometry}
 To ensure accuracy, and to know when to proceed to the next stage of the brewing process, at least several measurements by hydrometer are required. However, every measurement involves retrieving a sample of fermenting Wort in order to measure its specific gravity.\\
 Several solutions have been implemented to minimize exposure to contaminants and oxygen, which, at this stage of the process, can cause staling of the beer and a severe damage to its taste and clarity. However, most of them are mechanical, and none of them has completely solved the issue.\\
-Today, each micro-brewer must find their own point of balance between accuracy and risk, with each measurement increasing the accuracy of the process but endangering the final product.
+Today, each micro-brewer must find their own point of balance between accuracy and risk, with each measurement increasing the accuracy of the process but endangering and expending the final product.
 
 
 
 \section{Proposed solution}
 Therefore, I propose eliminating the need to retrieve a sample of the fermenting beer altogether, and disposing of the last major risk factor in beer brewing.\\
 The proposed solution will ensure a continuous - or, more accurately, discrete over very short intervals - measurement of the fermenting Worts SG, as well as calculate the current alcohol content while factoring in the environmental temperature. The device proposed will be integrated as a part of the closed fermenting Wort system, thus eliminating the danger of oxidation or contamination. Furthermore, it will allow wireless access to the results, so as to provide greater transparency of the brewing process.\\
-The device will be a Raspberry pi zero w attached to an HC-sr04 ultrasonic distance sensor and a DHT-11 temperature sensor - the exact architecture will be discussed at length in Chapter 4 of this work. The prototype designed and built for this thesis will be powered via cable, however future version may be battery operated. In order to ease integration and reduce costs, the device will utilize the hydrometer already present at every micro-brewery to complete the system. Should a micro-brewery not have a hydrometer, one may be supplied.\\
+The device will be a made from a Raspberry pi zero W micro-computer connected to an HC-sr04 ultrasonic distance sensor and a DHT-11 temperature sensor - the exact architecture will be discussed at length in Chapter 4 of this work. The prototype designed and built for this thesis will be powered via cable, however future version may be battery operated. In order to ease integration and reduce costs, the device will utilize the hydrometer already present at every micro-brewery to complete the system. Should a micro-brewery not have a hydrometer, one may be supplied.\\
 
 \begin{figure}[H]
 	\centering
@@ -323,6 +339,11 @@ The device will be a Raspberry pi zero w attached to an HC-sr04 ultrasonic dista
 \end{figure}
 
 The final result will be a low cost, accurate, and reliable solution to provide insight into the process while eliminating the most common danger factors of traditional methods. In the next chapter I will elaborate on both the systems software and hardware architecture, as well as its implementation in the field.
+
+\section{System Constraints}
+Since the device relies on a hydrometer, there are several constraints which are imposed on the system due to it. In the scope of this work a relatively small - 19 [cm] - glass hydrometer would be used. The hydrometer is marked in a range of 1.000-1.060 every 10 [mm] to denote a 0.010 change in the sampled liquids specific gravity(SG), with four additional smaller markings every 2[mm] to mark differences of 0.002 between the larger marks.\\
+These markings are marked along 60[cm] of the hydrometer's upper part. A hydrometer of this size and these markings is capable of measuring a SG difference of 0.06, which correlates to a maximal difference in final alcohol content of 7.88$\%$ Alcohol By Volume(ABV). While it is possible to interpolate further into a wider range of measurements, the accuracy of measurement in the higher range of 7-10$\%$ ABV requires different calculations to remain accurate\cite{Joy_Of_Brewing}. As these beers are not common in micro-brewing, such additional calculations will remain as optional additions in the future.\\
+Due to these limitations, the proposed device should be able to accurately identify changes of less than 2.0 [mm], with a standard deviation of less than 0.5 [mm], which translate into a 0.002 change in SG, or a 0.26$\%$ change in ABV. In this work I will aim for identification of a 1[mm] difference, to provide a margin for inaccuracies due to environmental factors.
 
 
 \pagebreak
@@ -512,6 +533,7 @@ v_{sound} = \frac{x}{\frac{\Delta t}{2}}\\
 x = \frac{v_{sound}}{2}\cdot \Delta t
 \end{gather}
 
+As is known in literature, the speed of sound depend on the medium through which it travels. In air, the effect of humidity is negligible, while the effect of pressure is noticeable\cite{Sound}. However, in the scope of this work, I will assume this device would not be used under pressure differing from 1 Atmosphere, or 101325[Pa].\\ 
 Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measurements, as it needs to stabilize for 2 seconds between measurements to allow for higher accuracy. The average result of these measurements will then be sent back to the Main Module to be processed. The reason for choosing 26 measurements was to assure the process would last less than a minute to match with the work of Cron, but in Chapter 5 our physical experiments suggest a different number of measurements would be better. The different amount of measurements will be justified via experimental data.
 
 
@@ -575,10 +597,10 @@ The experiments procedure involved mounting the sensor on a the custom rig at a 
 \end{figure}
 
 Note that as the slide was moving towards the sensor, its movement is noted as negative. 
-It is easy to see that the sensor preforms rather well despite its low cost, with an acceptable variation in the measurement - a standard deviation of 0.6533.\\
-The sensor provides a fairly accurate measurement, which, over the course of time, provides a rather linear relation, proving that with sufficient measurements the sensor can provide the necessary accuracy of 1[mm].
+It is easy to see that the sensor preforms rather well despite its low cost, with an acceptable variation in the measurement.\\
+The sensor provides a fairly accurate measurement, which, over the course of time, provides a rather linear relation, proving that with sufficient measurements the sensor can provide the necessary accuracy of less than 2[mm].
 
-\subsection{Amount of measurements}
+\section{Amount of measurements}
 The sensors sensitivity in the previous section is entirely dependent on the averaged result of twenty six measurements taken in quick succession.\\
 The original amount of measurements to be averaged was a compromise arrived at due to the sensors settling time - a two seconds pause between consecutive measurements to allow the system to settle and the one minute time limit imposed by Cron, encouraging the system to provide a data point every minute. However, since fermentation is a slow process which lasts at least a week\cite{Joy_Of_Brewing}, it is possible to perhaps waive the need to update the data every minute if the accuracy justifies it. As time is no longer such a pressing issue, it has been decided to update the database, and with it, the graphs and content, once every five minutes or less.\\
 To discover the effect of the number of consecutive measurements take on the accuracy of the result, the same rig which was used in the last measurement was used once more, only this time with a different purpose in mind: fifteen measurements were taken, with the slide moving one millimeter towards the sensor between each measurement cycle. During each cycle the sensor took more than a hundred distance measurements which validity was verified via calculating the standard deviation of each measurement.\\
@@ -603,7 +625,7 @@ Since the results are very hectic and seemingly without a pattern, the standard 
 As it is possible to see from the graph, the best results are the 10 readings per measurement and more than 80. Since 10 readings are far more vulnerable to environmental noise and bad readings than the higher values, it is safe to disqualify it as a viable solution. Since 100 readings take $202.54[s]\pm0.00327$ as measured by a timer while being the least vulnerable to disturbances among the measured cross sections, it will be selected as the proper amount of readings for our system, balancing accuracy with time.
 Therefor, for the optimal operation of the system, the distance from the sensor to the hydrometer will be sampled 100 times per cycle of the distance sensor module, with the average result being passed on for processing in the Main Module along with the temperature results from the DHT11 module.
 
-\subsection{Verification of system capabilities}
+\section{Verification of system capabilities}
 
 
 
@@ -619,7 +641,7 @@ Therefor, for the optimal operation of the system, the distance from the sensor 
 \endgroup
 This chapter will be dedicated to the discussion of this works results, the business case for the designed and prototyped device, how can it be improved in the future, as well as the conclusion of this thesis.
 
-\subsection{Discussion}
+\section{Discussion}
 The tests conducted in Chapter 5 proved sufficient to determine the accuracy of the HC-sr04 sensor and its appropriateness for use in this device.	The experiments conducted show an that, a few measurement errors aside, the sensors accuracy is 1[mm] or less when 26 measurements are taken and the optimal number of readings to be implemented are 100.\\
 It is worth noting, however, that the temperature readings could not be accurately recreated without an active beer fermentation process. While the maximal difference in temperature between the fermenting wort and the air above it is expected to be less than one degree Celsius\cite{Thermodynamics_Brewers}, it merits further examination. Despite this, it is clear from the experiments conducted that the device preforms as predicted, and sometimes even better.\\
 This prototype was built as an expandable platform, designed to accommodate future add ons to both hardware and software. Additional software modifications could include a calibration function to allow for the sensor to be used with all types of hydrometers and breweries; curve fitting to predict when the fermentation would end or when it is best to end it; Google Weather integration to better understand the impact of environmental factors on fermentation; and IoT architecture integration, to implement better fermentation predictions based on data gathered from several such devices, as well as study seemingly unrelated disturbances and their effects on beer brewing.
@@ -627,13 +649,13 @@ Hardware additions could be different sensors to provide extended functionality,
 
 \pagebreak
 
-\subsection{Business proposal}
+\section{Business proposal}
 The device targets the very niche market of micro-brewing, which luckily narrows the target audience immensely. A possible marketing strategy would be to propose a modular model of the device, so that every possible type of customer can enjoy their preferred version.\\
 Due to the low cost of the device it is possible to offer the most basic version of it for at least a 300$\%$ markup, and offer several varieties - for example assembled, disassembled, with 3D printed housing, etc.\\
 I believe previous attempts at this market have have failed due to the competing products being extremely expensive, or being so complex that they required specific training and previous knowledge.\\
 A possible marketing strategy could involve ads in targeted literature, as well as a crowd-funding campaign as both a way to gather an initial cash reserve to fund assembly and a marketing push. As most of the micro-brewing market do so as a hobby, suggesting this as a low-cost "Do it yourself" device which can be assembled by the clients themselves would increase product interaction, as well as seem as an addition to their current brewing process and personal skills.
 
-\subsection{Conclusion}
+\section{Conclusion}
 The aim of this thesis work was to design and build a low cost, high accuracy device to monitor the progression of beer fermentation processes. The proposed device was to be accurate enough to be useful, and yet cheap enough that small, private micro-breweries would benefit from using it.\\ 
 The proposed device was assembled in its entirety for less than 13$\$$US, or 283.28 $CZK$. The total cost of device assembly was about 3.25$\%$ of its mechanically closest competitor, BrewGuard, a 400$\$$US device which failed due to its high price. As proven in Chapter 5, the device can reach an accuracy of 1[mm], and provide an accurate measurement of Alcohol By Volume.\\
 Unlike current market solutions, the device could be utilized by almost anyone with minimal instructions and enable greater insight into the fermentation process - allowing for vastly superior customizability and predictability of the resulting beer.
@@ -757,6 +779,10 @@ To conclude, this device was designed, programmed, and built using the diverse k
 	Krones Inc.\\
 	\textit{Brewing and Process Technology}, 2014
 	
+	\bibitem{Sound}
+	\textit{"The variation of the specific heat ratio and the speed of sound in air with temperature, pressure, humidity, and $CO_2$ concentration"}\\
+	O. Cramer\\
+	\textit{National Metrology Program, Council for Scientific and Industrial Research}, 1992
 	
 	
 \end{thebibliography}
