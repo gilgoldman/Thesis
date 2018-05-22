@@ -17,9 +17,9 @@
 %	titlelanguage = czech,
 %	mainlanguage = czech,
 	otherlanguages = {czech},
-	title-czech = {Title in Czech},
+	title-czech = {},
 	title-english = {Alcohol content measurement within the fermentation process},
-	subtitle-czech = {Subtitle in Czech},
+	subtitle-czech = {},
 	subtitle-english = {\textit{Low-cost automatic ethanol measurement as indication of fermentation progress}},
 	doctype = B,
 	faculty = F3,
@@ -27,12 +27,12 @@
 	department-english = {Department of Control Engineering},
 	author = {Gil Goldman},
 	supervisor = {Prof. Jiři Novák},
-	supervisor-address = {Ústav X, \\ Uliční 5, \\ Praha 99},
+	supervisor-address = {Technicka 2\\ 166 27\\ Praha 6},
 	fieldofstudy-english = {Robotics and Cybernetics},
 	subfieldofstudy-english = {Control Engineering},
 	fieldofstudy-czech = {Robotika a Kybernetika},
-	subfieldofstudy-czech = {Subfield in Czech},
-	keywords-czech = {Keywords in Czech},
+	subfieldofstudy-czech = {},
+	keywords-czech = {Fermentace, Ethanol, Automatizace ,Měření},
 	keywords-english = {Fermentation, Ethanol, Automation, Measurement},
 	day = 20,
 	month = 4,
@@ -95,7 +95,7 @@ V této práci budu prozkoumávat moderní metody měření postupu fermentačn�
 
 % Acknowledgements / Podekovani
 \begin{thanks}
-The Author would like to thank Professor Jiri Novak for his thorough guidance and tutelage - it has been an honor working on this topic under his supervision. %\emph{alma mater}.
+The Author would like to thank Doc. Ing. Jiri Novak, Ph.D. for his thorough guidance and tutelage - it has been an honor working on this topic under his supervision. In addition, the author would like to thank Doc. Ing. Mattia Butta, Ph.D. for his patient and kind assistance with the measurements, and Richard Sedivy, Esq. for his translation of relevant parts into Czech. Furthermore, the author would like to note the assistance of Ido Schwartz, and Ohad Barta with the experimental parts, and Eran Goldman-Malka with technical matters.%\emph{alma mater}.
 \end{thanks}
 
 % Declaration / Prohlaseni
@@ -374,7 +374,7 @@ This device was chosen for its ease of use, availability, versatility, and low c
 \subsection{HC-sr04 Ultrasonic Ranging Module}
 The HC-sr04 sensor provides a non-contact ultrasonic distance measurement function, at ranges of 2 to 400 [cm] $\pm$0.3[cm] with a measuring angle of 30$^\circ$\\
 The sensor works by emitting eight pulses at 40[kHz] and listening for the rebounding pulses. It is then possible to computationally calculate, based on the length of the interval between the transmission and the reception of the rebounding signal, the distance between the sensor and the target.\\
-The HC-sr04 sensor was chosen for this project due to it's high accuracy, small size, and low price. However, as the sensor's accuracy fluctuations can have a noticeable impact on such sensitive instrumentation, methods to compensate for them will be discussed and tested in Chapter 5.\\
+The HC-sr04 sensor was chosen for this project due to it's high accuracy, small size, and low price. However, as the sensor's inherent inaccuracies may have a noticeable impact on such sensitive instrumentation, methods to compensate for them will be discussed and tested in Chapter 5.\\
 
 \begin{figure}[H]
 	\centering
@@ -396,7 +396,7 @@ Thanks to $(4.1)$, it is now clear that $R_2$ should have approximately twice th
 
 
 \subsection{DHT-11 Digital Humidity and Temperature sensor}
-The DHT-11 Digital Humidity and Temperature utilizes a capacitive humidity sensor and a thermistor to measure relative ambient humidity with $\pm$5$\%$ accuracy at 25$^\circ$, and temperature with $\pm$2 [C$^\circ$] at 25[C$^\circ$]. The instruments readings are then digitalized via a built in microprocessor which transmits a digital reading from each sensor at 16 bit resolution.
+The DHT-11 Digital Humidity and Temperature utilizes a capacitive humidity sensor and a thermistor to measure relative ambient humidity with $\pm$5$\%$ accuracy at 25$^\circ$, and temperature with $\pm$2 [C$^\circ$] at 25[C$^\circ$]. The instruments readings are then digitalized via a built in microprocessor which transmits a digital reading from each sensor.
 
 \begin{figure}[H]
 	\centering
@@ -450,10 +450,10 @@ Grafana is an open source graph generating web server. It is capable of retrievi
 It was chosen as a complement to InfluxDB due to the pair's great integration, as well as Grafana's flexibility and streamlined user interface.
 
 \subsection{Main Software module}
-The main software module (Main) will hold the majority of custom function and process calls of the project. It will be the part in charge of turning on or off the various sensor modules, as well as run three major calculations: convert the average distance measured by the distance sensor to a specific gravity (SG) reading as is measured by the hydrometer, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated, alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.
+The main software module (Main) holds the majority of custom function and process calls of the project. It is the part in charge of turning on or off the various sensor modules, as well as run three major calculations: convert the average distance measured by the distance sensor to a specific gravity (SG) reading as is measured by the hydrometer, correct SG based on temperature reading, and convert the corrected SG to alcohol percentages. The finalized, temperature compensated alcohol measurement will then be stored in InfluxDB for use by Grafana as a String data type.
 
 \paragraph{Distance to specific gravity:}
-A hydrometer reading correlates directly to its depth in liquid, i.e. its distance from the sensor. Due to the casing which holds the device, the sensors distance from the surface of the liquid is given at 18 [cm]. As it is to be submerged in liquid up to 2 [cm], the hydrometer's height above the water during minimal measurement (1.000, the SG of water) is 2.5[cm], and the sensor height is 1.5 [cm], the active measurement range is 12 [c]. The hydrometer used for this work ranges in SG values between 1.000 to 1.060 across 4.8 [cm].\\
+A hydrometer reading correlates directly to its depth in liquid, i.e. its distance from the sensor. Due to the casing which holds the device, the sensors distance from the surface of the liquid is given at 18 [cm]. As it is to be submerged in liquid up to 2 [cm], the hydrometer's height above the water during minimal measurement (1.000, the SG of water) is 2.5[cm], and the sensor height is 1.5 [cm], the active measurement range is 12 [cm]. The hydrometer used for this work ranges in SG values between 1.000 to 1.060 across 4.8 [cm].\\
 These two parameters - distance from the sensor and SG reading - can be viewed as a Cartesian tuple. Therefore, as the relation between the two is linear, it can be derived with simple linear approximation:
 \begin{equation}
 y-y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)
@@ -512,7 +512,7 @@ v_{sound} = \frac{x}{\frac{\Delta t}{2}}\\
 x = \frac{v_{sound}}{2}\cdot \Delta t
 \end{gather}
 
-Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measurements, as it needs to stabilize for 2 seconds between measurements to allow for higher accuracy. The average result of these measurements will then be sent back to the Main Module to be processed. The reason for choosing 26 measurements was to assure the process would last less than a minute to match with the work of Cron, but in Chapter 4 our physical experiments suggest a different number of measurements would be better. The different amount of measurements will be justified via experimental data.
+Once the HC-sr04 module is awoken by the Main Module, it will conduct 26 measurements, as it needs to stabilize for 2 seconds between measurements to allow for higher accuracy. The average result of these measurements will then be sent back to the Main Module to be processed. The reason for choosing 26 measurements was to assure the process would last less than a minute to match with the work of Cron, but in Chapter 5 our physical experiments suggest a different number of measurements would be better. The different amount of measurements will be justified via experimental data.
 
 
 \subsection{DHT- 11}
@@ -582,8 +582,8 @@ The sensor provides a fairly accurate measurement, which, over the course of tim
 The sensors sensitivity in the previous section is entirely dependent on the averaged result of twenty six measurements taken in quick succession.\\
 The original amount of measurements to be averaged was a compromise arrived at due to the sensors settling time - a two seconds pause between consecutive measurements to allow the system to settle and the one minute time limit imposed by Cron, encouraging the system to provide a data point every minute. However, since fermentation is a slow process which lasts at least a week\cite{Joy_Of_Brewing}, it is possible to perhaps waive the need to update the data every minute if the accuracy justifies it. As time is no longer such a pressing issue, it has been decided to update the database, and with it, the graphs and content, once every five minutes or less.\\
 To discover the effect of the number of consecutive measurements take on the accuracy of the result, the same rig which was used in the last measurement was used once more, only this time with a different purpose in mind: fifteen measurements were taken, with the slide moving one millimeter towards the sensor between each measurement cycle. During each cycle the sensor took more than a hundred distance measurements which validity was verified via calculating the standard deviation of each measurement.\\
-Then, after at least a hundred valid measurements of each distance were obtained, a program was created to calculate the standard deviation of various chunks of the measurement and see how the amount of measurements taken influence the standard deviation of the result. The program calculated the standard deviation of ten cross sections of the data (the first 10 readings, 20, 30, and so forth until 100 readings) across the entire 15 complete measurements.\\
-Five selected measurements, the standard deviations of the first 10, 30, 50, 70, and 100 readings from each measurement, can be viewed as:
+Then, after at least a hundred valid measurements of each distance were obtained, a program was created to calculate the standard deviation of various chunks of the measurement and see how the amount of measurements taken influence the standard deviation of the result. The program calculated the standard deviation of ten cross sections of the data (the first 10 readings, 20, 30, and so forth until 100 readings) across the 15 different distance measurements.\\
+Five selected measurements out of the 15 different measured positions, the standard deviations of the first 10, 30, 50, 70, and 100 readings from each measurement, can be viewed as:
  
 \begin{figure}[H]
 	\centering
