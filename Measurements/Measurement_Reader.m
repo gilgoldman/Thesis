@@ -33,7 +33,7 @@ for samples = 1:length(sampleCount)
             res = char(res,line1);
         end
         fclose(fid);
-        if i<11 % This if eliminates problematic lines at the end of files
+        if i<11 % This 'if' eliminates problematic lines at the end of files
             res(122, :) = []; % This is the null line at the end of every file
             res(121, :) = []; % This it the text line from the python work
         else
@@ -63,25 +63,32 @@ for i = 1:length(resultMatrix(:,1))
    Sfinal(i) = std(resultMatrix(i, :));
 end
 
-t = 10:10:100;
-plot(t, Sfinal, 'bo-')
-xticks(10:10:100);
-xlabel('Number of readings sampled');
-ylabel('Standard Deviation');
-title('Standard Deviation compared to amount of readings taken');
-legend('Standard Deviation');
+%t = 10:10:100;
+%plot(t, Sfinal, 'bo-')
+%xticks(10:10:100);
+%xlabel('Number of readings sampled');
+%ylabel('Standard Deviation');
+%title('Standard Deviation compared to amount of readings taken');
+%legend('Standard Deviation');
 %saveas(gca,'test.pdf');
 %system('pdfcrop test.pdf test.pdf');
 
-%for i = 1:length(resultMatrix(1,:)) % Plots the entire thingy
-%    t = 1:length(resultMatrix(1,:));
-%    plot(t, resultMatrix(i , :));
-%    hold on; grid on;
-%end
-%plot(t, resultMatrix(1,:), 'r:^', t, resultMatrix(3, :), 'b:^', t, resultMatrix(5, :), 'g:^', t, resultMatrix(7, :), ...
-%    'm^:', t, resultMatrix(10, :), 'k^:') 
-%xticks([1:15]);
-%title('Standard deviation cross-sectional cut');
-%xlabel('Number of measurement');
-%ylabel('Standard deviation');
+
+% Plot the STD scatter plot
+%t = 1:length(resultMatrix(1,:));
+%plot(t, resultMatrix(1,:), 'rx', t, resultMatrix(3, :), 'bx', t, resultMatrix(5, :), 'gx', t, resultMatrix(7, :), ...
+%    'mx', t, resultMatrix(10, :), 'kx') 
+% This is for the STD bar graph
+%vectorForBars = [resultMatrix(1,:);resultMatrix(3, :);resultMatrix(5, :);resultMatrix(7, :);resultMatrix(10, :)];
+%bar(vectorForBars')
+% These are the plots parameters
+%xticks(1:15);
+%title('Standard deviation cross-sectional scatter plot');
+%xlabel('Distance moved by slide [cm]');
+%ylabel('Standard deviation [cm]');
 %legend('10 Measurements','30 Measurements','50 Measurements','70 Measurements','100 Measurements');
+
+
+% This is the system verification plot
+SGRead = [1.001, 1.007, 1.09, 1.015, 1.029, 1.041];
+plot
