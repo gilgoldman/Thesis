@@ -63,9 +63,9 @@
 \contentsline {section}{\numberline {5.1}Hc-sr04 verification}{25}{section.5.1}
 \contentsline {section}{\numberline {5.2}Amount of measurements}{27}{section.5.2}
 \contentsline {section}{\numberline {5.3}Verification of system capabilities}{29}{section.5.3}
-\contentsline {chapter}{\numberline {6}Discussion and Conclusion}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Discussion}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Business proposal}{32}{section.6.2}
-\contentsline {section}{\numberline {6.3}Conclusion}{32}{section.6.3}
-\contentsline {chapter}{\numberline {A}Bibliography}{33}{appendix.A}
-\contentsline {chapter}{\numberline {B}Project\ Specification}{37}{section*.12}
+\contentsline {chapter}{\numberline {6}Discussion and Conclusion}{32}{chapter.6}
+\contentsline {section}{\numberline {6.1}Discussion}{32}{section.6.1}
+\contentsline {section}{\numberline {6.2}Business proposal}{33}{section.6.2}
+\contentsline {section}{\numberline {6.3}Conclusion}{33}{section.6.3}
+\contentsline {chapter}{\numberline {A}Bibliography}{35}{appendix.A}
+\contentsline {chapter}{\numberline {B}Project\ Specification}{39}{section*.12}

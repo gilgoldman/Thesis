@@ -90,5 +90,14 @@ end
 
 
 % This is the system verification plot
-SGRead = [1.001, 1.007, 1.09, 1.015, 1.029, 1.041];
-plot
+SGRead = [1.001, 1.007, 1.009, 1.015, 1.029, 1.041];
+SGActual = [1.000, 1.005, 1.010, 1.015, 1.030, 1.040];
+barVector = [SGRead; SGActual];
+t = 1:6;
+bar(barVector')
+%plot(t,SGRead, 'bo:', t, SGActual, 'ko:')
+xticks(1:6)
+title('Comparison between measured and actual Specific Gravity')
+ylabel('Specific Gravity')
+xlabel('Number of measurement')
+legend('Specific Gravity measured by device','Specific Gravity of test solution', 'Location', 'northwest')
