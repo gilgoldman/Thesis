@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.10.11)  22 MAY 2018 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.10.11)  23 MAY 2018 14:37
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1641,7 +1641,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--124
 [3
 
 
-] [4
+]
+Underfull \hbox (badness 1092) in paragraph at lines 124--124
+\T1/lmr/m/n/10.95 (+20) This dis-ser-ta-tion sur-veys the cur-rent
+ []
+
+[4
 
 ] (Thesis.toc)
 \tf@toc=\write5
@@ -1867,9 +1872,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 505--506
 
  []
 
-
-LaTeX Warning: Citation `PH_In_yeast' on page 22 undefined on input line 509.
-
 [22]
 Underfull \hbox (badness 10000) in paragraph at lines 526--528
 
@@ -1879,18 +1881,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--528
 Chapter 5.
 [25]
 Package epstopdf Info: Source file: <DistanceMeasuringGraphAndFit2.eps>
-(epstopdf)                    date: 2018-05-22 20:01:04
-(epstopdf)                    size: 28245 bytes
+(epstopdf)                    date: 2018-05-23 14:35:43
+(epstopdf)                    size: 30690 bytes
 (epstopdf)             Output file: <DistanceMeasuringGraphAndFit2-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2018-05-22 20:01:09
-(epstopdf)                    size: 7820 bytes
+(epstopdf)                    date: 2018-05-23 14:33:46
+(epstopdf)                    size: 7823 bytes
 (epstopdf)             Command: <epstopdf --outfile=DistanceMeasuringGraphAndFi
 t2-eps-converted-to.pdf DistanceMeasuringGraphAndFit2.eps>
 (epstopdf)             \includegraphics on input line 595.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=DistanceMeasuringGraphAndFit2-eps-converted-to.pdf
+ DistanceMeasuringGraphAndFit2.eps)...executed (allowed).
 
-<DistanceMeasuringGraphAndFit2-eps-converted-to.pdf, id=544, 421.575pt x 316.18
+Package epstopdf Info: Result file: <DistanceMeasuringGraphAndFit2-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2018-05-23 14:37:03
+(epstopdf)                    size: 7982 bytes.
+
+<DistanceMeasuringGraphAndFit2-eps-converted-to.pdf, id=545, 421.575pt x 316.18
 124pt>
 File: DistanceMeasuringGraphAndFit2-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1910,7 +1918,7 @@ verted-to.pdf CrossSectionStdBars.eps>
 (epstopdf)             \includegraphics on input line 612.
 Package epstopdf Info: Output file is already uptodate.
 
-<CrossSectionStdBars-eps-converted-to.pdf, id=554, 1028.84375pt x 489.83pt>
+<CrossSectionStdBars-eps-converted-to.pdf, id=555, 1028.84375pt x 489.83pt>
 File: CrossSectionStdBars-eps-converted-to.pdf Graphic file (type pdf)
 
 <use CrossSectionStdBars-eps-converted-to.pdf>
@@ -1930,7 +1938,7 @@ s-converted-to.pdf stdAcrossAllMeasurements.eps>
 (epstopdf)             \includegraphics on input line 618.
 Package epstopdf Info: Output file is already uptodate.
 
-<stdAcrossAllMeasurements-eps-converted-to.pdf, id=559, 421.575pt x 316.18124pt
+<stdAcrossAllMeasurements-eps-converted-to.pdf, id=560, 421.575pt x 316.18124pt
 >
 File: stdAcrossAllMeasurements-eps-converted-to.pdf Graphic file (type pdf)
  <use stdAcrossAllMeasurements-eps-converted-to.pdf>
@@ -1949,7 +1957,7 @@ df>
 (epstopdf)             \includegraphics on input line 628.
 Package epstopdf Info: Output file is already uptodate.
 
-<CrossSectionReadingsStd-eps-converted-to.pdf, id=560, 492.84125pt x 352.31625p
+<CrossSectionReadingsStd-eps-converted-to.pdf, id=561, 492.84125pt x 352.31625p
 t>
 File: CrossSectionReadingsStd-eps-converted-to.pdf Graphic file (type pdf)
  <use CrossSectionReadingsStd-eps-converted-to.pdf>
@@ -1971,7 +1979,7 @@ ps-converted-to.pdf SpecificGravityComparison.eps>
 (epstopdf)             \includegraphics on input line 662.
 Package epstopdf Info: Output file is already uptodate.
 
-<SpecificGravityComparison-eps-converted-to.pdf, id=581, 421.575pt x 316.18124p
+<SpecificGravityComparison-eps-converted-to.pdf, id=582, 421.575pt x 316.18124p
 t>
 File: SpecificGravityComparison-eps-converted-to.pdf Graphic file (type pdf)
  <use SpecificGravityComparison-eps-converted-to.pdf>
@@ -1989,7 +1997,7 @@ d-to.pdf ComparisonBars.eps>
 (epstopdf)             \includegraphics on input line 668.
 Package epstopdf Info: Output file is already uptodate.
 
-<ComparisonBars-eps-converted-to.pdf, id=582, 421.575pt x 316.18124pt>
+<ComparisonBars-eps-converted-to.pdf, id=583, 421.575pt x 316.18124pt>
 File: ComparisonBars-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ComparisonBars-eps-converted-to.pdf>
@@ -2021,62 +2029,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 747--750
 
 [35] [36] [37] [38
 
-] <ctutest-zadani.pdf, id=636, 597.50786pt x 845.04686pt>
+] <ctutest-zadani.pdf, id=637, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf used on input line 835.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf used on input line 835.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 
-<ctutest-zadani.pdf, id=639, page=1, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=640, page=1, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [39 <./ctutest-zadani.pdf>]
-<ctutest-zadani.pdf, id=661, page=2, 597.50786pt x 845.04686pt>
+<ctutest-zadani.pdf, id=662, page=2, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 835.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 835.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 831.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 835.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [40 <./ctutest-zadani.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 833.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 833.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 837.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 837.
  (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 833.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 837.
 
 
  *File List*
@@ -2242,20 +2250,17 @@ ctutest-zadani.pdf    Graphic file (type pdf)
 ctutest-zadani.pdf    Graphic file (type pdf)
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 833.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 837.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 3390B27AB1BA4CC906D401E676ACEB90;2829.
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 833.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 837.
  ) 
 Here is how much of TeX's memory you used:
- 23769 strings out of 493328
- 412679 string characters out of 3139120
- 647947 words of memory out of 3000000
+ 23766 strings out of 493328
+ 412653 string characters out of 3139120
+ 647984 words of memory out of 3000000
  26642 multiletter control sequences out of 15000+200000
- 624248 words of font info for 157 fonts, out of 3000000 for 9000
+ 624082 words of font info for 155 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,56p,10370b,819s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -2266,19 +2271,18 @@ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (46 pages, 1272871 bytes).
+ic/lm/lmbxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Thesis.pdf (46 pages, 1252855 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
+ 756 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
  26075 words of extra memory for PDF output out of 29859 (max. 10000000)
 
