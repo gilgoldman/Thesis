@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.10.11)  23 MAY 2018 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.10.11)  23 MAY 2018 19:35
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1970,7 +1970,7 @@ Package epstopdf Info: Source file: <SpecificGravityComparison.eps>
 (epstopdf)                    size: 4529 bytes
 (epstopdf)             Command: <epstopdf --outfile=SpecificGravityComparison-e
 ps-converted-to.pdf SpecificGravityComparison.eps>
-(epstopdf)             \includegraphics on input line 662.
+(epstopdf)             \includegraphics on input line 661.
 Package epstopdf Info: Output file is already uptodate.
 
 <SpecificGravityComparison-eps-converted-to.pdf, id=582, 421.575pt x 316.18124p
@@ -1978,7 +1978,7 @@ t>
 File: SpecificGravityComparison-eps-converted-to.pdf Graphic file (type pdf)
  <use SpecificGravityComparison-eps-converted-to.pdf>
 Package pdftex.def Info: SpecificGravityComparison-eps-converted-to.pdf used on
- input line 662.
+ input line 661.
 (pdftex.def)             Requested size: 363.0pt x 272.2531pt.
 Package epstopdf Info: Source file: <ComparisonBars.eps>
 (epstopdf)                    date: 2018-05-22 21:42:43
@@ -1988,7 +1988,7 @@ Package epstopdf Info: Source file: <ComparisonBars.eps>
 (epstopdf)                    size: 3890 bytes
 (epstopdf)             Command: <epstopdf --outfile=ComparisonBars-eps-converte
 d-to.pdf ComparisonBars.eps>
-(epstopdf)             \includegraphics on input line 668.
+(epstopdf)             \includegraphics on input line 667.
 Package epstopdf Info: Output file is already uptodate.
 
 <ComparisonBars-eps-converted-to.pdf, id=583, 421.575pt x 316.18124pt>
@@ -1996,7 +1996,7 @@ File: ComparisonBars-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ComparisonBars-eps-converted-to.pdf>
 Package pdftex.def Info: ComparisonBars-eps-converted-to.pdf used on input line
- 668.
+ 667.
 (pdftex.def)             Requested size: 363.0pt x 272.2531pt.
  [30 <./SpecificGravityComparison-eps-converted-to.pdf>] [31 <./ComparisonBars-
 eps-converted-to.pdf>]
@@ -2005,19 +2005,19 @@ Chapter 6.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \chapter with sig. 's' on line 708.
+. Redefining command \chapter with sig. 's' on line 707.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \appendix with sig. 'ss' on line 708.
+. Redefining command \appendix with sig. 'ss' on line 707.
 .................................................
  [33] [34
 
 ]
 Appendix A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--750
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
 
  []
 
@@ -2027,58 +2027,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 747--750
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf used on input line 834.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf>
-Package pdftex.def Info: ctutest-zadani.pdf used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf used on input line 834.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 
 <ctutest-zadani.pdf, id=640, page=1, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 834.
 (pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 834.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 834.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 834.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 1>
-Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf, page1 used on input line 834.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [39 <./ctutest-zadani.pdf>]
 <ctutest-zadani.pdf, id=662, page=2, 597.50786pt x 845.04686pt>
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 834.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
  <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 834.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
 File: ctutest-zadani.pdf Graphic file (type pdf)
 
 <use ctutest-zadani.pdf, page 2>
-Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 835.
+Package pdftex.def Info: ctutest-zadani.pdf, page2 used on input line 834.
 (pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
  [40 <./ctutest-zadani.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 837.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 837.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 836.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 836.
  (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 837.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 836.
 
 
  *File List*
@@ -2244,10 +2244,10 @@ ctutest-zadani.pdf    Graphic file (type pdf)
 ctutest-zadani.pdf    Graphic file (type pdf)
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 837.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 836.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 3390B27AB1BA4CC906D401E676ACEB90;2829.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 837.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 836.
  ) 
 Here is how much of TeX's memory you used:
  23754 strings out of 493328
@@ -2274,7 +2274,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (46 pages, 1252591 bytes).
+Output written on Thesis.pdf (46 pages, 1252590 bytes).
 PDF statistics:
  756 PDF objects out of 1000 (max. 8388607)
  156 named destinations out of 1000 (max. 500000)
