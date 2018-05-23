@@ -1,24 +1,24 @@
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
 \contentsline {paragraph}{Keywords:}{iv}{paragraph*.1}
 \contentsline {paragraph}{Supervisor:}{iv}{paragraph*.2}
-\babel@toc {czech}{}
+\select@language {czech}
 \contentsline {paragraph}{Kl\'i\v cov\'a\ slova:}{iv}{paragraph*.3}
 \contentsline {paragraph}{P\v reklad\ n\'azvu:}{iv}{paragraph*.4}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {czech}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
-\babel@toc {english}{}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {czech}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}
 \contentsline {section}{\numberline {0.1}Introduction}{1}{section.0.1}
 \contentsline {chapter}{\numberline {1}How beer is brewed}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Overview of Beer Brewing}{2}{section.1.1}
