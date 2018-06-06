@@ -1,6 +1,7 @@
 Statnice Topics:
 
 Legend:
+(V) = Done
 * = Needs revision on the subtopics mentioned
 - = Notes regarding subject
 ! = Priority topic
@@ -10,13 +11,15 @@ Legend:
 1) Calculus and Linear Algebra*
   1.1) Integration techniques - by parts
   1.2) Convergence
-  1.3) Lagrange multipliers
-  1.4) Fubini's Theorem
-  1.5) Gauss' Theorem
-  1.6) Green's Theorem
-  1.7) Stoke's Theorem
+  1.3) Lagrange multipliers (V)
+  1.4) Fubini's Theorem (V)
+  1.5) Gauss' Theorem (V)
+  1.6) Green's Theorem (V)
+  1.7) Stoke's Theorem (V)
+  1.8) Fourier Series (V)
+  1.9) Taylor Series (V)
 2) Physics
-  2.1) Conservative fields
+  2.1) Conservative fields (V)
   2.2) Lagrange's equation of the 2nd order
   2.3) Hamilton's canonical equations
   2.4) Motion in field of central force
@@ -39,10 +42,10 @@ Legend:
   2.21) Wave Particle Duality, Scheodinger's equation, uncertainty principle
   2.22) Tunnel effect, quantum numbers, Band theory of solids
 3) Programming (?)
-4) Logic and Graph Theory (?)
+4) Logic and Graph Theory (V)
 5) Statistics
 6) Signal Theory and analysis basics
-  6.1) Basic types, properties, and description in time and frequency of signals
+  6.1) Basic types, properties, and description in time and frequency of signals (V)
   6.2) Convolution, Correlation, and application of Laplace, Fourier, and Z transform
   6.3) Sampling and Shaping of signals
   6.4) Analogue and digital filters
@@ -50,7 +53,7 @@ Legend:
 7) Circuit Theory
 8) Automatic Control (!)
   8.1) Dynamic systems and their models
-    - Systems: Continuous time, discrete time, linear, non-Linear
+    - Systems: Continuous time, discrete time, linear, non-Linear (V)
     - Models: Differential/difference equations, transfer function, state space
   8.2) Model construction and transformations
     - How to create models from systems
@@ -82,4 +85,20 @@ Legend:
 11) Cybernetics and AI *
 12) Networks and systems (DSY)
   - GIT GUD IN DIS YO!!!
-13)
+13) Sensors and Measurements (SME)
+  13.1) Measurement of Voltage, Current, and frequency
+  13.2) Uncertainties and methods of decreasing them
+  13.3) Sampling, A/D converters, oscilloscope
+  13.4) Measurements of electrical power and consumption
+  13.5) Resistive and magnetic Sensors
+  13.6) Measurements of small voltage and resistance
+  13.7) Capacitive and inductive Sensors
+  13.8) Measurement of Impedance
+  13.9) Optoelectronic and ultrasound Sensors
+  13.10) Sensors and transducers for measuring vibration, speed, and acceleration
+  13.11) Measurement of revolution speed and angular position
+  13.12) Sensors for navigation
+  13.13) Measurement of force, pressure, level and flow rate
+  13.14) Sensors of temperature and associated measuring circuits
+  13.15) Sensor networks and communication busses
+  13.16) DAC's and signal generators
