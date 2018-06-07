@@ -86,9 +86,9 @@ Legend:
 12) Networks and systems (DSY)
   - GIT GUD IN DIS YO!!!
 13) Sensors and Measurements (SME)
-  13.1) Measurement of Voltage, Current, and frequency
-  13.2) Uncertainties and methods of decreasing them
-  13.3) Sampling, A/D converters, oscilloscope
+  13.1) Measurement of Voltage, Current, and frequency (V)
+  13.2) Uncertainties and methods of decreasing them (V)
+  13.3) Sampling, A/D converters, oscilloscope (V)
   13.4) Measurements of electrical power and consumption
   13.5) Resistive and magnetic Sensors
   13.6) Measurements of small voltage and resistance
