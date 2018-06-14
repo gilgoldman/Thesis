@@ -89,9 +89,9 @@ Legend:
   13.1) Measurement of Voltage, Current, and frequency (V)
   13.2) Uncertainties and methods of decreasing them (V)
   13.3) Sampling, A/D converters, oscilloscope (V)
-  13.4) Measurements of electrical power and consumption
+  13.4) Measurements of electrical power and consumption (V)
   13.5) Resistive and magnetic Sensors
-  13.6) Measurements of small voltage and resistance
+  13.6) Measurements of small voltage and resistance (V)
   13.7) Capacitive and inductive Sensors
   13.8) Measurement of Impedance
   13.9) Optoelectronic and ultrasound Sensors
