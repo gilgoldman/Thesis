@@ -29,10 +29,10 @@ Legend:
   2.8) Electric current, current density
   2.9) Conservation of Electric charge
   2.10) Joule's law
-  2.11) Maxwell's equations
-  2.12) Gauss' law
+  2.11) Maxwell's equations (!) (V)
+  2.12) Gauss' law (!)
   2.13) Ampere's law and Biot-Savart's law (!)
-  2.14) 3 Laws of Thermodynamics
+  2.14) 3 Laws of Thermodynamics (V)
   2.15) Work, internal energy, Entropy and probability
   2.16) Wave Theory - phase velocity, group velocity, dissipation and dispersion, general wave equation
   2.17) Wave superposition, Huygen's principle
@@ -78,7 +78,17 @@ Legend:
   8.17) Non-linear systems and control
   8.18) MIMO systems, properties and control issues
 9) Computer Micro-architecture
-  - DMA, Finite automata, sequential logic circuits, etc.
+  - Minimization of logic functions (!)
+    - Algebraically (V)
+    - Karnaugh maps (V)
+  - Combinational logic circuits and their hazards (!) (V)
+  - Sequential logic circuits (V)
+  - Logic circuits in computer systems (?)
+  - Programmable circuits FPGA (?)
+  - Synthesis of finite automata as sequential logic circuits (?)
+  - CPU: machine code instructions, address space, buses, memories, interrupts, and exceptions, DMA
+  - Programmable logic controllers PLC (?)
+
 
 10) OS theory and Databases
   - Threads, scheduling, inter-process communications, etc.
