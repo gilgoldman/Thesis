@@ -47,7 +47,7 @@ Legend:
 6) Signal Theory and analysis basics
   6.1) Basic types, properties, and description in time and frequency of signals (V)
   6.2) Convolution, Correlation, and application of Laplace, Fourier, and Z transform
-  6.3) Sampling and Shaping of signals
+  6.3) Sampling and Shaping of signals (V)
   6.4) Analogue and digital filters
   6.5) Quantization, Modulation
 7) Circuit Theory
@@ -83,7 +83,7 @@ Legend:
     - Karnaugh maps (V)
   - Combinational logic circuits and their hazards (!) (V)
   - Sequential logic circuits (V)
-  - Logic circuits in computer systems (?)
+  - Logic circuits in computer systems (V)
   - Programmable circuits FPGA (?)
   - Synthesis of finite automata as sequential logic circuits (?)
   - CPU: machine code instructions, address space, buses, memories, interrupts, and exceptions, DMA
