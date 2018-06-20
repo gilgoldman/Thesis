@@ -27,7 +27,7 @@ Legend:
   2.6) Physical fields - description of a field, potential.
   2.7) Fundamental quantities of electrostatic field
   2.8) Electric current, current density
-  2.9) Conservation of Electric charge
+  2.9) Conservation of Electric charge (V)
   2.10) Joule's law
   2.11) Maxwell's equations (!) (V)
   2.12) Gauss' law (!)
@@ -37,9 +37,9 @@ Legend:
   2.16) Wave Theory - phase velocity, group velocity, dissipation and dispersion, general wave equation
   2.17) Wave superposition, Huygen's principle
   2.18) Diffraction of waves, Doppler's effect
-  2.19) Black-body radiation, Photoelectric and Compton effects
+  2.19) Black-body radiation, Photoelectric and Compton effects (V)
   2.20) Bohr's model of the atom
-  2.21) Wave Particle Duality, Scheodinger's equation, uncertainty principle
+  2.21) Wave Particle Duality, Schrodinger's equation, uncertainty principle
   2.22) Tunnel effect, quantum numbers, Band theory of solids
 3) Programming (?)
 4) Logic and Graph Theory (V)
